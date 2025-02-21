@@ -1,0 +1,101 @@
+
+state 0
+	$accept: .top $end 
+
+	NUM  shift 3
+	.  error
+
+	top  goto 1
+	expr  goto 2
+
+state 1
+	$accept:  top.$end 
+
+	$end  accept
+	.  error
+
+
+state 2
+	top:  expr.    (1)
+	expr:  expr.'+' NUM 
+	expr:  expr.'-' NUM 
+	expr:  expr.'*' NUM 
+	expr:  expr.'/' NUM 
+
+	'+'  shift 4
+	'-'  shift 5
+	'*'  shift 6
+	'/'  shift 7
+	.  reduce 1 (src line 26)
+
+
+state 3
+	expr:  NUM.    (2)
+
+	.  reduce 2 (src line 30)
+
+
+state 4
+	expr:  expr '+'.NUM 
+
+	NUM  shift 8
+	.  error
+
+
+state 5
+	expr:  expr '-'.NUM 
+
+	NUM  shift 9
+	.  error
+
+
+state 6
+	expr:  expr '*'.NUM 
+
+	NUM  shift 10
+	.  error
+
+
+state 7
+	expr:  expr '/'.NUM 
+
+	NUM  shift 11
+	.  error
+
+
+state 8
+	expr:  expr '+' NUM.    (3)
+
+	.  reduce 3 (src line 32)
+
+
+state 9
+	expr:  expr '-' NUM.    (4)
+
+	.  reduce 4 (src line 35)
+
+
+state 10
+	expr:  expr '*' NUM.    (5)
+
+	.  reduce 5 (src line 38)
+
+
+state 11
+	expr:  expr '/' NUM.    (6)
+
+	.  reduce 6 (src line 41)
+
+
+8 terminals, 3 nonterminals
+7 grammar rules, 12/16000 states
+0 shift/reduce, 0 reduce/reduce conflicts reported
+52 working sets used
+memory: parser 1/240000
+0 extra closures
+9 shift entries, 1 exceptions
+2 goto entries
+0 entries saved by goto default
+Optimizer space used: output 11/240000
+11 table entries, 0 zero
+maximum spread: 8, maximum offset: 8
