@@ -135,13 +135,12 @@ func (d *decoder) readRecords(cb ReadDataFunc) error {
 				//
 
 				for _, field := range md.Fields {
-					fieldData, err := registration.GetField(md.GlobalMessageNumber, uint16(field.Id))
-					if err != nil {
-						return err
-					} else {
-						print(fieldData.FieldId)
-
+					fieldData, ok := registration.GetField(md.GlobalMessageNumber, uint16(field.Id))
+					if !ok {
+						continue
 					}
+
+					println(md.GlobalMessageNumber, fieldData.FieldId)
 
 				}
 

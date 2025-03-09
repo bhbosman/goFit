@@ -28,13 +28,13 @@ func RegisterMessage(msgNumber uint16, fieldMap map[uint16]DefinedFields, onCrea
 
 var couldNotFindField = fmt.Errorf("could not find message/field")
 
-func GetField(msgNumber uint16, fieldId uint16) (DefinedFields, error) {
+func GetField(msgNumber uint16, fieldId uint16) (DefinedFields, bool) {
 	if message, ok := globalFieldMap[msgNumber]; ok {
 		if fieldMap, ok := message[fieldId]; ok {
-			return fieldMap, nil
+			return fieldMap, true
 		}
 	}
-	return DefinedFields{}, couldNotFindField
+	return DefinedFields{}, false
 }
 
 type DefinedFields struct {
