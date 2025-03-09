@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaConfigurationData", ""> HsaConfigurationData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Encoded configuration data", "", ""> @Timestamp;
+	byte<"Byte", 0, 0, "", 1, 1, "", "", "", "", "", "Encoded configuration data. Health SDK use only", "", ""> @Data;
+	uint8<"Uint8", 1, -1, "", 1, 1, "", "", "", "", "", "Size in bytes of data field", "", ""> @DataSize;
+};

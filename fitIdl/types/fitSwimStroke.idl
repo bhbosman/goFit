@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> SwimStroke
+{
+	@Freestyle = 0x00, // Value: 0, Comment: 
+	@Backstroke = 0x01, // Value: 1, Comment: 
+	@Breaststroke = 0x02, // Value: 2, Comment: 
+	@Butterfly = 0x03, // Value: 3, Comment: 
+	@Drill = 0x04, // Value: 4, Comment: 
+	@Mixed = 0x05, // Value: 5, Comment: 
+	@Im = 0x06 // Value: 6, Comment: 
+};

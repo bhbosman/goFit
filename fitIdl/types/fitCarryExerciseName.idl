@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> CarryExerciseName
+{
+	@BarHolds = 0x0000, // Value: 0, Comment: 
+	@FarmersWalk = 0x0001, // Value: 1, Comment: 
+	@FarmersWalkOnToes = 0x0002, // Value: 2, Comment: 
+	@HexDumbbellHold = 0x0003, // Value: 3, Comment: 
+	@OverheadCarry = 0x0004 // Value: 4, Comment: 
+};

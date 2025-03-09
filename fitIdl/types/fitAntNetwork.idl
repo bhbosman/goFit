@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> AntNetwork
+{
+	@Public = 0x00, // Value: 0, Comment: 
+	@Antplus = 0x01, // Value: 1, Comment: 
+	@Antfs = 0x02, // Value: 2, Comment: 
+	@Private = 0x03 // Value: 3, Comment: 
+};

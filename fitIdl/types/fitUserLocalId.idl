@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> UserLocalId
+{
+	@LocalMin = 0x0000, // Value: 0, Comment: 
+	@LocalMax = 0x000F, // Value: 15, Comment: 
+	@StationaryMin = 0x0010, // Value: 16, Comment: 
+	@StationaryMax = 0x00FF, // Value: 255, Comment: 
+	@PortableMin = 0x0100, // Value: 256, Comment: 
+	@PortableMax = 0xFFFE // Value: 65534, Comment: 
+};

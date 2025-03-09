@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SlaveDevice", ""> SlaveDevice {
+	Manufacturer<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Manufacturer;
+	uint16<"Uint16", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Product
+	{
+		uint16<"Uint16", "", 1, 1, "", "", "", "manufacturer", "favero_electronics", "", "", ""> @FaveroProduct;
+		uint16<"Uint16", "", 1, 1, "", "", "", "manufacturer,manufacturer,manufacturer,manufacturer", "garmin,dynastream,dynastream_oem,tacx", "", "", "1"> @GarminProduct;
+	};
+};

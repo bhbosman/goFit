@@ -1,0 +1,16 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"BloodPressure", ""> BloodPressure {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", "1"> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "mmHg", "", "", "", "", "", "", "1"> @SystolicPressure;
+	uint16<"Uint16", 1, -1, "", 1, 1, "mmHg", "", "", "", "", "", "", "1"> @DiastolicPressure;
+	uint16<"Uint16", 2, -1, "", 1, 1, "mmHg", "", "", "", "", "", "", "1"> @MeanArterialPressure;
+	uint16<"Uint16", 3, -1, "", 1, 1, "mmHg", "", "", "", "", "", "", "1"> @Map3SampleMean;
+	uint16<"Uint16", 4, -1, "", 1, 1, "mmHg", "", "", "", "", "", "", "1"> @MapMorningValues;
+	uint16<"Uint16", 5, -1, "", 1, 1, "mmHg", "", "", "", "", "", "", "1"> @MapEveningValues;
+	uint8<"Uint8", 6, -1, "", 1, 1, "bpm", "", "", "", "", "", "", "1"> @HeartRate;
+	HrType<"Enum", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @HeartRateType;
+	BpStatus<"Enum", 8, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Status;
+	MessageIndex<"Enum", 9, -1, "", 1, 1, "", "", "", "", "", "Associates this blood pressure message to a user. This corresponds to the index of the user profile message in the blood pressure file.", "", "1"> @UserProfileIndex;
+};

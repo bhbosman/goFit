@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"VideoClip", ""> VideoClip {
+	uint16<"Uint16", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ClipNumber;
+	uint32<"Uint32", 1, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @StartTimestamp;
+	uint16<"Uint16", 2, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @StartTimestampMs;
+	uint32<"Uint32", 3, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @EndTimestamp;
+	uint16<"Uint16", 4, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @EndTimestampMs;
+	uint32<"Uint32", 6, -1, "", 1, 1, "ms", "", "", "", "", "Start of clip in video time", "", ""> @ClipStart;
+	uint32<"Uint32", 7, -1, "", 1, 1, "ms", "", "", "", "", "End of clip in video time", "", ""> @ClipEnd;
+};

@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"StressLevel", ""> StressLevel {
+	int16<"Sint16", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @StressLevelValue;
+	uint32<"Uint32", 1, -1, "", 1, 1, "s", "", "", "", "", "Time stress score was calculated", "", ""> @StressLevelTime;
+};

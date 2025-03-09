@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HrvValue", ""> HrvValue {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 128, 1, "ms", "", "", "", "", "5 minute RMSSD", "", ""> @Value;
+};

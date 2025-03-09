@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> SportEvent
+{
+	@Uncategorized = 0x00, // Value: 0, Comment: 
+	@Geocaching = 0x01, // Value: 1, Comment: 
+	@Fitness = 0x02, // Value: 2, Comment: 
+	@Recreation = 0x03, // Value: 3, Comment: 
+	@Race = 0x04, // Value: 4, Comment: 
+	@SpecialEvent = 0x05, // Value: 5, Comment: 
+	@Training = 0x06, // Value: 6, Comment: 
+	@Transportation = 0x07, // Value: 7, Comment: 
+	@Touring = 0x08 // Value: 8, Comment: 
+};

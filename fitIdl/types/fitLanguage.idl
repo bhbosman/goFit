@@ -1,0 +1,44 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> Language
+{
+	@English = 0x00, // Value: 0, Comment: 
+	@French = 0x01, // Value: 1, Comment: 
+	@Italian = 0x02, // Value: 2, Comment: 
+	@German = 0x03, // Value: 3, Comment: 
+	@Spanish = 0x04, // Value: 4, Comment: 
+	@Croatian = 0x05, // Value: 5, Comment: 
+	@Czech = 0x06, // Value: 6, Comment: 
+	@Danish = 0x07, // Value: 7, Comment: 
+	@Dutch = 0x08, // Value: 8, Comment: 
+	@Finnish = 0x09, // Value: 9, Comment: 
+	@Greek = 0x0A, // Value: 10, Comment: 
+	@Hungarian = 0x0B, // Value: 11, Comment: 
+	@Norwegian = 0x0C, // Value: 12, Comment: 
+	@Polish = 0x0D, // Value: 13, Comment: 
+	@Portuguese = 0x0E, // Value: 14, Comment: 
+	@Slovakian = 0x0F, // Value: 15, Comment: 
+	@Slovenian = 0x10, // Value: 16, Comment: 
+	@Swedish = 0x11, // Value: 17, Comment: 
+	@Russian = 0x12, // Value: 18, Comment: 
+	@Turkish = 0x13, // Value: 19, Comment: 
+	@Latvian = 0x14, // Value: 20, Comment: 
+	@Ukrainian = 0x15, // Value: 21, Comment: 
+	@Arabic = 0x16, // Value: 22, Comment: 
+	@Farsi = 0x17, // Value: 23, Comment: 
+	@Bulgarian = 0x18, // Value: 24, Comment: 
+	@Romanian = 0x19, // Value: 25, Comment: 
+	@Chinese = 0x1A, // Value: 26, Comment: 
+	@Japanese = 0x1B, // Value: 27, Comment: 
+	@Korean = 0x1C, // Value: 28, Comment: 
+	@Taiwanese = 0x1D, // Value: 29, Comment: 
+	@Thai = 0x1E, // Value: 30, Comment: 
+	@Hebrew = 0x1F, // Value: 31, Comment: 
+	@BrazilianPortuguese = 0x20, // Value: 32, Comment: 
+	@Indonesian = 0x21, // Value: 33, Comment: 
+	@Malaysian = 0x22, // Value: 34, Comment: 
+	@Vietnamese = 0x23, // Value: 35, Comment: 
+	@Burmese = 0x24, // Value: 36, Comment: 
+	@Mongolian = 0x25, // Value: 37, Comment: 
+	@Custom = 0xFE // Value: 254, Comment: 
+};

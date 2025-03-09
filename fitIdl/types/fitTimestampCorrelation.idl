@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"TimestampCorrelation", ""> TimestampCorrelation {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of UTC timestamp at the time the system timestamp was recorded.", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 32768, 1, "s", "", "", "", "", "Fractional part of the UTC timestamp at the time the system timestamp was recorded.", "", ""> @FractionalTimestamp;
+	uint32<"Uint32", 1, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the system timestamp", "", ""> @SystemTimestamp;
+	uint16<"Uint16", 2, -1, "", 32768, 1, "s", "", "", "", "", "Fractional part of the system timestamp", "", ""> @FractionalSystemTimestamp;
+	LocalDateTime<"Enum", 3, -1, "", 1, 1, "s", "", "", "", "", "timestamp epoch expressed in local time used to convert timestamps to local time", "", ""> @LocalTimestamp;
+	uint16<"Uint16", 4, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the UTC timestamp at the time the system timestamp was recorded.", "", ""> @TimestampMs;
+	uint16<"Uint16", 5, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the system timestamp", "", ""> @SystemTimestampMs;
+};

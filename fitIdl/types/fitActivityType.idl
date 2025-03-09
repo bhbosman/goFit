@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ActivityType
+{
+	@Generic = 0x00, // Value: 0, Comment: 
+	@Running = 0x01, // Value: 1, Comment: 
+	@Cycling = 0x02, // Value: 2, Comment: 
+	@Transition = 0x03, // Value: 3, Comment: 
+	@FitnessEquipment = 0x04, // Value: 4, Comment: 
+	@Swimming = 0x05, // Value: 5, Comment: 
+	@Walking = 0x06, // Value: 6, Comment: 
+	@Sedentary = 0x08, // Value: 8, Comment: 
+	@All = 0xFE // Value: 254, Comment: 
+};

@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaGyroscopeData", ""> HsaGyroscopeData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond resolution of the timestamp", "", ""> @TimestampMs;
+	uint16<"Uint16", 1, -1, "", 1, 1, "1/32768 s", "", "", "", "", "Sampling Interval in 32 kHz timescale", "", ""> @SamplingInterval;
+	int16<"Sint16", 2, 0, "", 28.57143, 1, "deg/s", "", "", "", "", "X-Axis Measurement", "", ""> @GyroX;
+	int16<"Sint16", 3, 0, "", 28.57143, 1, "deg/s", "", "", "", "", "Y-Axis Measurement", "", ""> @GyroY;
+	int16<"Sint16", 4, 0, "", 28.57143, 1, "deg/s", "", "", "", "", "Z-Axis Measurement", "", ""> @GyroZ;
+	uint32<"Uint32", 5, -1, "", 1, 1, "1/32768 s", "", "", "", "", "32 kHz timestamp", "", ""> @Timestamp32k;
+};

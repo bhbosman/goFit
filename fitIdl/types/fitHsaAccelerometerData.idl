@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaAccelerometerData", ""> HsaAccelerometerData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond resolution of the timestamp", "", ""> @TimestampMs;
+	uint16<"Uint16", 1, -1, "", 1, 1, "ms", "", "", "", "", "Sampling Interval in Milliseconds", "", ""> @SamplingInterval;
+	int16<"Sint16", 2, 0, "", 1.024, 1, "mG", "", "", "", "", "X-Axis Measurement", "", ""> @AccelX;
+	int16<"Sint16", 3, 0, "", 1.024, 1, "mG", "", "", "", "", "Y-Axis Measurement", "", ""> @AccelY;
+	int16<"Sint16", 4, 0, "", 1.024, 1, "mG", "", "", "", "", "Z-Axis Measurement", "", ""> @AccelZ;
+	uint32<"Uint32", 5, -1, "", 1, 1, "", "", "", "", "", "32 kHz timestamp", "", ""> @Timestamp32k;
+};

@@ -1,0 +1,55 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ExdDataUnits
+{
+	@NoUnits = 0x00, // Value: 0, Comment: 
+	@Laps = 0x01, // Value: 1, Comment: 
+	@MilesPerHour = 0x02, // Value: 2, Comment: 
+	@KilometersPerHour = 0x03, // Value: 3, Comment: 
+	@FeetPerHour = 0x04, // Value: 4, Comment: 
+	@MetersPerHour = 0x05, // Value: 5, Comment: 
+	@DegreesCelsius = 0x06, // Value: 6, Comment: 
+	@DegreesFarenheit = 0x07, // Value: 7, Comment: 
+	@Zone = 0x08, // Value: 8, Comment: 
+	@Gear = 0x09, // Value: 9, Comment: 
+	@Rpm = 0x0A, // Value: 10, Comment: 
+	@Bpm = 0x0B, // Value: 11, Comment: 
+	@Degrees = 0x0C, // Value: 12, Comment: 
+	@Millimeters = 0x0D, // Value: 13, Comment: 
+	@Meters = 0x0E, // Value: 14, Comment: 
+	@Kilometers = 0x0F, // Value: 15, Comment: 
+	@Feet = 0x10, // Value: 16, Comment: 
+	@Yards = 0x11, // Value: 17, Comment: 
+	@Kilofeet = 0x12, // Value: 18, Comment: 
+	@Miles = 0x13, // Value: 19, Comment: 
+	@Time = 0x14, // Value: 20, Comment: 
+	@EnumTurnType = 0x15, // Value: 21, Comment: 
+	@Percent = 0x16, // Value: 22, Comment: 
+	@Watts = 0x17, // Value: 23, Comment: 
+	@WattsPerKilogram = 0x18, // Value: 24, Comment: 
+	@EnumBatteryStatus = 0x19, // Value: 25, Comment: 
+	@EnumBikeLightBeamAngleMode = 0x1A, // Value: 26, Comment: 
+	@EnumBikeLightBatteryStatus = 0x1B, // Value: 27, Comment: 
+	@EnumBikeLightNetworkConfigType = 0x1C, // Value: 28, Comment: 
+	@Lights = 0x1D, // Value: 29, Comment: 
+	@Seconds = 0x1E, // Value: 30, Comment: 
+	@Minutes = 0x1F, // Value: 31, Comment: 
+	@Hours = 0x20, // Value: 32, Comment: 
+	@Calories = 0x21, // Value: 33, Comment: 
+	@Kilojoules = 0x22, // Value: 34, Comment: 
+	@Milliseconds = 0x23, // Value: 35, Comment: 
+	@SecondPerMile = 0x24, // Value: 36, Comment: 
+	@SecondPerKilometer = 0x25, // Value: 37, Comment: 
+	@Centimeter = 0x26, // Value: 38, Comment: 
+	@EnumCoursePoint = 0x27, // Value: 39, Comment: 
+	@Bradians = 0x28, // Value: 40, Comment: 
+	@EnumSport = 0x29, // Value: 41, Comment: 
+	@InchesHg = 0x2A, // Value: 42, Comment: 
+	@MmHg = 0x2B, // Value: 43, Comment: 
+	@Mbars = 0x2C, // Value: 44, Comment: 
+	@HectoPascals = 0x2D, // Value: 45, Comment: 
+	@FeetPerMin = 0x2E, // Value: 46, Comment: 
+	@MetersPerMin = 0x2F, // Value: 47, Comment: 
+	@MetersPerSec = 0x30, // Value: 48, Comment: 
+	@EightCardinal = 0x31 // Value: 49, Comment: 
+};

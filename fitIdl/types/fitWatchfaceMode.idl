@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> WatchfaceMode
+{
+	@Digital = 0x00, // Value: 0, Comment: 
+	@Analog = 0x01, // Value: 1, Comment: 
+	@ConnectIq = 0x02, // Value: 2, Comment: 
+	@Disabled = 0x03 // Value: 3, Comment: 
+};

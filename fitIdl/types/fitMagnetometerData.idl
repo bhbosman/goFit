@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"MagnetometerData", ""> MagnetometerData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the timestamp", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the timestamp.", "", ""> @TimestampMs;
+	uint16<"Uint16", 1, 0, "", 1, 1, "ms", "", "", "", "", "Each time in the array describes the time at which the compass sample with the corrosponding index was taken. Limited to 30 samples in each message. The samples may span across seconds. Array size must match the number of samples in cmps_x and cmps_y and cmps_z", "", ""> @SampleTimeOffset;
+	uint16<"Uint16", 2, 0, "", 1, 1, "counts", "", "", "", "", "These are the raw ADC reading. Maximum number of samples is 30 in each message. The samples may span across seconds. A conversion will need to be done on this data once read.", "", ""> @MagX;
+	uint16<"Uint16", 3, 0, "", 1, 1, "counts", "", "", "", "", "These are the raw ADC reading. Maximum number of samples is 30 in each message. The samples may span across seconds. A conversion will need to be done on this data once read.", "", ""> @MagY;
+	uint16<"Uint16", 4, 0, "", 1, 1, "counts", "", "", "", "", "These are the raw ADC reading. Maximum number of samples is 30 in each message. The samples may span across seconds. A conversion will need to be done on this data once read.", "", ""> @MagZ;
+	float32<"Float32", 5, 0, "", 1, 1, "G", "", "", "", "", "Calibrated Magnetometer reading", "", ""> @CalibratedMagX;
+	float32<"Float32", 6, 0, "", 1, 1, "G", "", "", "", "", "Calibrated Magnetometer reading", "", ""> @CalibratedMagY;
+	float32<"Float32", 7, 0, "", 1, 1, "G", "", "", "", "", "Calibrated Magnetometer reading", "", ""> @CalibratedMagZ;
+};

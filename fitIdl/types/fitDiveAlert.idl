@@ -1,0 +1,44 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> DiveAlert
+{
+	@NdlReached = 0x00, // Value: 0, Comment: 
+	@GasSwitchPrompted = 0x01, // Value: 1, Comment: 
+	@NearSurface = 0x02, // Value: 2, Comment: 
+	@ApproachingNdl = 0x03, // Value: 3, Comment: 
+	@Po2Warn = 0x04, // Value: 4, Comment: 
+	@Po2CritHigh = 0x05, // Value: 5, Comment: 
+	@Po2CritLow = 0x06, // Value: 6, Comment: 
+	@TimeAlert = 0x07, // Value: 7, Comment: 
+	@DepthAlert = 0x08, // Value: 8, Comment: 
+	@DecoCeilingBroken = 0x09, // Value: 9, Comment: 
+	@DecoComplete = 0x0A, // Value: 10, Comment: 
+	@SafetyStopBroken = 0x0B, // Value: 11, Comment: 
+	@SafetyStopComplete = 0x0C, // Value: 12, Comment: 
+	@CnsWarning = 0x0D, // Value: 13, Comment: 
+	@CnsCritical = 0x0E, // Value: 14, Comment: 
+	@OtuWarning = 0x0F, // Value: 15, Comment: 
+	@OtuCritical = 0x10, // Value: 16, Comment: 
+	@AscentCritical = 0x11, // Value: 17, Comment: 
+	@AlertDismissedByKey = 0x12, // Value: 18, Comment: 
+	@AlertDismissedByTimeout = 0x13, // Value: 19, Comment: 
+	@BatteryLow = 0x14, // Value: 20, Comment: 
+	@BatteryCritical = 0x15, // Value: 21, Comment: 
+	@SafetyStopStarted = 0x16, // Value: 22, Comment: 
+	@ApproachingFirstDecoStop = 0x17, // Value: 23, Comment: 
+	@SetpointSwitchAutoLow = 0x18, // Value: 24, Comment: 
+	@SetpointSwitchAutoHigh = 0x19, // Value: 25, Comment: 
+	@SetpointSwitchManualLow = 0x1A, // Value: 26, Comment: 
+	@SetpointSwitchManualHigh = 0x1B, // Value: 27, Comment: 
+	@AutoSetpointSwitchIgnored = 0x1C, // Value: 28, Comment: 
+	@SwitchedToOpenCircuit = 0x1D, // Value: 29, Comment: 
+	@SwitchedToClosedCircuit = 0x1E, // Value: 30, Comment: 
+	@TankBatteryLow = 0x20, // Value: 32, Comment: 
+	@Po2CcrDilLow = 0x21, // Value: 33, Comment: 
+	@DecoStopCleared = 0x22, // Value: 34, Comment: 
+	@ApneaNeutralBuoyancy = 0x23, // Value: 35, Comment: 
+	@ApneaTargetDepth = 0x24, // Value: 36, Comment: 
+	@ApneaSurface = 0x25, // Value: 37, Comment: 
+	@ApneaHighSpeed = 0x26, // Value: 38, Comment: 
+	@ApneaLowSpeed = 0x27 // Value: 39, Comment: 
+};

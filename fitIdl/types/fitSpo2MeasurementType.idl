@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> Spo2MeasurementType
+{
+	@OffWrist = 0x00, // Value: 0, Comment: 
+	@SpotCheck = 0x01, // Value: 1, Comment: 
+	@ContinuousCheck = 0x02, // Value: 2, Comment: 
+	@Periodic = 0x03 // Value: 3, Comment: 
+};

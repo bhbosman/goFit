@@ -1,0 +1,16 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Set", ""> Set {
+	uint32<"Uint32", 254, -1, "", 1, 1, "", "", "", "", "", "Timestamp of the set", "", ""> @Timestamp;
+	uint32<"Uint32", 0, -1, "", 1000, 1, "s", "", "", "", "", "", "", ""> @Duration;
+	uint16<"Uint16", 3, -1, "", 1, 1, "", "", "", "", "", "# of repitions of the movement", "", ""> @Repetitions;
+	uint16<"Uint16", 4, -1, "", 16, 1, "kg", "", "", "", "", "Amount of weight applied for the set", "", ""> @Weight;
+	SetType<"Enum", 5, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @SetType;
+	uint32<"Uint32", 6, -1, "", 1, 1, "", "", "", "", "", "Start time of the set", "", ""> @StartTime;
+	ExerciseCategory<"Enum", 7, 0, "", 1, 1, "", "", "", "", "", "", "", ""> @Category;
+	uint16<"Uint16", 8, 0, "", 1, 1, "", "", "", "", "", "Based on the associated category, see [category]_exercise_names", "", ""> @CategorySubtype;
+	FitBaseUnit<"Enum", 9, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @WeightDisplayUnit;
+	MessageIndex<"Enum", 10, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @MessageIndex;
+	MessageIndex<"Enum", 11, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @WktStepIndex;
+};

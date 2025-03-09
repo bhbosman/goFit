@@ -1,0 +1,22 @@
+#include "0001.idl"
+
+typedef uint64 FitInt64z;
+typedef uint32 FitInt32z;
+typedef uint16 FitInt16z;
+typedef uint8  FitInt08z;
+
+typedef uint64 FitUint64;
+typedef uint32 FitUint32;
+typedef uint16 FitUint16;
+typedef uint8  FitUint08;
+
+typedef int64 FitInt64;
+typedef int32 FitInt32;
+typedef int16 FitInt16;
+typedef int8  FitInt08;
+
+
+
+
+typedef sequence<sequence<FitInt64z>> FitInt64zArray;
+typedef sequence<sequence<int32>> Int32Array;

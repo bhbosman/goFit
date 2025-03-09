@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> BatteryStatus
+{
+	@New = 0x01, // Value: 1, Comment: 
+	@Good = 0x02, // Value: 2, Comment: 
+	@Ok = 0x03, // Value: 3, Comment: 
+	@Low = 0x04, // Value: 4, Comment: 
+	@Critical = 0x05, // Value: 5, Comment: 
+	@Charging = 0x06, // Value: 6, Comment: 
+	@Unknown = 0x07 // Value: 7, Comment: 
+};

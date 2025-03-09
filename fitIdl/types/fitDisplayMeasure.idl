@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> DisplayMeasure
+{
+	@Metric = 0x00, // Value: 0, Comment: 
+	@Statute = 0x01, // Value: 1, Comment: 
+	@Nautical = 0x02 // Value: 2, Comment: 
+};

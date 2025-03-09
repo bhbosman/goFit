@@ -1,0 +1,24 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Split", ""> Split {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @MessageIndex;
+	SplitType<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @SplitType;
+	uint32<"Uint32", 1, -1, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TotalElapsedTime;
+	uint32<"Uint32", 2, -1, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TotalTimerTime;
+	uint32<"Uint32", 3, -1, "", 100, 1, "m", "", "", "", "", "", "", ""> @TotalDistance;
+	uint32<"Uint32", 4, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @AvgSpeed;
+	uint32<"Uint32", 9, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @StartTime;
+	uint16<"Uint16", 13, -1, "", 1, 1, "m", "", "", "", "", "", "", ""> @TotalAscent;
+	uint16<"Uint16", 14, -1, "", 1, 1, "m", "", "", "", "", "", "", ""> @TotalDescent;
+	int32<"Sint32", 21, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @StartPositionLat;
+	int32<"Sint32", 22, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @StartPositionLong;
+	int32<"Sint32", 23, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @EndPositionLat;
+	int32<"Sint32", 24, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @EndPositionLong;
+	uint32<"Uint32", 25, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @MaxSpeed;
+	int32<"Sint32", 26, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @AvgVertSpeed;
+	uint32<"Uint32", 27, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @EndTime;
+	uint32<"Uint32", 28, -1, "", 1, 1, "kcal", "", "", "", "", "", "", ""> @TotalCalories;
+	uint32<"Uint32", 74, -1, "", 5, 500, "m", "", "", "", "", "", "", ""> @StartElevation;
+	uint32<"Uint32", 110, -1, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TotalMovingTime;
+};

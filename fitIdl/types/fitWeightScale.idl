@@ -1,0 +1,19 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"WeightScale", ""> WeightScale {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", "1"> @Timestamp;
+	Weight<"Enum", 0, -1, "", 100, 1, "kg", "", "", "", "", "", "", "1"> @Weight;
+	uint16<"Uint16", 1, -1, "", 100, 1, "%", "", "", "", "", "", "", "1"> @PercentFat;
+	uint16<"Uint16", 2, -1, "", 100, 1, "%", "", "", "", "", "", "", "1"> @PercentHydration;
+	uint16<"Uint16", 3, -1, "", 100, 1, "kg", "", "", "", "", "", "", "1"> @VisceralFatMass;
+	uint16<"Uint16", 4, -1, "", 100, 1, "kg", "", "", "", "", "", "", "1"> @BoneMass;
+	uint16<"Uint16", 5, -1, "", 100, 1, "kg", "", "", "", "", "", "", "1"> @MuscleMass;
+	uint16<"Uint16", 7, -1, "", 4, 1, "kcal/day", "", "", "", "", "", "", "1"> @BasalMet;
+	uint8<"Uint8", 8, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @PhysiqueRating;
+	uint16<"Uint16", 9, -1, "", 4, 1, "kcal/day", "", "", "", "", "~4kJ per kcal, 0.25 allows max 16384 kcal", "", "1"> @ActiveMet;
+	uint8<"Uint8", 10, -1, "", 1, 1, "years", "", "", "", "", "", "", "1"> @MetabolicAge;
+	uint8<"Uint8", 11, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @VisceralFatRating;
+	MessageIndex<"Enum", 12, -1, "", 1, 1, "", "", "", "", "", "Associates this weight scale message to a user. This corresponds to the index of the user profile message in the weight scale file.", "", "1"> @UserProfileIndex;
+	uint16<"Uint16", 13, -1, "", 10, 1, "kg/m^2", "", "", "", "", "", "", "1"> @Bmi;
+};

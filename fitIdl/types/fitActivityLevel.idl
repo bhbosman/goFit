@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ActivityLevel
+{
+	@Low = 0x00, // Value: 0, Comment: 
+	@Medium = 0x01, // Value: 1, Comment: 
+	@High = 0x02 // Value: 2, Comment: 
+};

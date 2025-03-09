@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"GpsMetadata", ""> GpsMetadata {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the timestamp.", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the timestamp.", "", ""> @TimestampMs;
+	int32<"Sint32", 1, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @PositionLat;
+	int32<"Sint32", 2, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @PositionLong;
+	uint32<"Uint32", 3, -1, "", 5, 500, "m", "", "", "", "", "", "", ""> @EnhancedAltitude;
+	uint32<"Uint32", 4, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @EnhancedSpeed;
+	uint16<"Uint16", 5, -1, "", 100, 1, "degrees", "", "", "", "", "", "", ""> @Heading;
+	uint32<"Uint32", 6, -1, "", 1, 1, "s", "", "", "", "", "Used to correlate UTC to system time if the timestamp of the message is in system time. This UTC time is derived from the GPS data.", "", ""> @UtcTimestamp;
+	int16<"Sint16", 7, 0, "", 100, 1, "m/s", "", "", "", "", "velocity[0] is lon velocity. Velocity[1] is lat velocity. Velocity[2] is altitude velocity.", "", ""> @Velocity;
+};

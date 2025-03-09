@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"NmeaSentence", ""> NmeaSentence {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Timestamp message was output", "", "1"> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Fractional part of timestamp, added to timestamp", "", "1"> @TimestampMs;
+	string<"String", 1, -1, "", 1, 1, "", "", "", "", "", "NMEA sentence", "", "83"> @Sentence;
+};

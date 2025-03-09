@@ -1,0 +1,30 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> AntplusDeviceType
+{
+	@Antfs = 0x01, // Value: 1, Comment: 
+	@BikePower = 0x0B, // Value: 11, Comment: 
+	@EnvironmentSensorLegacy = 0x0C, // Value: 12, Comment: 
+	@MultiSportSpeedDistance = 0x0F, // Value: 15, Comment: 
+	@Control = 0x10, // Value: 16, Comment: 
+	@FitnessEquipment = 0x11, // Value: 17, Comment: 
+	@BloodPressure = 0x12, // Value: 18, Comment: 
+	@GeocacheNode = 0x13, // Value: 19, Comment: 
+	@LightElectricVehicle = 0x14, // Value: 20, Comment: 
+	@EnvSensor = 0x19, // Value: 25, Comment: 
+	@Racquet = 0x1A, // Value: 26, Comment: 
+	@ControlHub = 0x1B, // Value: 27, Comment: 
+	@MuscleOxygen = 0x1F, // Value: 31, Comment: 
+	@Shifting = 0x22, // Value: 34, Comment: 
+	@BikeLightMain = 0x23, // Value: 35, Comment: 
+	@BikeLightShared = 0x24, // Value: 36, Comment: 
+	@Exd = 0x26, // Value: 38, Comment: 
+	@BikeRadar = 0x28, // Value: 40, Comment: 
+	@BikeAero = 0x2E, // Value: 46, Comment: 
+	@WeightScale = 0x77, // Value: 119, Comment: 
+	@HeartRate = 0x78, // Value: 120, Comment: 
+	@BikeSpeedCadence = 0x79, // Value: 121, Comment: 
+	@BikeCadence = 0x7A, // Value: 122, Comment: 
+	@BikeSpeed = 0x7B, // Value: 123, Comment: 
+	@StrideSpeedDistance = 0x7C // Value: 124, Comment: 
+};

@@ -1,0 +1,16 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"FileId", ""> FileId {
+	File<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Type;
+	Manufacturer<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Manufacturer;
+	uint16<"Uint16", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Product
+	{
+		uint16<"Uint16", "", 1, 1, "", "", "", "manufacturer", "favero_electronics", "", "", ""> @FaveroProduct;
+		uint16<"Uint16", "", 1, 1, "", "", "", "manufacturer,manufacturer,manufacturer,manufacturer", "garmin,dynastream,dynastream_oem,tacx", "", "", "1"> @GarminProduct;
+	};
+	uint32<"Uint32z", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SerialNumber;
+	uint32<"Uint32", 4, -1, "", 1, 1, "", "", "", "", "", "Only set for files that are can be created/erased.", "", "1"> @TimeCreated;
+	uint16<"Uint16", 5, -1, "", 1, 1, "", "", "", "", "", "Only set for files that are not created/erased.", "", "1"> @Number;
+	string<"String", 8, -1, "", 1, 1, "", "", "", "", "", "Optional free form string to indicate the devices name or model", "", "20"> @ProductName;
+};

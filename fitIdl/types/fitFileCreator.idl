@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"FileCreator", ""> FileCreator {
+	uint16<"Uint16", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SoftwareVersion;
+	uint8<"Uint8", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @HardwareVersion;
+};

@@ -1,0 +1,26 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> WeatherStatus
+{
+	@Clear = 0x00, // Value: 0, Comment: 
+	@PartlyCloudy = 0x01, // Value: 1, Comment: 
+	@MostlyCloudy = 0x02, // Value: 2, Comment: 
+	@Rain = 0x03, // Value: 3, Comment: 
+	@Snow = 0x04, // Value: 4, Comment: 
+	@Windy = 0x05, // Value: 5, Comment: 
+	@Thunderstorms = 0x06, // Value: 6, Comment: 
+	@WintryMix = 0x07, // Value: 7, Comment: 
+	@Fog = 0x08, // Value: 8, Comment: 
+	@Hazy = 0x0B, // Value: 11, Comment: 
+	@Hail = 0x0C, // Value: 12, Comment: 
+	@ScatteredShowers = 0x0D, // Value: 13, Comment: 
+	@ScatteredThunderstorms = 0x0E, // Value: 14, Comment: 
+	@UnknownPrecipitation = 0x0F, // Value: 15, Comment: 
+	@LightRain = 0x10, // Value: 16, Comment: 
+	@HeavyRain = 0x11, // Value: 17, Comment: 
+	@LightSnow = 0x12, // Value: 18, Comment: 
+	@HeavySnow = 0x13, // Value: 19, Comment: 
+	@LightRainSnow = 0x14, // Value: 20, Comment: 
+	@HeavyRainSnow = 0x15, // Value: 21, Comment: 
+	@Cloudy = 0x16 // Value: 22, Comment: 
+};

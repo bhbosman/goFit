@@ -1,0 +1,25 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ActivitySubtype
+{
+	@Generic = 0x00, // Value: 0, Comment: 
+	@Treadmill = 0x01, // Value: 1, Comment: 
+	@Street = 0x02, // Value: 2, Comment: 
+	@Trail = 0x03, // Value: 3, Comment: 
+	@Track = 0x04, // Value: 4, Comment: 
+	@Spin = 0x05, // Value: 5, Comment: 
+	@IndoorCycling = 0x06, // Value: 6, Comment: 
+	@Road = 0x07, // Value: 7, Comment: 
+	@Mountain = 0x08, // Value: 8, Comment: 
+	@Downhill = 0x09, // Value: 9, Comment: 
+	@Recumbent = 0x0A, // Value: 10, Comment: 
+	@Cyclocross = 0x0B, // Value: 11, Comment: 
+	@HandCycling = 0x0C, // Value: 12, Comment: 
+	@TrackCycling = 0x0D, // Value: 13, Comment: 
+	@IndoorRowing = 0x0E, // Value: 14, Comment: 
+	@Elliptical = 0x0F, // Value: 15, Comment: 
+	@StairClimbing = 0x10, // Value: 16, Comment: 
+	@LapSwimming = 0x11, // Value: 17, Comment: 
+	@OpenWater = 0x12, // Value: 18, Comment: 
+	@All = 0xFE // Value: 254, Comment: 
+};

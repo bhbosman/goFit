@@ -1,0 +1,15 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> EventType
+{
+	@Start = 0x00, // Value: 0, Comment: 
+	@Stop = 0x01, // Value: 1, Comment: 
+	@ConsecutiveDepreciated = 0x02, // Value: 2, Comment: 
+	@Marker = 0x03, // Value: 3, Comment: 
+	@StopAll = 0x04, // Value: 4, Comment: 
+	@BeginDepreciated = 0x05, // Value: 5, Comment: 
+	@EndDepreciated = 0x06, // Value: 6, Comment: 
+	@EndAllDepreciated = 0x07, // Value: 7, Comment: 
+	@StopDisable = 0x08, // Value: 8, Comment: 
+	@StopDisableAll = 0x09 // Value: 9, Comment: 
+};

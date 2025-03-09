@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"MaxMetData", ""> MaxMetData {
+	uint32<"Uint32", 0, -1, "", 1, 1, "", "", "", "", "", "Time maxMET and vo2 were calculated", "", ""> @UpdateTime;
+	uint16<"Uint16", 2, -1, "", 10, 1, "mL/kg/min", "", "", "", "", "", "", ""> @Vo2Max;
+	Sport<"Enum", 5, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Sport;
+	SubSport<"Enum", 6, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @SubSport;
+	MaxMetCategory<"Enum", 8, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @MaxMetCategory;
+	bool<"Bool", 9, -1, "", 1, 1, "", "", "", "", "", "Indicates if calibrated data was used in the calculation", "", ""> @CalibratedData;
+	MaxMetHeartRateSource<"Enum", 12, -1, "", 1, 1, "", "", "", "", "", "Indicates if the estimate was obtained using a chest strap or wrist heart rate", "", ""> @HrSource;
+	MaxMetSpeedSource<"Enum", 13, -1, "", 1, 1, "", "", "", "", "", "Indidcates if the estimate was obtained using onboard GPS or connected GPS", "", ""> @SpeedSource;
+};

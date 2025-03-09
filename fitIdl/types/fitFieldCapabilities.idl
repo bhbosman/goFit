@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"FieldCapabilities", ""> FieldCapabilities {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	File<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @File;
+	MesgNum<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MesgNum;
+	uint8<"Uint8", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @FieldNum;
+	uint16<"Uint16", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Count;
+};

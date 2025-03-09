@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> DiveGasStatus
+{
+	@Disabled = 0x00, // Value: 0, Comment: 
+	@Enabled = 0x01, // Value: 1, Comment: 
+	@BackupOnly = 0x02 // Value: 2, Comment: 
+};

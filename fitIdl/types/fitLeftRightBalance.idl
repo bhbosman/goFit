@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> LeftRightBalance
+{
+	@Mask = 0x7F, // Value: 127, Comment: 
+	@Right = 0x80 // Value: 128, Comment: 
+};

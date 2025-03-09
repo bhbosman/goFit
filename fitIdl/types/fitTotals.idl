@@ -1,0 +1,15 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Totals", ""> Totals {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", "1"> @Timestamp;
+	uint32<"Uint32", 0, -1, "", 1, 1, "s", "", "", "", "", "Excludes pauses", "", "1"> @TimerTime;
+	uint32<"Uint32", 1, -1, "", 1, 1, "m", "", "", "", "", "", "", "1"> @Distance;
+	uint32<"Uint32", 2, -1, "", 1, 1, "kcal", "", "", "", "", "", "", "1"> @Calories;
+	Sport<"Enum", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Sport;
+	uint32<"Uint32", 4, -1, "", 1, 1, "s", "", "", "", "", "Includes pauses", "", "1"> @ElapsedTime;
+	uint16<"Uint16", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Sessions;
+	uint32<"Uint32", 6, -1, "", 1, 1, "s", "", "", "", "", "", "", "1"> @ActiveTime;
+	uint8<"Uint8", 9, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @SportIndex;
+};

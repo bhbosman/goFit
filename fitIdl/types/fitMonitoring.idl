@@ -1,0 +1,38 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Monitoring", ""> Monitoring {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Must align to logging interval, for example, time must be 00:00:00 for daily log.", "", "1"> @Timestamp;
+	DeviceIndex<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "Associates this data to device_info message. Not required for file with single device (sensor).", "", "1"> @DeviceIndex;
+	uint16<"Uint16", 1, -1, "", 1, 1, "kcal", "", "", "", "", "Accumulated total calories. Maintained by MonitoringReader for each activity_type. See SDK documentation", "", "1"> @Calories;
+	uint32<"Uint32", 2, -1, "", 100, 1, "m", "", "", "", "", "Accumulated distance. Maintained by MonitoringReader for each activity_type. See SDK documentation.", "", "1"> @Distance;
+	uint32<"Uint32", 3, -1, "", 2, 1, "cycles", "", "", "", "", "Accumulated cycles. Maintained by MonitoringReader for each activity_type. See SDK documentation.", "", "1"> @Cycles
+	{
+		uint32<"Uint32", "", 1, 1, "steps", "", "", "activity_type,activity_type", "walking,running", "", "", ""> @Steps;
+		uint32<"Uint32", "", 2, 1, "strokes", "", "", "activity_type,activity_type", "cycling,swimming", "", "", "1"> @Strokes;
+	};
+	uint32<"Uint32", 4, -1, "", 1000, 1, "s", "", "", "", "", "", "", "1"> @ActiveTime;
+	ActivityType<"Enum", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ActivityType;
+	ActivitySubtype<"Enum", 6, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ActivitySubtype;
+	ActivityLevel<"Enum", 7, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ActivityLevel;
+	uint16<"Uint16", 8, -1, "", 1, 1, "100 * m", "", "", "", "", "", "", "1"> @Distance16;
+	uint16<"Uint16", 9, -1, "", 1, 1, "2 * cycles (steps)", "", "", "", "", "", "", "1"> @Cycles16;
+	uint16<"Uint16", 10, -1, "", 1, 1, "s", "", "", "", "", "", "", "1"> @ActiveTime16;
+	LocalDateTime<"Enum", 11, -1, "", 1, 1, "", "", "", "", "", "Must align to logging interval, for example, time must be 00:00:00 for daily log.", "", "1"> @LocalTimestamp;
+	int16<"Sint16", 12, -1, "", 100, 1, "C", "", "", "", "", "Avg temperature during the logging interval ended at timestamp", "", ""> @Temperature;
+	int16<"Sint16", 14, -1, "", 100, 1, "C", "", "", "", "", "Min temperature during the logging interval ended at timestamp", "", ""> @TemperatureMin;
+	int16<"Sint16", 15, -1, "", 100, 1, "C", "", "", "", "", "Max temperature during the logging interval ended at timestamp", "", ""> @TemperatureMax;
+	uint16<"Uint16", 16, 0, "", 1, 1, "minutes", "", "", "", "", "Indexed using minute_activity_level enum", "", ""> @ActivityTime;
+	uint16<"Uint16", 19, -1, "", 1, 1, "kcal", "", "", "", "", "", "", ""> @ActiveCalories;
+	byte<"Byte", 24, -1, "activity_type,intensity", 1, 1, "", "5,3", "", "", "", "Indicates single type / intensity for duration since last monitoring message.", "", ""> @CurrentActivityTypeIntensity;
+	uint8<"Uint8", 25, -1, "", 1, 1, "min", "", "", "", "", "", "", ""> @TimestampMin8;
+	uint16<"Uint16", 26, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp16;
+	uint8<"Uint8", 27, -1, "", 1, 1, "bpm", "", "", "", "", "", "", ""> @HeartRate;
+	uint8<"Uint8", 28, -1, "", 10, 1, "", "", "", "", "", "", "", ""> @Intensity;
+	uint16<"Uint16", 29, -1, "", 1, 1, "min", "", "", "", "", "", "", ""> @DurationMin;
+	uint32<"Uint32", 30, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Duration;
+	uint32<"Uint32", 31, -1, "", 1000, 1, "m", "", "", "", "", "", "", ""> @Ascent;
+	uint32<"Uint32", 32, -1, "", 1000, 1, "m", "", "", "", "", "", "", ""> @Descent;
+	uint16<"Uint16", 33, -1, "", 1, 1, "minutes", "", "", "", "", "", "", ""> @ModerateActivityMinutes;
+	uint16<"Uint16", 34, -1, "", 1, 1, "minutes", "", "", "", "", "", "", ""> @VigorousActivityMinutes;
+};

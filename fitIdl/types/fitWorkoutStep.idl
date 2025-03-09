@@ -1,0 +1,77 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"WorkoutStep", ""> WorkoutStep {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	string<"String", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "16"> @WktStepName;
+	WktStepDuration<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @DurationType;
+	uint32<"Uint32", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @DurationValue
+	{
+		uint32<"Uint32", "", 1000, 1, "s", "", "", "duration_type,duration_type", "time,repetition_time", "", "", "1"> @DurationTime;
+		uint32<"Uint32", "", 100, 1, "m", "", "", "duration_type", "distance", "", "", "1"> @DurationDistance;
+		uint32<"Uint32", "", 1, 1, "% or bpm", "", "", "duration_type,duration_type", "hr_less_than,hr_greater_than", "", "", "1"> @DurationHr;
+		uint32<"Uint32", "", 1, 1, "calories", "", "", "duration_type", "calories", "", "", "1"> @DurationCalories;
+		uint32<"Uint32", "", 1, 1, "", "", "", "duration_type,duration_type,duration_type,duration_type,duration_type,duration_type,duration_type,duration_type", "repeat_until_steps_cmplt,repeat_until_time,repeat_until_distance,repeat_until_calories,repeat_until_hr_less_than,repeat_until_hr_greater_than,repeat_until_power_less_than,repeat_until_power_greater_than", "message_index of step to loop back to. Steps are assumed to be in the order by message_index. custom_name and intensity members are undefined for this duration type.", "", "1"> @DurationStep;
+		uint32<"Uint32", "", 1, 1, "% or watts", "", "", "duration_type,duration_type", "power_less_than,power_greater_than", "", "", "1"> @DurationPower;
+		uint32<"Uint32", "", 1, 1, "", "", "", "duration_type", "reps", "", "", "1"> @DurationReps;
+	};
+	WktStepTarget<"Enum", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @TargetType;
+	uint32<"Uint32", 4, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @TargetValue
+	{
+		uint32<"Uint32", "", 1, 1, "", "", "", "target_type", "speed", "speed zone (1-10);Custom =0;", "", "1"> @TargetSpeedZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "target_type", "heart_rate", "hr zone (1-5);Custom =0;", "", "1"> @TargetHrZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "target_type", "cadence", "Zone (1-?); Custom = 0;", "", "1"> @TargetCadenceZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "target_type", "power", "Power Zone ( 1-7); Custom = 0;", "", "1"> @TargetPowerZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "duration_type", "repeat_until_steps_cmplt", "# of repetitions", "", "1"> @RepeatSteps;
+		uint32<"Uint32", "", 1000, 1, "s", "", "", "duration_type", "repeat_until_time", "", "", "1"> @RepeatTime;
+		uint32<"Uint32", "", 100, 1, "m", "", "", "duration_type", "repeat_until_distance", "", "", "1"> @RepeatDistance;
+		uint32<"Uint32", "", 1, 1, "calories", "", "", "duration_type", "repeat_until_calories", "", "", "1"> @RepeatCalories;
+		uint32<"Uint32", "", 1, 1, "% or bpm", "", "", "duration_type,duration_type", "repeat_until_hr_less_than,repeat_until_hr_greater_than", "", "", "1"> @RepeatHr;
+		uint32<"Uint32", "", 1, 1, "% or watts", "", "", "duration_type,duration_type", "repeat_until_power_less_than,repeat_until_power_greater_than", "", "", "1"> @RepeatPower;
+		uint32<"Uint32", "", 1, 1, "", "", "", "target_type", "swim_stroke", "", "", "1"> @TargetStrokeType;
+	};
+	uint32<"Uint32", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @CustomTargetValueLow
+	{
+		uint32<"Uint32", "", 1000, 1, "m/s", "", "", "target_type", "speed", "", "", "1"> @CustomTargetSpeedLow;
+		uint32<"Uint32", "", 1, 1, "% or bpm", "", "", "target_type", "heart_rate", "", "", "1"> @CustomTargetHeartRateLow;
+		uint32<"Uint32", "", 1, 1, "rpm", "", "", "target_type", "cadence", "", "", "1"> @CustomTargetCadenceLow;
+		uint32<"Uint32", "", 1, 1, "% or watts", "", "", "target_type", "power", "", "", "1"> @CustomTargetPowerLow;
+	};
+	uint32<"Uint32", 6, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @CustomTargetValueHigh
+	{
+		uint32<"Uint32", "", 1000, 1, "m/s", "", "", "target_type", "speed", "", "", "1"> @CustomTargetSpeedHigh;
+		uint32<"Uint32", "", 1, 1, "% or bpm", "", "", "target_type", "heart_rate", "", "", "1"> @CustomTargetHeartRateHigh;
+		uint32<"Uint32", "", 1, 1, "rpm", "", "", "target_type", "cadence", "", "", "1"> @CustomTargetCadenceHigh;
+		uint32<"Uint32", "", 1, 1, "% or watts", "", "", "target_type", "power", "", "", "1"> @CustomTargetPowerHigh;
+	};
+	Intensity<"Enum", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Intensity;
+	string<"String", 8, -1, "", 1, 1, "", "", "", "", "", "", "", "50"> @Notes;
+	WorkoutEquipment<"Enum", 9, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Equipment;
+	ExerciseCategory<"Enum", 10, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ExerciseCategory;
+	uint16<"Uint16", 11, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ExerciseName;
+	uint16<"Uint16", 12, -1, "", 100, 1, "kg", "", "", "", "", "", "", ""> @ExerciseWeight;
+	FitBaseUnit<"Enum", 13, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @WeightDisplayUnit;
+	WktStepTarget<"Enum", 19, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SecondaryTargetType;
+	uint32<"Uint32", 20, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SecondaryTargetValue
+	{
+		uint32<"Uint32", "", 1, 1, "", "", "", "secondary_target_type", "speed", "speed zone (1-10);Custom =0;", "", "1"> @SecondaryTargetSpeedZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "secondary_target_type", "heart_rate", "hr zone (1-5);Custom =0;", "", "1"> @SecondaryTargetHrZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "secondary_target_type", "cadence", "Zone (1-?); Custom = 0;", "", "1"> @SecondaryTargetCadenceZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "secondary_target_type", "power", "Power Zone ( 1-7); Custom = 0;", "", "1"> @SecondaryTargetPowerZone;
+		uint32<"Uint32", "", 1, 1, "", "", "", "secondary_target_type", "swim_stroke", "", "", "1"> @SecondaryTargetStrokeType;
+	};
+	uint32<"Uint32", 21, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SecondaryCustomTargetValueLow
+	{
+		uint32<"Uint32", "", 1000, 1, "m/s", "", "", "secondary_target_type", "speed", "", "", "1"> @SecondaryCustomTargetSpeedLow;
+		uint32<"Uint32", "", 1, 1, "% or bpm", "", "", "secondary_target_type", "heart_rate", "", "", "1"> @SecondaryCustomTargetHeartRateLow;
+		uint32<"Uint32", "", 1, 1, "rpm", "", "", "secondary_target_type", "cadence", "", "", "1"> @SecondaryCustomTargetCadenceLow;
+		uint32<"Uint32", "", 1, 1, "% or watts", "", "", "secondary_target_type", "power", "", "", "1"> @SecondaryCustomTargetPowerLow;
+	};
+	uint32<"Uint32", 22, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SecondaryCustomTargetValueHigh
+	{
+		uint32<"Uint32", "", 1000, 1, "m/s", "", "", "secondary_target_type", "speed", "", "", "1"> @SecondaryCustomTargetSpeedHigh;
+		uint32<"Uint32", "", 1, 1, "% or bpm", "", "", "secondary_target_type", "heart_rate", "", "", "1"> @SecondaryCustomTargetHeartRateHigh;
+		uint32<"Uint32", "", 1, 1, "rpm", "", "", "secondary_target_type", "cadence", "", "", "1"> @SecondaryCustomTargetCadenceHigh;
+		uint32<"Uint32", "", 1, 1, "% or watts", "", "", "secondary_target_type", "power", "", "", "1"> @SecondaryCustomTargetPowerHigh;
+	};
+};

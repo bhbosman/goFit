@@ -1,0 +1,36 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> WktStepDuration
+{
+	@Time = 0x00, // Value: 0, Comment: 
+	@Distance = 0x01, // Value: 1, Comment: 
+	@HrLessThan = 0x02, // Value: 2, Comment: 
+	@HrGreaterThan = 0x03, // Value: 3, Comment: 
+	@Calories = 0x04, // Value: 4, Comment: 
+	@Open = 0x05, // Value: 5, Comment: 
+	@RepeatUntilStepsCmplt = 0x06, // Value: 6, Comment: 
+	@RepeatUntilTime = 0x07, // Value: 7, Comment: 
+	@RepeatUntilDistance = 0x08, // Value: 8, Comment: 
+	@RepeatUntilCalories = 0x09, // Value: 9, Comment: 
+	@RepeatUntilHrLessThan = 0x0A, // Value: 10, Comment: 
+	@RepeatUntilHrGreaterThan = 0x0B, // Value: 11, Comment: 
+	@RepeatUntilPowerLessThan = 0x0C, // Value: 12, Comment: 
+	@RepeatUntilPowerGreaterThan = 0x0D, // Value: 13, Comment: 
+	@PowerLessThan = 0x0E, // Value: 14, Comment: 
+	@PowerGreaterThan = 0x0F, // Value: 15, Comment: 
+	@TrainingPeaksTss = 0x10, // Value: 16, Comment: 
+	@RepeatUntilPowerLastLapLessThan = 0x11, // Value: 17, Comment: 
+	@RepeatUntilMaxPowerLastLapLessThan = 0x12, // Value: 18, Comment: 
+	@Power3sLessThan = 0x13, // Value: 19, Comment: 
+	@Power10sLessThan = 0x14, // Value: 20, Comment: 
+	@Power30sLessThan = 0x15, // Value: 21, Comment: 
+	@Power3sGreaterThan = 0x16, // Value: 22, Comment: 
+	@Power10sGreaterThan = 0x17, // Value: 23, Comment: 
+	@Power30sGreaterThan = 0x18, // Value: 24, Comment: 
+	@PowerLapLessThan = 0x19, // Value: 25, Comment: 
+	@PowerLapGreaterThan = 0x1A, // Value: 26, Comment: 
+	@RepeatUntilTrainingPeaksTss = 0x1B, // Value: 27, Comment: 
+	@RepetitionTime = 0x1C, // Value: 28, Comment: 
+	@Reps = 0x1D, // Value: 29, Comment: 
+	@TimeOnly = 0x1F // Value: 31, Comment: 
+};

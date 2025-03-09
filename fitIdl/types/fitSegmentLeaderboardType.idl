@@ -1,0 +1,20 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> SegmentLeaderboardType
+{
+	@Overall = 0x00, // Value: 0, Comment: 
+	@PersonalBest = 0x01, // Value: 1, Comment: 
+	@Connections = 0x02, // Value: 2, Comment: 
+	@Group = 0x03, // Value: 3, Comment: 
+	@Challenger = 0x04, // Value: 4, Comment: 
+	@Kom = 0x05, // Value: 5, Comment: 
+	@Qom = 0x06, // Value: 6, Comment: 
+	@Pr = 0x07, // Value: 7, Comment: 
+	@Goal = 0x08, // Value: 8, Comment: 
+	@Carrot = 0x09, // Value: 9, Comment: 
+	@ClubLeader = 0x0A, // Value: 10, Comment: 
+	@Rival = 0x0B, // Value: 11, Comment: 
+	@Last = 0x0C, // Value: 12, Comment: 
+	@RecentBest = 0x0D, // Value: 13, Comment: 
+	@CourseRecord = 0x0E // Value: 14, Comment: 
+};

@@ -1,0 +1,15 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> FlyeExerciseName
+{
+	@CableCrossover = 0x0000, // Value: 0, Comment: 
+	@DeclineDumbbellFlye = 0x0001, // Value: 1, Comment: 
+	@DumbbellFlye = 0x0002, // Value: 2, Comment: 
+	@InclineDumbbellFlye = 0x0003, // Value: 3, Comment: 
+	@KettlebellFlye = 0x0004, // Value: 4, Comment: 
+	@KneelingRearFlye = 0x0005, // Value: 5, Comment: 
+	@SingleArmStandingCableReverseFlye = 0x0006, // Value: 6, Comment: 
+	@SwissBallDumbbellFlye = 0x0007, // Value: 7, Comment: 
+	@ArmRotations = 0x0008, // Value: 8, Comment: 
+	@HugATree = 0x0009 // Value: 9, Comment: 
+};

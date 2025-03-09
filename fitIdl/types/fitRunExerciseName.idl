@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> RunExerciseName
+{
+	@Run = 0x0000, // Value: 0, Comment: 
+	@Walk = 0x0001, // Value: 1, Comment: 
+	@Jog = 0x0002, // Value: 2, Comment: 
+	@Sprint = 0x0003 // Value: 3, Comment: 
+};

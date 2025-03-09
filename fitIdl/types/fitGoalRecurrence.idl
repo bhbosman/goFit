@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> GoalRecurrence
+{
+	@Off = 0x00, // Value: 0, Comment: 
+	@Daily = 0x01, // Value: 1, Comment: 
+	@Weekly = 0x02, // Value: 2, Comment: 
+	@Monthly = 0x03, // Value: 3, Comment: 
+	@Yearly = 0x04, // Value: 4, Comment: 
+	@Custom = 0x05 // Value: 5, Comment: 
+};

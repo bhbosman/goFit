@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> DeviceIndex
+{
+	@Creator = 0x00 // Value: 0, Comment: 
+};

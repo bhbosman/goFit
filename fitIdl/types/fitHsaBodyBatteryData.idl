@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaBodyBatteryData", ""> HsaBodyBatteryData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "s", "", "", "", "", "Processing interval length in seconds", "", ""> @ProcessingInterval;
+	int8<"Sint8", 1, 0, "", 1, 1, "percent", "", "", "", "", "Body battery level: [0,100] Blank: -16", "", ""> @Level;
+	int16<"Sint16", 2, 0, "", 1, 1, "", "", "", "", "", "Body battery charged value", "", ""> @Charged;
+	int16<"Sint16", 3, 0, "", 1, 1, "", "", "", "", "", "Body battery uncharged value", "", ""> @Uncharged;
+};

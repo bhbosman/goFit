@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"ExdScreenConfiguration", ""> ExdScreenConfiguration {
+	uint8<"Uint8", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ScreenIndex;
+	uint8<"Uint8", 1, -1, "", 1, 1, "", "", "", "", "", "number of fields in screen", "", "1"> @FieldCount;
+	ExdLayout<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Layout;
+	bool<"Bool", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ScreenEnabled;
+};

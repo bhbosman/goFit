@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"VideoFrame", ""> VideoFrame {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the timestamp", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the timestamp.", "", ""> @TimestampMs;
+	uint32<"Uint32", 1, -1, "", 1, 1, "", "", "", "", "", "Number of the frame that the timestamp and timestamp_ms correlate to", "", ""> @FrameNumber;
+};

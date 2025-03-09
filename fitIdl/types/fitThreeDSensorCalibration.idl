@@ -1,0 +1,16 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"ThreeDSensorCalibration", ""> ThreeDSensorCalibration {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the timestamp", "", ""> @Timestamp;
+	SensorType<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "Indicates which sensor the calibration is for", "", ""> @SensorType;
+	uint32<"Uint32", 1, -1, "", 1, 1, "", "", "", "", "", "Calibration factor used to convert from raw ADC value to degrees, g, etc.", "", ""> @CalibrationFactor
+	{
+		uint32<"Uint32", "", 1, 1, "g", "", "", "sensor_type", "accelerometer", "Accelerometer calibration factor", "", ""> @AccelCalFactor;
+		uint32<"Uint32", "", 1, 1, "deg/s", "", "", "sensor_type", "gyroscope", "Gyro calibration factor", "", ""> @GyroCalFactor;
+	};
+	uint32<"Uint32", 2, -1, "", 1, 1, "counts", "", "", "", "", "Calibration factor divisor", "", ""> @CalibrationDivisor;
+	uint32<"Uint32", 3, -1, "", 1, 1, "", "", "", "", "", "Level shift value used to shift the ADC value back into range", "", ""> @LevelShift;
+	int32<"Sint32", 4, 0, "", 1, 1, "", "", "", "", "", "Internal calibration factors, one for each: xy, yx, zx", "", ""> @OffsetCal;
+	int32<"Sint32", 5, 0, "", 65535, 1, "", "", "", "", "", "3 x 3 rotation matrix (row major)", "", ""> @OrientationMatrix;
+};

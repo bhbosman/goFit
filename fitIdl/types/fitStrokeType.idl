@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> StrokeType
+{
+	@NoEvent = 0x00, // Value: 0, Comment: 
+	@Other = 0x01, // Value: 1, Comment: 
+	@Serve = 0x02, // Value: 2, Comment: 
+	@Forehand = 0x03, // Value: 3, Comment: 
+	@Backhand = 0x04, // Value: 4, Comment: 
+	@Smash = 0x05 // Value: 5, Comment: 
+};

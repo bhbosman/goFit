@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"AntTx", ""> AntTx {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", "1"> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 32768, 1, "s", "", "", "", "", "", "", "1"> @FractionalTimestamp;
+	byte<"Byte", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MesgId;
+	byte<"Byte", 2, 0, "channel_number,data,data,data,data,data,data,data,data", 1, 1, "", "8,8,8,8,8,8,8,8,8", "", "", "", "", "", "9"> @MesgData;
+	uint8<"Uint8", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ChannelNumber;
+	byte<"Byte", 4, 0, "", 1, 1, "", "", "", "", "", "", "", "8"> @Data;
+};

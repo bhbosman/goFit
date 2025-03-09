@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> TimeMode
+{
+	@Hour12 = 0x00, // Value: 0, Comment: 
+	@Hour24 = 0x01, // Value: 1, Comment: 
+	@Military = 0x02, // Value: 2, Comment: 
+	@Hour12WithSeconds = 0x03, // Value: 3, Comment: 
+	@Hour24WithSeconds = 0x04, // Value: 4, Comment: 
+	@Utc = 0x05 // Value: 5, Comment: 
+};

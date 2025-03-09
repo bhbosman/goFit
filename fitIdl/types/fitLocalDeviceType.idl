@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> LocalDeviceType
+{
+	@Gps = 0x00, // Value: 0, Comment: 
+	@Glonass = 0x01, // Value: 1, Comment: 
+	@GpsGlonass = 0x02, // Value: 2, Comment: 
+	@Accelerometer = 0x03, // Value: 3, Comment: 
+	@Barometer = 0x04, // Value: 4, Comment: 
+	@Temperature = 0x05, // Value: 5, Comment: 
+	@Whr = 0x0A, // Value: 10, Comment: 
+	@SensorHub = 0x0C // Value: 12, Comment: 
+};

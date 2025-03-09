@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SegmentId", ""> SegmentId {
+	string<"String", 0, -1, "", 1, 1, "", "", "", "", "", "Friendly name assigned to segment", "", "1"> @Name;
+	string<"String", 1, -1, "", 1, 1, "", "", "", "", "", "UUID of the segment", "", "1"> @Uuid;
+	Sport<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "Sport associated with the segment", "", "1"> @Sport;
+	bool<"Bool", 3, -1, "", 1, 1, "", "", "", "", "", "Segment enabled for evaluation", "", "1"> @Enabled;
+	uint32<"Uint32", 4, -1, "", 1, 1, "", "", "", "", "", "Primary key of the user that created the segment", "", "1"> @UserProfilePrimaryKey;
+	uint32<"Uint32", 5, -1, "", 1, 1, "", "", "", "", "", "ID of the device that created the segment", "", "1"> @DeviceId;
+	uint8<"Uint8", 6, -1, "", 1, 1, "", "", "", "", "", "Index for the Leader Board entry selected as the default race participant", "", "1"> @DefaultRaceLeader;
+	SegmentDeleteStatus<"Enum", 7, -1, "", 1, 1, "", "", "", "", "", "Indicates if any segments should be deleted", "", "1"> @DeleteStatus;
+	SegmentSelectionType<"Enum", 8, -1, "", 1, 1, "", "", "", "", "", "Indicates how the segment was selected to be sent to the device", "", "1"> @SelectionType;
+};

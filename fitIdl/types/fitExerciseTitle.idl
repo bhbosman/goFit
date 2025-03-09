@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"ExerciseTitle", ""> ExerciseTitle {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	ExerciseCategory<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ExerciseCategory;
+	uint16<"Uint16", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ExerciseName;
+	string<"String", 2, 0, "", 1, 1, "", "", "", "", "", "", "", "200"> @WktStepName;
+};

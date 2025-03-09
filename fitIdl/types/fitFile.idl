@@ -1,0 +1,25 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> File
+{
+	@Device = 0x01, // Value: 1, Comment: 
+	@Settings = 0x02, // Value: 2, Comment: 
+	@Sport = 0x03, // Value: 3, Comment: 
+	@Activity = 0x04, // Value: 4, Comment: 
+	@Workout = 0x05, // Value: 5, Comment: 
+	@Course = 0x06, // Value: 6, Comment: 
+	@Schedules = 0x07, // Value: 7, Comment: 
+	@Weight = 0x09, // Value: 9, Comment: 
+	@Totals = 0x0A, // Value: 10, Comment: 
+	@Goals = 0x0B, // Value: 11, Comment: 
+	@BloodPressure = 0x0E, // Value: 14, Comment: 
+	@MonitoringA = 0x0F, // Value: 15, Comment: 
+	@ActivitySummary = 0x14, // Value: 20, Comment: 
+	@MonitoringDaily = 0x1C, // Value: 28, Comment: 
+	@MonitoringB = 0x20, // Value: 32, Comment: 
+	@Segment = 0x22, // Value: 34, Comment: 
+	@SegmentList = 0x23, // Value: 35, Comment: 
+	@ExdConfiguration = 0x28, // Value: 40, Comment: 
+	@MfgRangeMin = 0xF7, // Value: 247, Comment: 
+	@MfgRangeMax = 0xFE // Value: 254, Comment: 
+};

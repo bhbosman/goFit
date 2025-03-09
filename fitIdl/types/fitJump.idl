@@ -1,0 +1,15 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Jump", ""> Jump {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	float32<"Float32", 0, -1, "", 1, 1, "m", "", "", "", "", "", "", ""> @Distance;
+	float32<"Float32", 1, -1, "", 1, 1, "m", "", "", "", "", "", "", ""> @Height;
+	uint8<"Uint8", 2, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Rotations;
+	float32<"Float32", 3, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @HangTime;
+	float32<"Float32", 4, -1, "", 1, 1, "", "", "", "", "", "A score for a jump calculated based on hang time, rotations, and distance.", "", ""> @Score;
+	int32<"Sint32", 5, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @PositionLat;
+	int32<"Sint32", 6, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @PositionLong;
+	uint16<"Uint16", 7, -1, "enhanced_speed", 1000, 1, "m/s", "16", "", "", "", "", "", ""> @Speed;
+	uint32<"Uint32", 8, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @EnhancedSpeed;
+};

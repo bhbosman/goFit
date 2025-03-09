@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> BpStatus
+{
+	@NoError = 0x00, // Value: 0, Comment: 
+	@ErrorIncompleteData = 0x01, // Value: 1, Comment: 
+	@ErrorNoMeasurement = 0x02, // Value: 2, Comment: 
+	@ErrorDataOutOfRange = 0x03, // Value: 3, Comment: 
+	@ErrorIrregularHeartRate = 0x04 // Value: 4, Comment: 
+};

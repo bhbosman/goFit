@@ -1,0 +1,23 @@
+
+
+struct<"BeatIntervals", ""> BeatIntervals {
+	date_time<253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> Timestamp;
+	uint16<0, -1, "", 1, 1, "ms", "", "", "", "", "Milliseconds past date_time", "", ""> TimestampMs;
+	uint16<1, 0, "", 1, 1, "ms", "", "", "", "", "Array of millisecond times between beats", "", ""> Time;
+};
+
+
+
+struct<"FileId", ""> FileId {
+	file<0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> Type;
+	manufacturer<1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> Manufacturer;
+	uint16<2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> Product;
+	uint32z<3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> SerialNumber;
+	date_time<4, -1, "", 1, 1, "", "", "", "", "", "Only set for files that are can be created/erased.", "", "1"> TimeCreated;
+	uint16<5, -1, "", 1, 1, "", "", "", "", "", "Only set for files that are not created/erased.", "", "1"> Number;
+	string<8, -1, "", 1, 1, "", "", "", "", "", "Optional free form string to indicate the devices name or model", "", "20"> ProductName
+	{
+	    string<"", 1, 1, "", "", "", "", "", "Optional free form string to indicate the devices name or model", "", "20"> ProductName;
+	    string<"", 1, 1, "", "", "", "", "", "Optional free form string to indicate the devices name or model", "", "20"> ProductName;
+	};
+};

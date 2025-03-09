@@ -1,0 +1,18 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> CameraEventType
+{
+	@VideoStart = 0x00, // Value: 0, Comment: 
+	@VideoSplit = 0x01, // Value: 1, Comment: 
+	@VideoEnd = 0x02, // Value: 2, Comment: 
+	@PhotoTaken = 0x03, // Value: 3, Comment: 
+	@VideoSecondStreamStart = 0x04, // Value: 4, Comment: 
+	@VideoSecondStreamSplit = 0x05, // Value: 5, Comment: 
+	@VideoSecondStreamEnd = 0x06, // Value: 6, Comment: 
+	@VideoSplitStart = 0x07, // Value: 7, Comment: 
+	@VideoSecondStreamSplitStart = 0x08, // Value: 8, Comment: 
+	@VideoPause = 0x0B, // Value: 11, Comment: 
+	@VideoSecondStreamPause = 0x0C, // Value: 12, Comment: 
+	@VideoResume = 0x0D, // Value: 13, Comment: 
+	@VideoSecondStreamResume = 0x0E // Value: 14, Comment: 
+};

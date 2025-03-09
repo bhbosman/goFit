@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> BacklightMode
+{
+	@Off = 0x00, // Value: 0, Comment: 
+	@Manual = 0x01, // Value: 1, Comment: 
+	@KeyAndMessages = 0x02, // Value: 2, Comment: 
+	@AutoBrightness = 0x03, // Value: 3, Comment: 
+	@SmartNotifications = 0x04, // Value: 4, Comment: 
+	@KeyAndMessagesNight = 0x05, // Value: 5, Comment: 
+	@KeyAndMessagesAndSmartNotifications = 0x06 // Value: 6, Comment: 
+};

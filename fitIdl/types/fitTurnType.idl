@@ -1,0 +1,43 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> TurnType
+{
+	@ArrivingIdx = 0x00, // Value: 0, Comment: 
+	@ArrivingLeftIdx = 0x01, // Value: 1, Comment: 
+	@ArrivingRightIdx = 0x02, // Value: 2, Comment: 
+	@ArrivingViaIdx = 0x03, // Value: 3, Comment: 
+	@ArrivingViaLeftIdx = 0x04, // Value: 4, Comment: 
+	@ArrivingViaRightIdx = 0x05, // Value: 5, Comment: 
+	@BearKeepLeftIdx = 0x06, // Value: 6, Comment: 
+	@BearKeepRightIdx = 0x07, // Value: 7, Comment: 
+	@ContinueIdx = 0x08, // Value: 8, Comment: 
+	@ExitLeftIdx = 0x09, // Value: 9, Comment: 
+	@ExitRightIdx = 0x0A, // Value: 10, Comment: 
+	@FerryIdx = 0x0B, // Value: 11, Comment: 
+	@Roundabout45Idx = 0x0C, // Value: 12, Comment: 
+	@Roundabout90Idx = 0x0D, // Value: 13, Comment: 
+	@Roundabout135Idx = 0x0E, // Value: 14, Comment: 
+	@Roundabout180Idx = 0x0F, // Value: 15, Comment: 
+	@Roundabout225Idx = 0x10, // Value: 16, Comment: 
+	@Roundabout270Idx = 0x11, // Value: 17, Comment: 
+	@Roundabout315Idx = 0x12, // Value: 18, Comment: 
+	@Roundabout360Idx = 0x13, // Value: 19, Comment: 
+	@RoundaboutNeg45Idx = 0x14, // Value: 20, Comment: 
+	@RoundaboutNeg90Idx = 0x15, // Value: 21, Comment: 
+	@RoundaboutNeg135Idx = 0x16, // Value: 22, Comment: 
+	@RoundaboutNeg180Idx = 0x17, // Value: 23, Comment: 
+	@RoundaboutNeg225Idx = 0x18, // Value: 24, Comment: 
+	@RoundaboutNeg270Idx = 0x19, // Value: 25, Comment: 
+	@RoundaboutNeg315Idx = 0x1A, // Value: 26, Comment: 
+	@RoundaboutNeg360Idx = 0x1B, // Value: 27, Comment: 
+	@RoundaboutGenericIdx = 0x1C, // Value: 28, Comment: 
+	@RoundaboutNegGenericIdx = 0x1D, // Value: 29, Comment: 
+	@SharpTurnLeftIdx = 0x1E, // Value: 30, Comment: 
+	@SharpTurnRightIdx = 0x1F, // Value: 31, Comment: 
+	@TurnLeftIdx = 0x20, // Value: 32, Comment: 
+	@TurnRightIdx = 0x21, // Value: 33, Comment: 
+	@UturnLeftIdx = 0x22, // Value: 34, Comment: 
+	@UturnRightIdx = 0x23, // Value: 35, Comment: 
+	@IconInvIdx = 0x24, // Value: 36, Comment: 
+	@IconIdxCnt = 0x25 // Value: 37, Comment: 
+};

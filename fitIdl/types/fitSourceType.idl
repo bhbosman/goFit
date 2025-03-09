@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> SourceType
+{
+	@Ant = 0x00, // Value: 0, Comment: 
+	@Antplus = 0x01, // Value: 1, Comment: 
+	@Bluetooth = 0x02, // Value: 2, Comment: 
+	@BluetoothLowEnergy = 0x03, // Value: 3, Comment: 
+	@Wifi = 0x04, // Value: 4, Comment: 
+	@Local = 0x05 // Value: 5, Comment: 
+};

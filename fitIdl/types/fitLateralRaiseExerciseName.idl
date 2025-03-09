@@ -1,0 +1,39 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> LateralRaiseExerciseName
+{
+	@_45DegreeCableExternalRotation = 0x0000, // Value: 0, Comment: 
+	@AlternatingLateralRaiseWithStaticHold = 0x0001, // Value: 1, Comment: 
+	@BarMuscleUp = 0x0002, // Value: 2, Comment: 
+	@BentOverLateralRaise = 0x0003, // Value: 3, Comment: 
+	@CableDiagonalRaise = 0x0004, // Value: 4, Comment: 
+	@CableFrontRaise = 0x0005, // Value: 5, Comment: 
+	@CalorieRow = 0x0006, // Value: 6, Comment: 
+	@ComboShoulderRaise = 0x0007, // Value: 7, Comment: 
+	@DumbbellDiagonalRaise = 0x0008, // Value: 8, Comment: 
+	@DumbbellVRaise = 0x0009, // Value: 9, Comment: 
+	@FrontRaise = 0x000A, // Value: 10, Comment: 
+	@LeaningDumbbellLateralRaise = 0x000B, // Value: 11, Comment: 
+	@LyingDumbbellRaise = 0x000C, // Value: 12, Comment: 
+	@MuscleUp = 0x000D, // Value: 13, Comment: 
+	@OneArmCableLateralRaise = 0x000E, // Value: 14, Comment: 
+	@OverhandGripRearLateralRaise = 0x000F, // Value: 15, Comment: 
+	@PlateRaises = 0x0010, // Value: 16, Comment: 
+	@RingDip = 0x0011, // Value: 17, Comment: 
+	@WeightedRingDip = 0x0012, // Value: 18, Comment: 
+	@RingMuscleUp = 0x0013, // Value: 19, Comment: 
+	@WeightedRingMuscleUp = 0x0014, // Value: 20, Comment: 
+	@RopeClimb = 0x0015, // Value: 21, Comment: 
+	@WeightedRopeClimb = 0x0016, // Value: 22, Comment: 
+	@Scaption = 0x0017, // Value: 23, Comment: 
+	@SeatedLateralRaise = 0x0018, // Value: 24, Comment: 
+	@SeatedRearLateralRaise = 0x0019, // Value: 25, Comment: 
+	@SideLyingLateralRaise = 0x001A, // Value: 26, Comment: 
+	@StandingLift = 0x001B, // Value: 27, Comment: 
+	@SuspendedRow = 0x001C, // Value: 28, Comment: 
+	@UnderhandGripRearLateralRaise = 0x001D, // Value: 29, Comment: 
+	@WallSlide = 0x001E, // Value: 30, Comment: 
+	@WeightedWallSlide = 0x001F, // Value: 31, Comment: 
+	@ArmCircles = 0x0020, // Value: 32, Comment: 
+	@ShavingTheHead = 0x0021 // Value: 33, Comment: 
+};

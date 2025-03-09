@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> BikeLightNetworkConfigType
+{
+	@Auto = 0x00, // Value: 0, Comment: 
+	@Individual = 0x04, // Value: 4, Comment: 
+	@HighVisibility = 0x05, // Value: 5, Comment: 
+	@Trail = 0x06 // Value: 6, Comment: 
+};

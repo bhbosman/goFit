@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaRespirationData", ""> HsaRespirationData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "s", "", "", "", "", "Processing interval length in seconds", "", ""> @ProcessingInterval;
+	int16<"Sint16", 1, 0, "", 100, 1, "breaths/min", "", "", "", "", "Breaths / min: [1,100] Invalid: 255 Excess motion: 254 Off wrist: 253 Not available: 252 Blank: 2.4", "", ""> @RespirationRate;
+};

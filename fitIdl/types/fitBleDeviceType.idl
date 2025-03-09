@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> BleDeviceType
+{
+	@ConnectedGps = 0x00, // Value: 0, Comment: 
+	@HeartRate = 0x01, // Value: 1, Comment: 
+	@BikePower = 0x02, // Value: 2, Comment: 
+	@BikeSpeedCadence = 0x03, // Value: 3, Comment: 
+	@BikeSpeed = 0x04, // Value: 4, Comment: 
+	@BikeCadence = 0x05, // Value: 5, Comment: 
+	@Footpod = 0x06, // Value: 6, Comment: 
+	@BikeTrainer = 0x07 // Value: 7, Comment: 
+};

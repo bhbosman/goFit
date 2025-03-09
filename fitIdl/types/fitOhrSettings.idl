@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"OhrSettings", ""> OhrSettings {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	Switch<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Enabled;
+};

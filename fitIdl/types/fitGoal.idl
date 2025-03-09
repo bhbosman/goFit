@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> Goal
+{
+	@Time = 0x00, // Value: 0, Comment: 
+	@Distance = 0x01, // Value: 1, Comment: 
+	@Calories = 0x02, // Value: 2, Comment: 
+	@Frequency = 0x03, // Value: 3, Comment: 
+	@Steps = 0x04, // Value: 4, Comment: 
+	@Ascent = 0x05, // Value: 5, Comment: 
+	@ActiveMinutes = 0x06 // Value: 6, Comment: 
+};

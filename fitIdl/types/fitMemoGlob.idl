@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"MemoGlob", ""> MemoGlob {
+	uint32<"Uint32", 250, -1, "", 1, 1, "", "", "", "", "", "Sequence number of memo blocks", "", ""> @PartIndex;
+	byte<"Byte", 0, 0, "", 1, 1, "", "", "", "", "", "Deprecated. Use data field.", "", ""> @Memo;
+	MesgNum<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "Message Number of the parent message", "", ""> @MesgNum;
+	MessageIndex<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "Index of mesg that this glob is associated with.", "", ""> @ParentIndex;
+	uint8<"Uint8", 3, -1, "", 1, 1, "", "", "", "", "", "Field within the parent that this glob is associated with", "", ""> @FieldNum;
+	uint8<"Uint8z", 4, 0, "", 1, 1, "", "", "", "", "", "Block of utf8 bytes. Note, mutltibyte characters may be split across adjoining memo_glob messages.", "", ""> @Data;
+};

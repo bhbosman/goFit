@@ -1,0 +1,26 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> SplitType
+{
+	@AscentSplit = 0x01, // Value: 1, Comment: 
+	@DescentSplit = 0x02, // Value: 2, Comment: 
+	@IntervalActive = 0x03, // Value: 3, Comment: 
+	@IntervalRest = 0x04, // Value: 4, Comment: 
+	@IntervalWarmup = 0x05, // Value: 5, Comment: 
+	@IntervalCooldown = 0x06, // Value: 6, Comment: 
+	@IntervalRecovery = 0x07, // Value: 7, Comment: 
+	@IntervalOther = 0x08, // Value: 8, Comment: 
+	@ClimbActive = 0x09, // Value: 9, Comment: 
+	@ClimbRest = 0x0A, // Value: 10, Comment: 
+	@SurfActive = 0x0B, // Value: 11, Comment: 
+	@RunActive = 0x0C, // Value: 12, Comment: 
+	@RunRest = 0x0D, // Value: 13, Comment: 
+	@WorkoutRound = 0x0E, // Value: 14, Comment: 
+	@RwdRun = 0x11, // Value: 17, Comment: 
+	@RwdWalk = 0x12, // Value: 18, Comment: 
+	@WindsurfActive = 0x15, // Value: 21, Comment: 
+	@RwdStand = 0x16, // Value: 22, Comment: 
+	@Transition = 0x17, // Value: 23, Comment: 
+	@SkiLiftSplit = 0x1C, // Value: 28, Comment: 
+	@SkiRunSplit = 0x1D // Value: 29, Comment: 
+};

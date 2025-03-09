@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> FitBaseUnit
+{
+	@Other = 0x0000, // Value: 0, Comment: 
+	@Kilogram = 0x0001, // Value: 1, Comment: 
+	@Pound = 0x0002 // Value: 2, Comment: 
+};

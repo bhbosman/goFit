@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> TissueModelType
+{
+	@Zhl16c = 0x00 // Value: 0, Comment: 
+};

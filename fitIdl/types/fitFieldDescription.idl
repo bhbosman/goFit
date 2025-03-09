@@ -1,0 +1,19 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"FieldDescription", ""> FieldDescription {
+	uint8<"Uint8", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @DeveloperDataIndex;
+	uint8<"Uint8", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @FieldDefinitionNumber;
+	FitBaseType<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @FitBaseTypeId;
+	string<"String", 3, 0, "", 1, 1, "", "", "", "", "", "", "", "64"> @FieldName;
+	uint8<"Uint8", 4, -1, "", 1, 1, "", "", "", "", "", "", "", "0"> @Array;
+	string<"String", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "0"> @Components;
+	uint8<"Uint8", 6, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Scale;
+	int8<"Sint8", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Offset;
+	string<"String", 8, 0, "", 1, 1, "", "", "", "", "", "", "", "16"> @Units;
+	string<"String", 9, -1, "", 1, 1, "", "", "", "", "", "", "", "0"> @Bits;
+	string<"String", 10, -1, "", 1, 1, "", "", "", "", "", "", "", "0"> @Accumulate;
+	FitBaseUnit<"Enum", 13, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @FitBaseUnitId;
+	MesgNum<"Enum", 14, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @NativeMesgNum;
+	uint8<"Uint8", 15, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @NativeFieldNum;
+};

@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"WatchfaceSettings", ""> WatchfaceSettings {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @MessageIndex;
+	WatchfaceMode<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Mode;
+	byte<"Byte", 1, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Layout
+	{
+		byte<"Byte", "", 1, 1, "", "", "", "mode", "digital", "", "", ""> @DigitalLayout;
+		byte<"Byte", "", 1, 1, "", "", "", "mode", "analog", "", "", ""> @AnalogLayout;
+	};
+};

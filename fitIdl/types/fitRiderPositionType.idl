@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> RiderPositionType
+{
+	@Seated = 0x00, // Value: 0, Comment: 
+	@Standing = 0x01, // Value: 1, Comment: 
+	@TransitionToSeated = 0x02, // Value: 2, Comment: 
+	@TransitionToStanding = 0x03 // Value: 3, Comment: 
+};

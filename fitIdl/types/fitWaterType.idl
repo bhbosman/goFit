@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> WaterType
+{
+	@Fresh = 0x00, // Value: 0, Comment: 
+	@Salt = 0x01, // Value: 1, Comment: 
+	@En13319 = 0x02, // Value: 2, Comment: 
+	@Custom = 0x03 // Value: 3, Comment: 
+};

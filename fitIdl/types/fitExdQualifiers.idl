@@ -1,0 +1,49 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ExdQualifiers
+{
+	@NoQualifier = 0x00, // Value: 0, Comment: 
+	@Instantaneous = 0x01, // Value: 1, Comment: 
+	@Average = 0x02, // Value: 2, Comment: 
+	@Lap = 0x03, // Value: 3, Comment: 
+	@Maximum = 0x04, // Value: 4, Comment: 
+	@MaximumAverage = 0x05, // Value: 5, Comment: 
+	@MaximumLap = 0x06, // Value: 6, Comment: 
+	@LastLap = 0x07, // Value: 7, Comment: 
+	@AverageLap = 0x08, // Value: 8, Comment: 
+	@ToDestination = 0x09, // Value: 9, Comment: 
+	@ToGo = 0x0A, // Value: 10, Comment: 
+	@ToNext = 0x0B, // Value: 11, Comment: 
+	@NextCoursePoint = 0x0C, // Value: 12, Comment: 
+	@Total = 0x0D, // Value: 13, Comment: 
+	@ThreeSecondAverage = 0x0E, // Value: 14, Comment: 
+	@TenSecondAverage = 0x0F, // Value: 15, Comment: 
+	@ThirtySecondAverage = 0x10, // Value: 16, Comment: 
+	@PercentMaximum = 0x11, // Value: 17, Comment: 
+	@PercentMaximumAverage = 0x12, // Value: 18, Comment: 
+	@LapPercentMaximum = 0x13, // Value: 19, Comment: 
+	@Elapsed = 0x14, // Value: 20, Comment: 
+	@Sunrise = 0x15, // Value: 21, Comment: 
+	@Sunset = 0x16, // Value: 22, Comment: 
+	@ComparedToVirtualPartner = 0x17, // Value: 23, Comment: 
+	@Maximum24h = 0x18, // Value: 24, Comment: 
+	@Minimum24h = 0x19, // Value: 25, Comment: 
+	@Minimum = 0x1A, // Value: 26, Comment: 
+	@First = 0x1B, // Value: 27, Comment: 
+	@Second = 0x1C, // Value: 28, Comment: 
+	@Third = 0x1D, // Value: 29, Comment: 
+	@Shifter = 0x1E, // Value: 30, Comment: 
+	@LastSport = 0x1F, // Value: 31, Comment: 
+	@Moving = 0x20, // Value: 32, Comment: 
+	@Stopped = 0x21, // Value: 33, Comment: 
+	@EstimatedTotal = 0x22, // Value: 34, Comment: 
+	@Zone9 = 0xF2, // Value: 242, Comment: 
+	@Zone8 = 0xF3, // Value: 243, Comment: 
+	@Zone7 = 0xF4, // Value: 244, Comment: 
+	@Zone6 = 0xF5, // Value: 245, Comment: 
+	@Zone5 = 0xF6, // Value: 246, Comment: 
+	@Zone4 = 0xF7, // Value: 247, Comment: 
+	@Zone3 = 0xF8, // Value: 248, Comment: 
+	@Zone2 = 0xF9, // Value: 249, Comment: 
+	@Zone1 = 0xFA // Value: 250, Comment: 
+};

@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"BarometerData", ""> BarometerData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the timestamp", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the timestamp.", "", ""> @TimestampMs;
+	uint16<"Uint16", 1, 0, "", 1, 1, "ms", "", "", "", "", "Each time in the array describes the time at which the barometer sample with the corrosponding index was taken. The samples may span across seconds. Array size must match the number of samples in baro_cal", "", ""> @SampleTimeOffset;
+	uint32<"Uint32", 2, 0, "", 1, 1, "Pa", "", "", "", "", "These are the raw ADC reading. The samples may span across seconds. A conversion will need to be done on this data once read.", "", ""> @BaroPres;
+};

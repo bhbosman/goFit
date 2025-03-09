@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> WorkoutEquipment
+{
+	@None = 0x00, // Value: 0, Comment: 
+	@SwimFins = 0x01, // Value: 1, Comment: 
+	@SwimKickboard = 0x02, // Value: 2, Comment: 
+	@SwimPaddles = 0x03, // Value: 3, Comment: 
+	@SwimPullBuoy = 0x04, // Value: 4, Comment: 
+	@SwimSnorkel = 0x05 // Value: 5, Comment: 
+};

@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> AutolapTrigger
+{
+	@Time = 0x00, // Value: 0, Comment: 
+	@Distance = 0x01, // Value: 1, Comment: 
+	@PositionStart = 0x02, // Value: 2, Comment: 
+	@PositionLap = 0x03, // Value: 3, Comment: 
+	@PositionWaypoint = 0x04, // Value: 4, Comment: 
+	@PositionMarked = 0x05, // Value: 5, Comment: 
+	@Off = 0x06, // Value: 6, Comment: 
+	@AutoSelect = 0x0D // Value: 13, Comment: 
+};

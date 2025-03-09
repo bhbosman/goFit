@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Workout", ""> Workout {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	Sport<"Enum", 4, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Sport;
+	WorkoutCapabilities<"Enum", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Capabilities;
+	uint16<"Uint16", 6, -1, "", 1, 1, "", "", "", "", "", "number of valid steps", "", "1"> @NumValidSteps;
+	string<"String", 8, -1, "", 1, 1, "", "", "", "", "", "", "", "16"> @WktName;
+	SubSport<"Enum", 11, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SubSport;
+	uint16<"Uint16", 14, -1, "", 100, 1, "m", "", "", "", "", "", "", "1"> @PoolLength;
+	DisplayMeasure<"Enum", 15, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @PoolLengthUnit;
+	string<"String", 17, -1, "", 1, 1, "", "", "", "", "", "Description of the workout", "", ""> @WktDescription;
+};

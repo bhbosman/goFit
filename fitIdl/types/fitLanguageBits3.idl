@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> LanguageBits3
+{
+	@Bulgarian = 0x01, // Value: 1, Comment: 
+	@Romanian = 0x02, // Value: 2, Comment: 
+	@Chinese = 0x04, // Value: 4, Comment: 
+	@Japanese = 0x08, // Value: 8, Comment: 
+	@Korean = 0x10, // Value: 16, Comment: 
+	@Taiwanese = 0x20, // Value: 32, Comment: 
+	@Thai = 0x40, // Value: 64, Comment: 
+	@Hebrew = 0x80 // Value: 128, Comment: 
+};

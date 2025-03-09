@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaStressData", ""> HsaStressData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "s", "", "", "", "", "Processing interval length in seconds", "", ""> @ProcessingInterval;
+	int8<"Sint8", 1, 0, "", 1, 1, "s", "", "", "", "", "Stress Level: [0,100] Off wrist: -1 Excess motion: -2 Not enough data: -3 Recovering from exercise: -4 Unidentified: -5 Blank: -16", "", ""> @StressLevel;
+};

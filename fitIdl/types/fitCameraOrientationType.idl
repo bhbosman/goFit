@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> CameraOrientationType
+{
+	@CameraOrientation0 = 0x00, // Value: 0, Comment: 
+	@CameraOrientation90 = 0x01, // Value: 1, Comment: 
+	@CameraOrientation180 = 0x02, // Value: 2, Comment: 
+	@CameraOrientation270 = 0x03 // Value: 3, Comment: 
+};

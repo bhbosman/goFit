@@ -1,0 +1,19 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> WktStepTarget
+{
+	@Speed = 0x00, // Value: 0, Comment: 
+	@HeartRate = 0x01, // Value: 1, Comment: 
+	@Open = 0x02, // Value: 2, Comment: 
+	@Cadence = 0x03, // Value: 3, Comment: 
+	@Power = 0x04, // Value: 4, Comment: 
+	@Grade = 0x05, // Value: 5, Comment: 
+	@Resistance = 0x06, // Value: 6, Comment: 
+	@Power3s = 0x07, // Value: 7, Comment: 
+	@Power10s = 0x08, // Value: 8, Comment: 
+	@Power30s = 0x09, // Value: 9, Comment: 
+	@PowerLap = 0x0A, // Value: 10, Comment: 
+	@SwimStroke = 0x0B, // Value: 11, Comment: 
+	@SpeedLap = 0x0C, // Value: 12, Comment: 
+	@HeartRateLap = 0x0D // Value: 13, Comment: 
+};
