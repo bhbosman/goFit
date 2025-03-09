@@ -1,11 +1,11 @@
 package main
 
 import (
-	"awesomeProject/fitIdl/decoder"
-	"awesomeProject/fitIdl/fitDecl"
-	"awesomeProject/fitIdl/messages"
-	"awesomeProject/fitIdl/registration"
 	"fmt"
+	"github.com/bhbosman/goFit/fitIdl/decoder"
+	"github.com/bhbosman/goFit/fitIdl/fitDecl"
+	"github.com/bhbosman/goFit/fitIdl/messages"
+	"github.com/bhbosman/goFit/fitIdl/registration"
 
 	"io"
 	"os"

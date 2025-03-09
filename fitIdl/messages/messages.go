@@ -41,6 +41,7 @@ const (
 	Sint64  BaseType = 0x8E // 2’s complement format
 	Uint64  BaseType = 0x8F
 	Uint64z BaseType = 0x90
+	Bool    BaseType = 0xA0
 )
 
 const (

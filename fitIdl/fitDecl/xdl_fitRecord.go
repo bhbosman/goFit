@@ -1,7 +1,7 @@
 package fitDecl
 
-import registration "awesomeProject/fitIdl/registration"
-import messages "awesomeProject/fitIdl/messages"
+import messages "github.com/bhbosman/goFit/fitIdl/messages"
+import registration "github.com/bhbosman/goFit/fitIdl/registration"
 
 type Record struct {
 	Timestamp                     uint32

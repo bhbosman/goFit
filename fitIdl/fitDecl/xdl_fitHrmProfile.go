@@ -1,7 +1,7 @@
 package fitDecl
 
-import messages "awesomeProject/fitIdl/messages"
-import registration "awesomeProject/fitIdl/registration"
+import registration "github.com/bhbosman/goFit/fitIdl/registration"
+import messages "github.com/bhbosman/goFit/fitIdl/messages"
 
 type HrmProfile struct {
 	MessageIndex      MessageIndex

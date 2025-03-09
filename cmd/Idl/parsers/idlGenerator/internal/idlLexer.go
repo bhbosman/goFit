@@ -1,9 +1,9 @@
 package internal
 
 import (
-	"awesomeProject/cmd/Idl/parsers/common"
 	"errors"
 	"fmt"
+	"github.com/bhbosman/goFit/cmd/Idl/parsers/common"
 	"go.uber.org/multierr"
 	"go/ast"
 	"go/token"

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/cmd/Idl/cmd"
+	"github.com/bhbosman/goFit/cmd/Idl/cmd"
 )
 
 func main() {

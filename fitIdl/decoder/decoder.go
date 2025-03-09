@@ -1,10 +1,10 @@
 package decoder
 
 import (
-	"awesomeProject/fitIdl/messages"
-	"awesomeProject/fitIdl/registration"
 	"encoding/binary"
 	"errors"
+	"github.com/bhbosman/goFit/fitIdl/messages"
+	"github.com/bhbosman/goFit/fitIdl/registration"
 	"io"
 	"time"
 )
@@ -139,7 +139,7 @@ func (d *decoder) readRecords(cb ReadDataFunc) error {
 					if err != nil {
 						return err
 					} else {
-						print(fieldData.DefNumber)
+						print(fieldData.FieldId)
 
 					}
 

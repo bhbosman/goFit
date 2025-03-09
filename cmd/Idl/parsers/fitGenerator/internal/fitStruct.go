@@ -110,8 +110,8 @@ func (rwStruct *fitStruct) BuildType(w io.Writer, params BuildTypeParams) (n int
 }
 
 func (rwStruct *fitStruct) IncludeImports(m map[string]string) {
-	m["messages"] = "awesomeProject/fitIdl/messages"
-	m["registration"] = "awesomeProject/fitIdl/registration"
+	m["messages"] = "github.com/bhbosman/goFit/fitIdl/messages"
+	m["registration"] = "github.com/bhbosman/goFit/fitIdl/registration"
 }
 
 func (rwStruct *fitStruct) FileName() string {

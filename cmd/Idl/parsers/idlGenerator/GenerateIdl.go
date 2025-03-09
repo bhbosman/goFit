@@ -1,9 +1,9 @@
 package idlGenerator
 
 import (
-	"awesomeProject/cmd/Idl/parsers/common"
-	"awesomeProject/cmd/Idl/parsers/idlGenerator/internal"
 	"fmt"
+	"github.com/bhbosman/goFit/cmd/Idl/parsers/common"
+	"github.com/bhbosman/goFit/cmd/Idl/parsers/idlGenerator/internal"
 	"io"
 )
 

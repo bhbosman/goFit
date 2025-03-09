@@ -1,4 +1,4 @@
-module awesomeProject
+module github.com/bhbosman/goFit
 
 go 1.24
 

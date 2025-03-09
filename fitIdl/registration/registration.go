@@ -1,8 +1,8 @@
 package registration
 
 import (
-	"awesomeProject/fitIdl/messages"
 	"fmt"
+	"github.com/bhbosman/goFit/fitIdl/messages"
 )
 
 type IFitMessage interface {

@@ -1,9 +1,9 @@
 package fitGenerator
 
 import (
-	"awesomeProject/cmd/Idl/parsers/common"
-	"awesomeProject/cmd/Idl/parsers/fitGenerator/internal"
 	"fmt"
+	"github.com/bhbosman/goFit/cmd/Idl/parsers/common"
+	"github.com/bhbosman/goFit/cmd/Idl/parsers/fitGenerator/internal"
 	"io"
 )
 

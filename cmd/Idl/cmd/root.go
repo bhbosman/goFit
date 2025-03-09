@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"awesomeProject/cmd/Idl/parsers/fitGenerator"
-	"awesomeProject/cmd/Idl/parsers/idlGenerator"
 	"fmt"
+	"github.com/bhbosman/goFit/cmd/Idl/parsers/fitGenerator"
+	"github.com/bhbosman/goFit/cmd/Idl/parsers/idlGenerator"
 	"github.com/spf13/cobra"
 	"io"
 	"os"
