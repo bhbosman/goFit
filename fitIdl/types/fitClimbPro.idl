@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"ClimbPro", ""> ClimbPro {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	int32<"Sint32", 0, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @PositionLat;
+	int32<"Sint32", 1, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", ""> @PositionLong;
+	ClimbProEvent<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ClimbProEvent;
+	uint16<"Uint16", 3, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ClimbNumber;
+	uint8<"Uint8", 4, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ClimbCategory;
+	float32<"Float32", 5, -1, "", 1, 1, "m", "", "", "", "", "", "", ""> @CurrentDist;
+};

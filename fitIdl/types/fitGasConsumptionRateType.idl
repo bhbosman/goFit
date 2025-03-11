@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> GasConsumptionRateType
+{
+	@PressureSac = 0x00, // Value: 0, Comment: 
+	@VolumeSac = 0x01, // Value: 1, Comment: 
+	@Rmv = 0x02 // Value: 2, Comment: 
+};

@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> Autoscroll
+{
+	@None = 0x00, // Value: 0, Comment: 
+	@Slow = 0x01, // Value: 1, Comment: 
+	@Medium = 0x02, // Value: 2, Comment: 
+	@Fast = 0x03 // Value: 3, Comment: 
+};

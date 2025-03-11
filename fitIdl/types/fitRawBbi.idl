@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"RawBbi", ""> RawBbi {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond resolution of the timestamp", "", ""> @TimestampMs;
+	uint16<"Uint16", 1, 0, "time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap,time,quality,gap", 1, 1, "", "14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1,14,1,1", "", "", "", "1 bit for gap indicator, 1 bit for quality indicator, and 14 bits for Beat-to-Beat interval values in whole-integer millisecond resolution", "", ""> @Data;
+	uint16<"Uint16", 2, 0, "", 1, 1, "ms", "", "", "", "", "Array of millisecond times between beats", "", ""> @Time;
+	uint8<"Uint8", 3, 0, "", 1, 1, "", "", "", "", "", "1 = high confidence. 0 = low confidence. N/A when gap = 1", "", ""> @Quality;
+	uint8<"Uint8", 4, 0, "", 1, 1, "", "", "", "", "", "1 = gap (time represents ms gap length). 0 = BBI data", "", ""> @Gap;
+};

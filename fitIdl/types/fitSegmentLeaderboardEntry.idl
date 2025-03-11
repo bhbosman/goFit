@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SegmentLeaderboardEntry", ""> SegmentLeaderboardEntry {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	string<"String", 0, -1, "", 1, 1, "", "", "", "", "", "Friendly name assigned to leader", "", "1"> @Name;
+	SegmentLeaderboardType<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "Leader classification", "", "1"> @Type;
+	uint32<"Uint32", 2, -1, "", 1, 1, "", "", "", "", "", "Primary user ID of this leader", "", "1"> @GroupPrimaryKey;
+	uint32<"Uint32", 3, -1, "", 1, 1, "", "", "", "", "", "ID of the activity associated with this leader time", "", "1"> @ActivityId;
+	uint32<"Uint32", 4, -1, "", 1000, 1, "s", "", "", "", "", "Segment Time (includes pauses)", "", "1"> @SegmentTime;
+	string<"String", 5, -1, "", 1, 1, "", "", "", "", "", "String version of the activity_id. 21 characters long, express in decimal", "", ""> @ActivityIdString;
+};

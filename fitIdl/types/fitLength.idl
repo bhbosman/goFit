@@ -1,0 +1,27 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Length", ""> Length {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Timestamp;
+	Event<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Event;
+	EventType<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @EventType;
+	uint32<"Uint32", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @StartTime;
+	uint32<"Uint32", 3, -1, "", 1000, 1, "s", "", "", "", "", "", "", "1"> @TotalElapsedTime;
+	uint32<"Uint32", 4, -1, "", 1000, 1, "s", "", "", "", "", "", "", "1"> @TotalTimerTime;
+	uint16<"Uint16", 5, -1, "", 1, 1, "strokes", "", "", "", "", "", "", "1"> @TotalStrokes;
+	uint16<"Uint16", 6, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", "1"> @AvgSpeed;
+	SwimStroke<"Enum", 7, -1, "", 1, 1, "swim_stroke", "", "", "", "", "", "", "1"> @SwimStroke;
+	uint8<"Uint8", 9, -1, "", 1, 1, "strokes/min", "", "", "", "", "", "", "1"> @AvgSwimmingCadence;
+	uint8<"Uint8", 10, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @EventGroup;
+	uint16<"Uint16", 11, -1, "", 1, 1, "kcal", "", "", "", "", "", "", "1"> @TotalCalories;
+	LengthType<"Enum", 12, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @LengthType;
+	uint16<"Uint16", 18, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @PlayerScore;
+	uint16<"Uint16", 19, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @OpponentScore;
+	uint16<"Uint16", 20, 0, "", 1, 1, "counts", "", "", "", "", "stroke_type enum used as the index", "", "1"> @StrokeCount;
+	uint16<"Uint16", 21, 0, "", 1, 1, "counts", "", "", "", "", "zone number used as the index", "", "1"> @ZoneCount;
+	uint16<"Uint16", 22, -1, "", 100, 1, "Breaths/min", "", "", "", "", "", "", ""> @EnhancedAvgRespirationRate;
+	uint16<"Uint16", 23, -1, "", 100, 1, "Breaths/min", "", "", "", "", "", "", ""> @EnhancedMaxRespirationRate;
+	uint8<"Uint8", 24, -1, "enhanced_avg_respiration_rate", 1, 1, "", "8", "", "", "", "", "", ""> @AvgRespirationRate;
+	uint8<"Uint8", 25, -1, "enhanced_max_respiration_rate", 1, 1, "", "8", "", "", "", "", "", ""> @MaxRespirationRate;
+};

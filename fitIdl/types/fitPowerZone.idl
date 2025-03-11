@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"PowerZone", ""> PowerZone {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	uint16<"Uint16", 1, -1, "", 1, 1, "watts", "", "", "", "", "", "", "1"> @HighValue;
+	string<"String", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "16"> @Name;
+};

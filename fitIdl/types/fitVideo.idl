@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Video", ""> Video {
+	string<"String", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Url;
+	string<"String", 1, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @HostingProvider;
+	uint32<"Uint32", 2, -1, "", 1, 1, "ms", "", "", "", "", "Playback time of video", "", ""> @Duration;
+};

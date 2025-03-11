@@ -1,0 +1,22 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"TimeInZone", ""> TimeInZone {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	MesgNum<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ReferenceMesg;
+	MessageIndex<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ReferenceIndex;
+	uint32<"Uint32", 2, 0, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TimeInHrZone;
+	uint32<"Uint32", 3, 0, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TimeInSpeedZone;
+	uint32<"Uint32", 4, 0, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TimeInCadenceZone;
+	uint32<"Uint32", 5, 0, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TimeInPowerZone;
+	uint8<"Uint8", 6, 0, "", 1, 1, "bpm", "", "", "", "", "", "", ""> @HrZoneHighBoundary;
+	uint16<"Uint16", 7, 0, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @SpeedZoneHighBoundary;
+	uint8<"Uint8", 8, 0, "", 1, 1, "rpm", "", "", "", "", "", "", ""> @CadenceZoneHighBondary;
+	uint16<"Uint16", 9, 0, "", 1, 1, "watts", "", "", "", "", "", "", ""> @PowerZoneHighBoundary;
+	HrZoneCalc<"Enum", 10, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @HrCalcType;
+	uint8<"Uint8", 11, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @MaxHeartRate;
+	uint8<"Uint8", 12, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @RestingHeartRate;
+	uint8<"Uint8", 13, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ThresholdHeartRate;
+	PwrZoneCalc<"Enum", 14, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @PwrCalcType;
+	uint16<"Uint16", 15, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @FunctionalThresholdPower;
+};

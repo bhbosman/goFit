@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> MaxMetHeartRateSource
+{
+	@Whr = 0x00, // Value: 0, Comment: 
+	@Hrm = 0x01 // Value: 1, Comment: 
+};

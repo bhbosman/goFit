@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> FaveroProduct
+{
+	@AssiomaUno = 0x000A, // Value: 10, Comment: 
+	@AssiomaDuo = 0x000C // Value: 12, Comment: 
+};

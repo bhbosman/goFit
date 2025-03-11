@@ -1,0 +1,38 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> PlyoExerciseName
+{
+	@AlternatingJumpLunge = 0x0000, // Value: 0, Comment: 
+	@WeightedAlternatingJumpLunge = 0x0001, // Value: 1, Comment: 
+	@BarbellJumpSquat = 0x0002, // Value: 2, Comment: 
+	@BodyWeightJumpSquat = 0x0003, // Value: 3, Comment: 
+	@WeightedJumpSquat = 0x0004, // Value: 4, Comment: 
+	@CrossKneeStrike = 0x0005, // Value: 5, Comment: 
+	@WeightedCrossKneeStrike = 0x0006, // Value: 6, Comment: 
+	@DepthJump = 0x0007, // Value: 7, Comment: 
+	@WeightedDepthJump = 0x0008, // Value: 8, Comment: 
+	@DumbbellJumpSquat = 0x0009, // Value: 9, Comment: 
+	@DumbbellSplitJump = 0x000A, // Value: 10, Comment: 
+	@FrontKneeStrike = 0x000B, // Value: 11, Comment: 
+	@WeightedFrontKneeStrike = 0x000C, // Value: 12, Comment: 
+	@HighBoxJump = 0x000D, // Value: 13, Comment: 
+	@WeightedHighBoxJump = 0x000E, // Value: 14, Comment: 
+	@IsometricExplosiveBodyWeightJumpSquat = 0x000F, // Value: 15, Comment: 
+	@WeightedIsometricExplosiveJumpSquat = 0x0010, // Value: 16, Comment: 
+	@LateralLeapAndHop = 0x0011, // Value: 17, Comment: 
+	@WeightedLateralLeapAndHop = 0x0012, // Value: 18, Comment: 
+	@LateralPlyoSquats = 0x0013, // Value: 19, Comment: 
+	@WeightedLateralPlyoSquats = 0x0014, // Value: 20, Comment: 
+	@LateralSlide = 0x0015, // Value: 21, Comment: 
+	@WeightedLateralSlide = 0x0016, // Value: 22, Comment: 
+	@MedicineBallOverheadThrows = 0x0017, // Value: 23, Comment: 
+	@MedicineBallSideThrow = 0x0018, // Value: 24, Comment: 
+	@MedicineBallSlam = 0x0019, // Value: 25, Comment: 
+	@SideToSideMedicineBallThrows = 0x001A, // Value: 26, Comment: 
+	@SideToSideShuffleJump = 0x001B, // Value: 27, Comment: 
+	@WeightedSideToSideShuffleJump = 0x001C, // Value: 28, Comment: 
+	@SquatJumpOntoBox = 0x001D, // Value: 29, Comment: 
+	@WeightedSquatJumpOntoBox = 0x001E, // Value: 30, Comment: 
+	@SquatJumpsInAndOut = 0x001F, // Value: 31, Comment: 
+	@WeightedSquatJumpsInAndOut = 0x0020 // Value: 32, Comment: 
+};

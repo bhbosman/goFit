@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"FileCapabilities", ""> FileCapabilities {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	File<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Type;
+	FileFlags<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Flags;
+	string<"String", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "16"> @Directory;
+	uint16<"Uint16", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MaxCount;
+	uint32<"Uint32", 4, -1, "", 1, 1, "bytes", "", "", "", "", "", "", "1"> @MaxSize;
+};

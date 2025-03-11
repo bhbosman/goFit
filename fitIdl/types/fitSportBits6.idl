@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> SportBits6
+{
+	@FloorClimbing = 0x01 // Value: 1, Comment: Bit field corresponding to sport enum type (1 << (sport-48)).
+};

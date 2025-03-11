@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Course", ""> Course {
+	Sport<"Enum", 4, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Sport;
+	string<"String", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "16"> @Name;
+	CourseCapabilities<"Enum", 6, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Capabilities;
+	SubSport<"Enum", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SubSport;
+};

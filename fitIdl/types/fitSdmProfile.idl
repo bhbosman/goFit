@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SdmProfile", ""> SdmProfile {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	bool<"Bool", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Enabled;
+	uint16<"Uint16z", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SdmAntId;
+	uint16<"Uint16", 2, -1, "", 10, 1, "%", "", "", "", "", "", "", "1"> @SdmCalFactor;
+	uint32<"Uint32", 3, -1, "", 100, 1, "m", "", "", "", "", "", "", "1"> @Odometer;
+	bool<"Bool", 4, -1, "", 1, 1, "", "", "", "", "", "Use footpod for speed source instead of GPS", "", "1"> @SpeedSource;
+	uint8<"Uint8z", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SdmAntIdTransType;
+	uint8<"Uint8", 7, -1, "", 1, 1, "", "", "", "", "", "Rollover counter that can be used to extend the odometer", "", "1"> @OdometerRollover;
+};

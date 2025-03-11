@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0x00000000> AntChannelId
+{
+	@AntExtendedDeviceNumberUpperNibble = 0xF0000000, // Value: 4026531840, Comment: 
+	@AntTransmissionTypeLowerNibble = 0x0F000000, // Value: 251658240, Comment: 
+	@AntDeviceType = 0x00FF0000, // Value: 16711680, Comment: 
+	@AntDeviceNumber = 0x0000FFFF // Value: 65535, Comment: 
+};

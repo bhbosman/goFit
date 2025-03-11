@@ -1,0 +1,21 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"WeatherConditions", ""> WeatherConditions {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "time of update for current conditions, else forecast time", "", "1"> @Timestamp;
+	WeatherReport<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "Current or forecast", "", "1"> @WeatherReport;
+	int8<"Sint8", 1, -1, "", 1, 1, "C", "", "", "", "", "", "", "1"> @Temperature;
+	WeatherStatus<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "Corresponds to GSC Response weatherIcon field", "", "1"> @Condition;
+	uint16<"Uint16", 3, -1, "", 1, 1, "degrees", "", "", "", "", "", "", "1"> @WindDirection;
+	uint16<"Uint16", 4, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", "1"> @WindSpeed;
+	uint8<"Uint8", 5, -1, "", 1, 1, "", "", "", "", "", "range 0-100", "", "1"> @PrecipitationProbability;
+	int8<"Sint8", 6, -1, "", 1, 1, "C", "", "", "", "", "Heat Index if GCS heatIdx above or equal to 90F or wind chill if GCS windChill below or equal to 32F", "", "1"> @TemperatureFeelsLike;
+	uint8<"Uint8", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @RelativeHumidity;
+	string<"String", 8, -1, "", 1, 1, "", "", "", "", "", "string corresponding to GCS response location string", "", "64"> @Location;
+	uint32<"Uint32", 9, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ObservedAtTime;
+	int32<"Sint32", 10, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", "1"> @ObservedLocationLat;
+	int32<"Sint32", 11, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", "1"> @ObservedLocationLong;
+	DayOfWeek<"Enum", 12, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @DayOfWeek;
+	int8<"Sint8", 13, -1, "", 1, 1, "C", "", "", "", "", "", "", "1"> @HighTemperature;
+	int8<"Sint8", 14, -1, "", 1, 1, "C", "", "", "", "", "", "", "1"> @LowTemperature;
+};

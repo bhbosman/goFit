@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"WeatherAlert", ""> WeatherAlert {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Timestamp;
+	string<"String", 0, -1, "", 1, 1, "", "", "", "", "", "Unique identifier from GCS report ID string, length is 12", "", "12"> @ReportId;
+	uint32<"Uint32", 1, -1, "", 1, 1, "", "", "", "", "", "Time alert was issued", "", "1"> @IssueTime;
+	uint32<"Uint32", 2, -1, "", 1, 1, "", "", "", "", "", "Time alert expires", "", "1"> @ExpireTime;
+	WeatherSeverity<"Enum", 3, -1, "", 1, 1, "", "", "", "", "", "Warning, Watch, Advisory, Statement", "", "1"> @Severity;
+	WeatherSevereType<"Enum", 4, -1, "", 1, 1, "", "", "", "", "", "Tornado, Severe Thunderstorm, etc.", "", "1"> @Type;
+};

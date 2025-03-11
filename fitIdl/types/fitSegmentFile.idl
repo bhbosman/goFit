@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SegmentFile", ""> SegmentFile {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	string<"String", 1, -1, "", 1, 1, "", "", "", "", "", "UUID of the segment file", "", "1"> @FileUuid;
+	bool<"Bool", 3, -1, "", 1, 1, "", "", "", "", "", "Enabled state of the segment file", "", "1"> @Enabled;
+	uint32<"Uint32", 4, -1, "", 1, 1, "", "", "", "", "", "Primary key of the user that created the segment file", "", "1"> @UserProfilePrimaryKey;
+	SegmentLeaderboardType<"Enum", 7, 0, "", 1, 1, "", "", "", "", "", "Leader type of each leader in the segment file", "", "1"> @LeaderType;
+	uint32<"Uint32", 8, 0, "", 1, 1, "", "", "", "", "", "Group primary key of each leader in the segment file", "", "1"> @LeaderGroupPrimaryKey;
+	uint32<"Uint32", 9, 0, "", 1, 1, "", "", "", "", "", "Activity ID of each leader in the segment file", "", "1"> @LeaderActivityId;
+	string<"String", 10, 0, "", 1, 1, "", "", "", "", "", "String version of the activity ID of each leader in the segment file. 21 characters long for each ID, express in decimal", "", ""> @LeaderActivityIdString;
+	uint8<"Uint8", 11, -1, "", 1, 1, "", "", "", "", "", "Index for the Leader Board entry selected as the default race participant", "", ""> @DefaultRaceLeader;
+};

@@ -1,0 +1,26 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> CalfRaiseExerciseName
+{
+	@_3WayCalfRaise = 0x0000, // Value: 0, Comment: 
+	@_3WayWeightedCalfRaise = 0x0001, // Value: 1, Comment: 
+	@_3WaySingleLegCalfRaise = 0x0002, // Value: 2, Comment: 
+	@_3WayWeightedSingleLegCalfRaise = 0x0003, // Value: 3, Comment: 
+	@DonkeyCalfRaise = 0x0004, // Value: 4, Comment: 
+	@WeightedDonkeyCalfRaise = 0x0005, // Value: 5, Comment: 
+	@SeatedCalfRaise = 0x0006, // Value: 6, Comment: 
+	@WeightedSeatedCalfRaise = 0x0007, // Value: 7, Comment: 
+	@SeatedDumbbellToeRaise = 0x0008, // Value: 8, Comment: 
+	@SingleLegBentKneeCalfRaise = 0x0009, // Value: 9, Comment: 
+	@WeightedSingleLegBentKneeCalfRaise = 0x000A, // Value: 10, Comment: 
+	@SingleLegDeclinePushUp = 0x000B, // Value: 11, Comment: 
+	@SingleLegDonkeyCalfRaise = 0x000C, // Value: 12, Comment: 
+	@WeightedSingleLegDonkeyCalfRaise = 0x000D, // Value: 13, Comment: 
+	@SingleLegHipRaiseWithKneeHold = 0x000E, // Value: 14, Comment: 
+	@SingleLegStandingCalfRaise = 0x000F, // Value: 15, Comment: 
+	@SingleLegStandingDumbbellCalfRaise = 0x0010, // Value: 16, Comment: 
+	@StandingBarbellCalfRaise = 0x0011, // Value: 17, Comment: 
+	@StandingCalfRaise = 0x0012, // Value: 18, Comment: 
+	@WeightedStandingCalfRaise = 0x0013, // Value: 19, Comment: 
+	@StandingDumbbellCalfRaise = 0x0014 // Value: 20, Comment: 
+};

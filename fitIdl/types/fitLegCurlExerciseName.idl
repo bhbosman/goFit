@@ -1,0 +1,17 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> LegCurlExerciseName
+{
+	@LegCurl = 0x0000, // Value: 0, Comment: 
+	@WeightedLegCurl = 0x0001, // Value: 1, Comment: 
+	@GoodMorning = 0x0002, // Value: 2, Comment: 
+	@SeatedBarbellGoodMorning = 0x0003, // Value: 3, Comment: 
+	@SingleLegBarbellGoodMorning = 0x0004, // Value: 4, Comment: 
+	@SingleLegSlidingLegCurl = 0x0005, // Value: 5, Comment: 
+	@SlidingLegCurl = 0x0006, // Value: 6, Comment: 
+	@SplitBarbellGoodMorning = 0x0007, // Value: 7, Comment: 
+	@SplitStanceExtension = 0x0008, // Value: 8, Comment: 
+	@StaggeredStanceGoodMorning = 0x0009, // Value: 9, Comment: 
+	@SwissBallHipRaiseAndLegCurl = 0x000A, // Value: 10, Comment: 
+	@ZercherGoodMorning = 0x000B // Value: 11, Comment: 
+};

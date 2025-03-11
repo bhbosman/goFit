@@ -1,0 +1,37 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"BikeProfile", ""> BikeProfile {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	string<"String", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "16"> @Name;
+	Sport<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Sport;
+	SubSport<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SubSport;
+	uint32<"Uint32", 3, -1, "", 100, 1, "m", "", "", "", "", "", "", "1"> @Odometer;
+	uint16<"Uint16z", 4, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikeSpdAntId;
+	uint16<"Uint16z", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikeCadAntId;
+	uint16<"Uint16z", 6, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikeSpdcadAntId;
+	uint16<"Uint16z", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikePowerAntId;
+	uint16<"Uint16", 8, -1, "", 1000, 1, "m", "", "", "", "", "", "", "1"> @CustomWheelsize;
+	uint16<"Uint16", 9, -1, "", 1000, 1, "m", "", "", "", "", "", "", "1"> @AutoWheelsize;
+	uint16<"Uint16", 10, -1, "", 10, 1, "kg", "", "", "", "", "", "", "1"> @BikeWeight;
+	uint16<"Uint16", 11, -1, "", 10, 1, "%", "", "", "", "", "", "", "1"> @PowerCalFactor;
+	bool<"Bool", 12, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @AutoWheelCal;
+	bool<"Bool", 13, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @AutoPowerZero;
+	uint8<"Uint8", 14, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Id;
+	bool<"Bool", 15, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SpdEnabled;
+	bool<"Bool", 16, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @CadEnabled;
+	bool<"Bool", 17, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SpdcadEnabled;
+	bool<"Bool", 18, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @PowerEnabled;
+	uint8<"Uint8", 19, -1, "", 2, -110, "mm", "", "", "", "", "", "", "1"> @CrankLength;
+	bool<"Bool", 20, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Enabled;
+	uint8<"Uint8z", 21, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikeSpdAntIdTransType;
+	uint8<"Uint8z", 22, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikeCadAntIdTransType;
+	uint8<"Uint8z", 23, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikeSpdcadAntIdTransType;
+	uint8<"Uint8z", 24, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @BikePowerAntIdTransType;
+	uint8<"Uint8", 37, -1, "", 1, 1, "", "", "", "", "", "Rollover counter that can be used to extend the odometer", "", "1"> @OdometerRollover;
+	uint8<"Uint8z", 38, -1, "", 1, 1, "", "", "", "", "", "Number of front gears", "", "1"> @FrontGearNum;
+	uint8<"Uint8z", 39, 0, "", 1, 1, "", "", "", "", "", "Number of teeth on each gear 0 is innermost", "", "1"> @FrontGear;
+	uint8<"Uint8z", 40, -1, "", 1, 1, "", "", "", "", "", "Number of rear gears", "", "1"> @RearGearNum;
+	uint8<"Uint8z", 41, 0, "", 1, 1, "", "", "", "", "", "Number of teeth on each gear 0 is innermost", "", "1"> @RearGear;
+	bool<"Bool", 44, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ShimanoDi2Enabled;
+};

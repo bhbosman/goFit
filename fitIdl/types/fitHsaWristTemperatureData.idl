@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaWristTemperatureData", ""> HsaWristTemperatureData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "s", "", "", "", "", "Processing interval length in seconds", "", ""> @ProcessingInterval;
+	uint16<"Uint16", 1, 0, "", 1000, 1, "degC", "", "", "", "", "Wrist temperature reading", "", ""> @Value;
+};

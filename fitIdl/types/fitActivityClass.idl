@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ActivityClass
+{
+	@Level = 0x7F, // Value: 127, Comment: 
+	@LevelMax = 0x64, // Value: 100, Comment: 
+	@Athlete = 0x80 // Value: 128, Comment: 
+};

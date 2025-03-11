@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> TimerTrigger
+{
+	@Manual = 0x00, // Value: 0, Comment: timer event data
+	@Auto = 0x01, // Value: 1, Comment: timer event data
+	@FitnessEquipment = 0x02 // Value: 2, Comment: timer event data
+};

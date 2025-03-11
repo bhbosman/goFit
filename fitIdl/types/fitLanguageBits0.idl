@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> LanguageBits0
+{
+	@English = 0x01, // Value: 1, Comment: Bit field corresponding to language enum type (1 << language).
+	@French = 0x02, // Value: 2, Comment: Bit field corresponding to language enum type (1 << language).
+	@Italian = 0x04, // Value: 4, Comment: Bit field corresponding to language enum type (1 << language).
+	@German = 0x08, // Value: 8, Comment: Bit field corresponding to language enum type (1 << language).
+	@Spanish = 0x10, // Value: 16, Comment: Bit field corresponding to language enum type (1 << language).
+	@Croatian = 0x20, // Value: 32, Comment: Bit field corresponding to language enum type (1 << language).
+	@Czech = 0x40, // Value: 64, Comment: Bit field corresponding to language enum type (1 << language).
+	@Danish = 0x80 // Value: 128, Comment: Bit field corresponding to language enum type (1 << language).
+};

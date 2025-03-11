@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HrmProfile", ""> HrmProfile {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	bool<"Bool", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Enabled;
+	uint16<"Uint16z", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @HrmAntId;
+	bool<"Bool", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @LogHrv;
+	uint8<"Uint8z", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @HrmAntIdTransType;
+};

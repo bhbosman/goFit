@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> Checksum
+{
+	@Clear = 0x00, // Value: 0, Comment: 
+	@Ok = 0x01 // Value: 1, Comment: 
+};

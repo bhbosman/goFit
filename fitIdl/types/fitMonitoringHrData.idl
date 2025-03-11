@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"MonitoringHrData", ""> MonitoringHrData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Must align to logging interval, for example, time must be 00:00:00 for daily log.", "", "1"> @Timestamp;
+	uint8<"Uint8", 0, -1, "", 1, 1, "bpm", "", "", "", "", "7-day rolling average", "", "1"> @RestingHeartRate;
+	uint8<"Uint8", 1, -1, "", 1, 1, "bpm", "", "", "", "", "RHR for today only. (Feeds into 7-day average)", "", "1"> @CurrentDayRestingHeartRate;
+};

@@ -1,0 +1,29 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"DeviceSettings", ""> DeviceSettings {
+	uint8<"Uint8", 0, -1, "", 1, 1, "", "", "", "", "", "Index into time zone arrays.", "", "1"> @ActiveTimeZone;
+	uint32<"Uint32", 1, -1, "", 1, 1, "", "", "", "", "", "Offset from system time. Required to convert timestamp from system time to UTC.", "", "1"> @UtcOffset;
+	uint32<"Uint32", 2, 0, "", 1, 1, "s", "", "", "", "", "Offset from system time.", "", "2"> @TimeOffset;
+	TimeMode<"Enum", 4, 0, "", 1, 1, "", "", "", "", "", "Display mode for the time", "", "2"> @TimeMode;
+	int8<"Sint8", 5, 0, "", 4, 1, "hr", "", "", "", "", "timezone offset in 1/4 hour increments", "", "2"> @TimeZoneOffset;
+	BacklightMode<"Enum", 12, -1, "", 1, 1, "", "", "", "", "", "Mode for backlight", "", "1"> @BacklightMode;
+	bool<"Bool", 36, -1, "", 1, 1, "", "", "", "", "", "Enabled state of the activity tracker functionality", "", "1"> @ActivityTrackerEnabled;
+	uint32<"Uint32", 39, -1, "", 1, 1, "", "", "", "", "", "UTC timestamp used to set the devices clock and date", "", "1"> @ClockTime;
+	uint16<"Uint16", 40, 0, "", 1, 1, "", "", "", "", "", "Bitfield to configure enabled screens for each supported loop", "", "1"> @PagesEnabled;
+	bool<"Bool", 46, -1, "", 1, 1, "", "", "", "", "", "Enabled state of the move alert", "", "1"> @MoveAlertEnabled;
+	DateMode<"Enum", 47, -1, "", 1, 1, "", "", "", "", "", "Display mode for the date", "", "1"> @DateMode;
+	DisplayOrientation<"Enum", 55, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @DisplayOrientation;
+	Side<"Enum", 56, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MountingSide;
+	uint16<"Uint16", 57, 0, "", 1, 1, "", "", "", "", "", "Bitfield to indicate one page as default for each supported loop", "", "1"> @DefaultPage;
+	uint16<"Uint16", 58, -1, "", 1, 1, "steps", "", "", "", "", "Minimum steps before an autosync can occur", "", "1"> @AutosyncMinSteps;
+	uint16<"Uint16", 59, -1, "", 1, 1, "minutes", "", "", "", "", "Minimum minutes before an autosync can occur", "", "1"> @AutosyncMinTime;
+	bool<"Bool", 80, -1, "", 1, 1, "", "", "", "", "", "Enable auto-detect setting for the lactate threshold feature.", "", ""> @LactateThresholdAutodetectEnabled;
+	bool<"Bool", 86, -1, "", 1, 1, "", "", "", "", "", "Automatically upload using BLE", "", ""> @BleAutoUploadEnabled;
+	AutoSyncFrequency<"Enum", 89, -1, "", 1, 1, "", "", "", "", "", "Helps to conserve battery by changing modes", "", ""> @AutoSyncFrequency;
+	AutoActivityDetect<"Enum", 90, -1, "", 1, 1, "", "", "", "", "", "Allows setting specific activities auto-activity detect enabled/disabled settings", "", ""> @AutoActivityDetect;
+	uint8<"Uint8", 94, -1, "", 1, 1, "", "", "", "", "", "Number of screens configured to display", "", ""> @NumberOfScreens;
+	DisplayOrientation<"Enum", 95, -1, "", 1, 1, "", "", "", "", "", "Smart Notification display orientation", "", ""> @SmartNotificationDisplayOrientation;
+	Switch<"Enum", 134, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @TapInterface;
+	TapSensitivity<"Enum", 174, -1, "", 1, 1, "", "", "", "", "", "Used to hold the tap threshold setting", "", "1"> @TapSensitivity;
+};

@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> Switch
+{
+	@Off = 0x00, // Value: 0, Comment: 
+	@On = 0x01, // Value: 1, Comment: 
+	@Auto = 0x02 // Value: 2, Comment: 
+};

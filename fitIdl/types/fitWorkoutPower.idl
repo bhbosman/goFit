@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0xFFFFFFFF> WorkoutPower
+{
+	@WattsOffset = 0x000003E8 // Value: 1000, Comment: 0 - 1000 indicates % of functional threshold power; >1000 indicates watts plus 1000.
+};

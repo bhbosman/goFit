@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"TankSummary", ""> TankSummary {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	AntChannelId<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Sensor;
+	uint16<"Uint16", 1, -1, "", 100, 1, "bar", "", "", "", "", "", "", ""> @StartPressure;
+	uint16<"Uint16", 2, -1, "", 100, 1, "bar", "", "", "", "", "", "", ""> @EndPressure;
+	uint32<"Uint32", 3, -1, "", 100, 1, "L", "", "", "", "", "", "", ""> @VolumeUsed;
+};

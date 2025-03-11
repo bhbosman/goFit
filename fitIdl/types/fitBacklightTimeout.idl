@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> BacklightTimeout
+{
+	@Infinite = 0x00 // Value: 0, Comment: Timeout in seconds.
+};

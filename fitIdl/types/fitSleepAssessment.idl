@@ -1,0 +1,19 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SleepAssessment", ""> SleepAssessment {
+	uint8<"Uint8", 0, -1, "", 1, 1, "", "", "", "", "", "Average of awake_time_score and awakenings_count_score. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @CombinedAwakeScore;
+	uint8<"Uint8", 1, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the total time spent awake between sleep. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @AwakeTimeScore;
+	uint8<"Uint8", 2, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the number of awakenings that interrupt sleep. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @AwakeningsCountScore;
+	uint8<"Uint8", 3, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the amount of deep sleep. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @DeepSleepScore;
+	uint8<"Uint8", 4, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the quality of sleep based on sleep stages, heart-rate variability and possible awakenings during the night. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @SleepDurationScore;
+	uint8<"Uint8", 5, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the amount of light sleep. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @LightSleepScore;
+	uint8<"Uint8", 6, -1, "", 1, 1, "", "", "", "", "", "Total score that summarizes the overall quality of sleep, combining sleep duration and quality. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @OverallSleepScore;
+	uint8<"Uint8", 7, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the quality of sleep based on sleep stages, heart-rate variability and possible awakenings during the night. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @SleepQualityScore;
+	uint8<"Uint8", 8, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates stress and recovery during sleep. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @SleepRecoveryScore;
+	uint8<"Uint8", 9, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the amount of REM sleep. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @RemSleepScore;
+	uint8<"Uint8", 10, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the amount of restlessness during sleep. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @SleepRestlessnessScore;
+	uint8<"Uint8", 11, -1, "", 1, 1, "", "", "", "", "", "The number of awakenings during sleep.", "", ""> @AwakeningsCount;
+	uint8<"Uint8", 14, -1, "", 1, 1, "", "", "", "", "", "Score that evaluates the sleep interruptions. If valid: 0 (worst) to 100 (best). If unknown: FIT_UINT8_INVALID.", "", ""> @InterruptionsScore;
+	uint16<"Uint16", 15, -1, "", 100, 1, "", "", "", "", "", "Excludes stress during awake periods in the sleep window", "", ""> @AverageStressDuringSleep;
+};

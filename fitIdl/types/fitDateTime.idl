@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0xFFFFFFFF> DateTime
+{
+	@Min = 0x10000000 // Value: 268435456, Comment: seconds since UTC 00:00 Dec 31 1989
+};

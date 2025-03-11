@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"VideoTitle", ""> VideoTitle {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "Long titles will be split into multiple parts", "", "1"> @MessageIndex;
+	uint16<"Uint16", 0, -1, "", 1, 1, "", "", "", "", "", "Total number of title parts", "", "1"> @MessageCount;
+	string<"String", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "80"> @Text;
+};

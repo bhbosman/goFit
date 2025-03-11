@@ -1,0 +1,34 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"UserProfile", ""> UserProfile {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	string<"String", 0, -1, "", 1, 1, "", "", "", "", "", "Used for Morning Report greeting", "", "16"> @FriendlyName;
+	Gender<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Gender;
+	uint8<"Uint8", 2, -1, "", 1, 1, "years", "", "", "", "", "", "", "1"> @Age;
+	uint8<"Uint8", 3, -1, "", 100, 1, "m", "", "", "", "", "", "", "1"> @Height;
+	uint16<"Uint16", 4, -1, "", 10, 1, "kg", "", "", "", "", "", "", "1"> @Weight;
+	Language<"Enum", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Language;
+	DisplayMeasure<"Enum", 6, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ElevSetting;
+	DisplayMeasure<"Enum", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @WeightSetting;
+	uint8<"Uint8", 8, -1, "", 1, 1, "bpm", "", "", "", "", "", "", "1"> @RestingHeartRate;
+	uint8<"Uint8", 9, -1, "", 1, 1, "bpm", "", "", "", "", "", "", "1"> @DefaultMaxRunningHeartRate;
+	uint8<"Uint8", 10, -1, "", 1, 1, "bpm", "", "", "", "", "", "", "1"> @DefaultMaxBikingHeartRate;
+	uint8<"Uint8", 11, -1, "", 1, 1, "bpm", "", "", "", "", "", "", "1"> @DefaultMaxHeartRate;
+	DisplayHeart<"Enum", 12, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @HrSetting;
+	DisplayMeasure<"Enum", 13, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @SpeedSetting;
+	DisplayMeasure<"Enum", 14, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @DistSetting;
+	DisplayPower<"Enum", 16, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @PowerSetting;
+	ActivityClass<"Enum", 17, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ActivityClass;
+	DisplayPosition<"Enum", 18, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @PositionSetting;
+	DisplayMeasure<"Enum", 21, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @TemperatureSetting;
+	UserLocalId<"Enum", 22, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @LocalId;
+	byte<"Byte", 23, 0, "", 1, 1, "", "", "", "", "", "", "", "1"> @GlobalId;
+	LocaltimeIntoDay<"Enum", 28, -1, "", 1, 1, "", "", "", "", "", "Typical wake time", "", ""> @WakeTime;
+	LocaltimeIntoDay<"Enum", 29, -1, "", 1, 1, "", "", "", "", "", "Typical bed time", "", ""> @SleepTime;
+	DisplayMeasure<"Enum", 30, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @HeightSetting;
+	uint16<"Uint16", 31, -1, "", 1000, 1, "m", "", "", "", "", "User defined running step length set to 0 for auto length", "", "1"> @UserRunningStepLength;
+	uint16<"Uint16", 32, -1, "", 1000, 1, "m", "", "", "", "", "User defined walking step length set to 0 for auto length", "", "1"> @UserWalkingStepLength;
+	DisplayMeasure<"Enum", 47, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @DepthSetting;
+	uint32<"Uint32", 49, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @DiveCount;
+};

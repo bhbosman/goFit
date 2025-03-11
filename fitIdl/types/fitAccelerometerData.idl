@@ -1,0 +1,17 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"AccelerometerData", ""> AccelerometerData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the timestamp", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the timestamp.", "", ""> @TimestampMs;
+	uint16<"Uint16", 1, 0, "", 1, 1, "ms", "", "", "", "", "Each time in the array describes the time at which the accelerometer sample with the corrosponding index was taken. Limited to 30 samples in each message. The samples may span across seconds. Array size must match the number of samples in accel_x and accel_y and accel_z", "", ""> @SampleTimeOffset;
+	uint16<"Uint16", 2, 0, "", 1, 1, "counts", "", "", "", "", "These are the raw ADC reading. Maximum number of samples is 30 in each message. The samples may span across seconds. A conversion will need to be done on this data once read.", "", ""> @AccelX;
+	uint16<"Uint16", 3, 0, "", 1, 1, "counts", "", "", "", "", "These are the raw ADC reading. Maximum number of samples is 30 in each message. The samples may span across seconds. A conversion will need to be done on this data once read.", "", ""> @AccelY;
+	uint16<"Uint16", 4, 0, "", 1, 1, "counts", "", "", "", "", "These are the raw ADC reading. Maximum number of samples is 30 in each message. The samples may span across seconds. A conversion will need to be done on this data once read.", "", ""> @AccelZ;
+	float32<"Float32", 5, 0, "", 1, 1, "g", "", "", "", "", "Calibrated accel reading", "", ""> @CalibratedAccelX;
+	float32<"Float32", 6, 0, "", 1, 1, "g", "", "", "", "", "Calibrated accel reading", "", ""> @CalibratedAccelY;
+	float32<"Float32", 7, 0, "", 1, 1, "g", "", "", "", "", "Calibrated accel reading", "", ""> @CalibratedAccelZ;
+	int16<"Sint16", 8, 0, "", 1, 1, "mG", "", "", "", "", "Calibrated accel reading", "", ""> @CompressedCalibratedAccelX;
+	int16<"Sint16", 9, 0, "", 1, 1, "mG", "", "", "", "", "Calibrated accel reading", "", ""> @CompressedCalibratedAccelY;
+	int16<"Sint16", 10, 0, "", 1, 1, "mG", "", "", "", "", "Calibrated accel reading", "", ""> @CompressedCalibratedAccelZ;
+};

@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"ChronoShotData", ""> ChronoShotData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Timestamp;
+	uint32<"Uint32", 0, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @ShotSpeed;
+	uint16<"Uint16", 1, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ShotNum;
+};

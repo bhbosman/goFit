@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> FileFlags
+{
+	@Read = 0x02, // Value: 2, Comment: 
+	@Write = 0x04, // Value: 4, Comment: 
+	@Erase = 0x08 // Value: 8, Comment: 
+};

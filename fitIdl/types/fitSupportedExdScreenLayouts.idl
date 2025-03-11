@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0x00000000> SupportedExdScreenLayouts
+{
+	@FullScreen = 0x00000001, // Value: 1, Comment: 
+	@HalfVertical = 0x00000002, // Value: 2, Comment: 
+	@HalfHorizontal = 0x00000004, // Value: 4, Comment: 
+	@HalfVerticalRightSplit = 0x00000008, // Value: 8, Comment: 
+	@HalfHorizontalBottomSplit = 0x00000010, // Value: 16, Comment: 
+	@FullQuarterSplit = 0x00000020, // Value: 32, Comment: 
+	@HalfVerticalLeftSplit = 0x00000040, // Value: 64, Comment: 
+	@HalfHorizontalTopSplit = 0x00000080 // Value: 128, Comment: 
+};

@@ -1,0 +1,27 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> CardioExerciseName
+{
+	@BobAndWeaveCircle = 0x0000, // Value: 0, Comment: 
+	@WeightedBobAndWeaveCircle = 0x0001, // Value: 1, Comment: 
+	@CardioCoreCrawl = 0x0002, // Value: 2, Comment: 
+	@WeightedCardioCoreCrawl = 0x0003, // Value: 3, Comment: 
+	@DoubleUnder = 0x0004, // Value: 4, Comment: 
+	@WeightedDoubleUnder = 0x0005, // Value: 5, Comment: 
+	@JumpRope = 0x0006, // Value: 6, Comment: 
+	@WeightedJumpRope = 0x0007, // Value: 7, Comment: 
+	@JumpRopeCrossover = 0x0008, // Value: 8, Comment: 
+	@WeightedJumpRopeCrossover = 0x0009, // Value: 9, Comment: 
+	@JumpRopeJog = 0x000A, // Value: 10, Comment: 
+	@WeightedJumpRopeJog = 0x000B, // Value: 11, Comment: 
+	@JumpingJacks = 0x000C, // Value: 12, Comment: 
+	@WeightedJumpingJacks = 0x000D, // Value: 13, Comment: 
+	@SkiMoguls = 0x000E, // Value: 14, Comment: 
+	@WeightedSkiMoguls = 0x000F, // Value: 15, Comment: 
+	@SplitJacks = 0x0010, // Value: 16, Comment: 
+	@WeightedSplitJacks = 0x0011, // Value: 17, Comment: 
+	@SquatJacks = 0x0012, // Value: 18, Comment: 
+	@WeightedSquatJacks = 0x0013, // Value: 19, Comment: 
+	@TripleUnder = 0x0014, // Value: 20, Comment: 
+	@WeightedTripleUnder = 0x0015 // Value: 21, Comment: 
+};

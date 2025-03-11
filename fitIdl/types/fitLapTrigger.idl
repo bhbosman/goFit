@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> LapTrigger
+{
+	@Manual = 0x00, // Value: 0, Comment: 
+	@Time = 0x01, // Value: 1, Comment: 
+	@Distance = 0x02, // Value: 2, Comment: 
+	@PositionStart = 0x03, // Value: 3, Comment: 
+	@PositionLap = 0x04, // Value: 4, Comment: 
+	@PositionWaypoint = 0x05, // Value: 5, Comment: 
+	@PositionMarked = 0x06, // Value: 6, Comment: 
+	@SessionEnd = 0x07, // Value: 7, Comment: 
+	@FitnessEquipment = 0x08 // Value: 8, Comment: 
+};

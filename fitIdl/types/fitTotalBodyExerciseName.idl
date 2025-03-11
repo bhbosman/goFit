@@ -1,0 +1,18 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> TotalBodyExerciseName
+{
+	@Burpee = 0x0000, // Value: 0, Comment: 
+	@WeightedBurpee = 0x0001, // Value: 1, Comment: 
+	@BurpeeBoxJump = 0x0002, // Value: 2, Comment: 
+	@WeightedBurpeeBoxJump = 0x0003, // Value: 3, Comment: 
+	@HighPullBurpee = 0x0004, // Value: 4, Comment: 
+	@ManMakers = 0x0005, // Value: 5, Comment: 
+	@OneArmBurpee = 0x0006, // Value: 6, Comment: 
+	@SquatThrusts = 0x0007, // Value: 7, Comment: 
+	@WeightedSquatThrusts = 0x0008, // Value: 8, Comment: 
+	@SquatPlankPushUp = 0x0009, // Value: 9, Comment: 
+	@WeightedSquatPlankPushUp = 0x000A, // Value: 10, Comment: 
+	@StandingTRotationBalance = 0x000B, // Value: 11, Comment: 
+	@WeightedStandingTRotationBalance = 0x000C // Value: 12, Comment: 
+};

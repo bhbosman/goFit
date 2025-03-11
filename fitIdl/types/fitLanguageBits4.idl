@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> LanguageBits4
+{
+	@BrazilianPortuguese = 0x01, // Value: 1, Comment: 
+	@Indonesian = 0x02, // Value: 2, Comment: 
+	@Malaysian = 0x04, // Value: 4, Comment: 
+	@Vietnamese = 0x08, // Value: 8, Comment: 
+	@Burmese = 0x10, // Value: 16, Comment: 
+	@Mongolian = 0x20 // Value: 32, Comment: 
+};

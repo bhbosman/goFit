@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> DiveGasMode
+{
+	@OpenCircuit = 0x00, // Value: 0, Comment: 
+	@ClosedCircuitDiluent = 0x01 // Value: 1, Comment: 
+};

@@ -1,0 +1,17 @@
+
+{{ $constantDecl := . -}}
+// {{.Name}}: {{if ne .Comment ""}}{{.Comment}}{{end}}
+enum<{{.Type}}, {{.Type.InvalidValue}}> {{.Name}}
+{
+{{range .ConstantValue }}
+    {{- if or (or (or (eq $constantDecl.Type "enum") (eq $constantDecl.Type "byte")) (eq $constantDecl.Type "uint8")) (eq $constantDecl.Type "uint8z") -}}
+        {{$constantDecl.Name -}}{{.Name}} {{$constantDecl.Name}} = 0x{{printf "%02X" .Value}} // ByteValue: {{.Value}} {{.Comment -}}
+    {{- else if or (eq $constantDecl.Type "uint16") (eq $constantDecl.Type "uint16z") -}}
+        {{$constantDecl.Name}}{{.Name}} {{$constantDecl.Name}} = 0x{{printf "%04X" .Value}} // Int16 Value: {{.Value}} {{.Comment -}}
+    {{- else -}}
+        {{$constantDecl.Name}}{{.Name}} {{$constantDecl.Name}} = 0x{{printf "%08X" .Value}} // Int32 Value: {{.Value}} {{.Comment -}}
+    {{end }}
+{{end -}}
+
+};
+

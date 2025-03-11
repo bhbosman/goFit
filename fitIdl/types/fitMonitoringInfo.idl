@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"MonitoringInfo", ""> MonitoringInfo {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", "1"> @Timestamp;
+	LocalDateTime<"Enum", 0, -1, "", 1, 1, "s", "", "", "", "", "Use to convert activity timestamps to local time if device does not support time zone and daylight savings time correction.", "", "1"> @LocalTimestamp;
+	ActivityType<"Enum", 1, 0, "", 1, 1, "", "", "", "", "", "", "", ""> @ActivityType;
+	uint16<"Uint16", 3, 0, "", 5000, 1, "m/cycle", "", "", "", "", "Indexed by activity_type", "", ""> @CyclesToDistance;
+	uint16<"Uint16", 4, 0, "", 5000, 1, "kcal/cycle", "", "", "", "", "Indexed by activity_type", "", ""> @CyclesToCalories;
+	uint16<"Uint16", 5, -1, "", 1, 1, "kcal / day", "", "", "", "", "", "", ""> @RestingMetabolicRate;
+};

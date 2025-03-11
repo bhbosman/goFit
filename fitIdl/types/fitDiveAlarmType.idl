@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> DiveAlarmType
+{
+	@Depth = 0x00, // Value: 0, Comment: 
+	@Time = 0x01, // Value: 1, Comment: 
+	@Speed = 0x02 // Value: 2, Comment: 
+};

@@ -1,0 +1,47 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> DisplayPosition
+{
+	@Degree = 0x00, // Value: 0, Comment: 
+	@DegreeMinute = 0x01, // Value: 1, Comment: 
+	@DegreeMinuteSecond = 0x02, // Value: 2, Comment: 
+	@AustrianGrid = 0x03, // Value: 3, Comment: 
+	@BritishGrid = 0x04, // Value: 4, Comment: 
+	@DutchGrid = 0x05, // Value: 5, Comment: 
+	@HungarianGrid = 0x06, // Value: 6, Comment: 
+	@FinnishGrid = 0x07, // Value: 7, Comment: 
+	@GermanGrid = 0x08, // Value: 8, Comment: 
+	@IcelandicGrid = 0x09, // Value: 9, Comment: 
+	@IndonesianEquatorial = 0x0A, // Value: 10, Comment: 
+	@IndonesianIrian = 0x0B, // Value: 11, Comment: 
+	@IndonesianSouthern = 0x0C, // Value: 12, Comment: 
+	@IndiaZone0 = 0x0D, // Value: 13, Comment: 
+	@IndiaZoneIA = 0x0E, // Value: 14, Comment: 
+	@IndiaZoneIB = 0x0F, // Value: 15, Comment: 
+	@IndiaZoneIIA = 0x10, // Value: 16, Comment: 
+	@IndiaZoneIIB = 0x11, // Value: 17, Comment: 
+	@IndiaZoneIIIA = 0x12, // Value: 18, Comment: 
+	@IndiaZoneIIIB = 0x13, // Value: 19, Comment: 
+	@IndiaZoneIVA = 0x14, // Value: 20, Comment: 
+	@IndiaZoneIVB = 0x15, // Value: 21, Comment: 
+	@IrishTransverse = 0x16, // Value: 22, Comment: 
+	@IrishGrid = 0x17, // Value: 23, Comment: 
+	@Loran = 0x18, // Value: 24, Comment: 
+	@MaidenheadGrid = 0x19, // Value: 25, Comment: 
+	@MgrsGrid = 0x1A, // Value: 26, Comment: 
+	@NewZealandGrid = 0x1B, // Value: 27, Comment: 
+	@NewZealandTransverse = 0x1C, // Value: 28, Comment: 
+	@QatarGrid = 0x1D, // Value: 29, Comment: 
+	@ModifiedSwedishGrid = 0x1E, // Value: 30, Comment: 
+	@SwedishGrid = 0x1F, // Value: 31, Comment: 
+	@SouthAfricanGrid = 0x20, // Value: 32, Comment: 
+	@SwissGrid = 0x21, // Value: 33, Comment: 
+	@TaiwanGrid = 0x22, // Value: 34, Comment: 
+	@UnitedStatesGrid = 0x23, // Value: 35, Comment: 
+	@UtmUpsGrid = 0x24, // Value: 36, Comment: 
+	@WestMalayan = 0x25, // Value: 37, Comment: 
+	@BorneoRso = 0x26, // Value: 38, Comment: 
+	@EstonianGrid = 0x27, // Value: 39, Comment: 
+	@LatvianGrid = 0x28, // Value: 40, Comment: 
+	@SwedishRef99Grid = 0x29 // Value: 41, Comment: 
+};

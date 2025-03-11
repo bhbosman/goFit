@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> Weight
+{
+	@Calculating = 0xFFFE // Value: 65534, Comment: 
+};

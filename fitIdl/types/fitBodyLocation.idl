@@ -1,0 +1,45 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> BodyLocation
+{
+	@LeftLeg = 0x00, // Value: 0, Comment: 
+	@LeftCalf = 0x01, // Value: 1, Comment: 
+	@LeftShin = 0x02, // Value: 2, Comment: 
+	@LeftHamstring = 0x03, // Value: 3, Comment: 
+	@LeftQuad = 0x04, // Value: 4, Comment: 
+	@LeftGlute = 0x05, // Value: 5, Comment: 
+	@RightLeg = 0x06, // Value: 6, Comment: 
+	@RightCalf = 0x07, // Value: 7, Comment: 
+	@RightShin = 0x08, // Value: 8, Comment: 
+	@RightHamstring = 0x09, // Value: 9, Comment: 
+	@RightQuad = 0x0A, // Value: 10, Comment: 
+	@RightGlute = 0x0B, // Value: 11, Comment: 
+	@TorsoBack = 0x0C, // Value: 12, Comment: 
+	@LeftLowerBack = 0x0D, // Value: 13, Comment: 
+	@LeftUpperBack = 0x0E, // Value: 14, Comment: 
+	@RightLowerBack = 0x0F, // Value: 15, Comment: 
+	@RightUpperBack = 0x10, // Value: 16, Comment: 
+	@TorsoFront = 0x11, // Value: 17, Comment: 
+	@LeftAbdomen = 0x12, // Value: 18, Comment: 
+	@LeftChest = 0x13, // Value: 19, Comment: 
+	@RightAbdomen = 0x14, // Value: 20, Comment: 
+	@RightChest = 0x15, // Value: 21, Comment: 
+	@LeftArm = 0x16, // Value: 22, Comment: 
+	@LeftShoulder = 0x17, // Value: 23, Comment: 
+	@LeftBicep = 0x18, // Value: 24, Comment: 
+	@LeftTricep = 0x19, // Value: 25, Comment: 
+	@LeftBrachioradialis = 0x1A, // Value: 26, Comment: 
+	@LeftForearmExtensors = 0x1B, // Value: 27, Comment: 
+	@RightArm = 0x1C, // Value: 28, Comment: 
+	@RightShoulder = 0x1D, // Value: 29, Comment: 
+	@RightBicep = 0x1E, // Value: 30, Comment: 
+	@RightTricep = 0x1F, // Value: 31, Comment: 
+	@RightBrachioradialis = 0x20, // Value: 32, Comment: 
+	@RightForearmExtensors = 0x21, // Value: 33, Comment: 
+	@Neck = 0x22, // Value: 34, Comment: 
+	@Throat = 0x23, // Value: 35, Comment: 
+	@WaistMidBack = 0x24, // Value: 36, Comment: 
+	@WaistFront = 0x25, // Value: 37, Comment: 
+	@WaistLeft = 0x26, // Value: 38, Comment: 
+	@WaistRight = 0x27 // Value: 39, Comment: 
+};

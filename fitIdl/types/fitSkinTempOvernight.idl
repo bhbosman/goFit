@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SkinTempOvernight", ""> SkinTempOvernight {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Timestamp;
+	LocalDateTime<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @LocalTimestamp;
+	float32<"Float32", 1, -1, "", 1, 1, "", "", "", "", "", "The average overnight deviation from baseline temperature in degrees C", "", ""> @AverageDeviation;
+	float32<"Float32", 2, -1, "", 1, 1, "", "", "", "", "", "The average 7 day overnight deviation from baseline temperature in degrees C", "", ""> @Average7DayDeviation;
+	float32<"Float32", 4, -1, "", 1, 1, "", "", "", "", "", "Final overnight temperature value", "", ""> @NightlyValue;
+};

@@ -1,0 +1,28 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"DiveSummary", ""> DiveSummary {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	MesgNum<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ReferenceMesg;
+	MessageIndex<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @ReferenceIndex;
+	uint32<"Uint32", 2, -1, "", 1000, 1, "m", "", "", "", "", "0 if above water", "", ""> @AvgDepth;
+	uint32<"Uint32", 3, -1, "", 1000, 1, "m", "", "", "", "", "0 if above water", "", ""> @MaxDepth;
+	uint32<"Uint32", 4, -1, "", 1, 1, "s", "", "", "", "", "Time since end of last dive", "", ""> @SurfaceInterval;
+	uint8<"Uint8", 5, -1, "", 1, 1, "percent", "", "", "", "", "", "", ""> @StartCns;
+	uint8<"Uint8", 6, -1, "", 1, 1, "percent", "", "", "", "", "", "", ""> @EndCns;
+	uint16<"Uint16", 7, -1, "", 1, 1, "percent", "", "", "", "", "", "", ""> @StartN2;
+	uint16<"Uint16", 8, -1, "", 1, 1, "percent", "", "", "", "", "", "", ""> @EndN2;
+	uint16<"Uint16", 9, -1, "", 1, 1, "OTUs", "", "", "", "", "", "", ""> @O2Toxicity;
+	uint32<"Uint32", 10, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @DiveNumber;
+	uint32<"Uint32", 11, -1, "", 1000, 1, "s", "", "", "", "", "", "", ""> @BottomTime;
+	uint16<"Uint16", 12, -1, "", 100, 1, "bar/min", "", "", "", "", "Average pressure-based surface air consumption", "", ""> @AvgPressureSac;
+	uint16<"Uint16", 13, -1, "", 100, 1, "L/min", "", "", "", "", "Average volumetric surface air consumption", "", ""> @AvgVolumeSac;
+	uint16<"Uint16", 14, -1, "", 100, 1, "L/min", "", "", "", "", "Average respiratory minute volume", "", ""> @AvgRmv;
+	uint32<"Uint32", 15, -1, "", 1000, 1, "s", "", "", "", "", "Time to reach deepest level stop", "", ""> @DescentTime;
+	uint32<"Uint32", 16, -1, "", 1000, 1, "s", "", "", "", "", "Time after leaving bottom until reaching surface", "", ""> @AscentTime;
+	int32<"Sint32", 17, -1, "", 1000, 1, "m/s", "", "", "", "", "Average ascent rate, not including descents or stops", "", ""> @AvgAscentRate;
+	uint32<"Uint32", 22, -1, "", 1000, 1, "m/s", "", "", "", "", "Average descent rate, not including ascents or stops", "", ""> @AvgDescentRate;
+	uint32<"Uint32", 23, -1, "", 1000, 1, "m/s", "", "", "", "", "Maximum ascent rate", "", ""> @MaxAscentRate;
+	uint32<"Uint32", 24, -1, "", 1000, 1, "m/s", "", "", "", "", "Maximum descent rate", "", ""> @MaxDescentRate;
+	uint32<"Uint32", 25, -1, "", 1000, 1, "s", "", "", "", "", "Time spent neither ascending nor descending", "", ""> @HangTime;
+};

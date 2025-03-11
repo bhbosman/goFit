@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> AnalogWatchfaceLayout
+{
+	@Minimal = 0x00, // Value: 0, Comment: 
+	@Traditional = 0x01, // Value: 1, Comment: 
+	@Modern = 0x02 // Value: 2, Comment: 
+};

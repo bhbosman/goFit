@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> SensorType
+{
+	@Accelerometer = 0x00, // Value: 0, Comment: 
+	@Gyroscope = 0x01, // Value: 1, Comment: 
+	@Compass = 0x02, // Value: 2, Comment: 
+	@Barometer = 0x03 // Value: 3, Comment: 
+};

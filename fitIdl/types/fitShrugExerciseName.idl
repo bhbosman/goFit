@@ -1,0 +1,22 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> ShrugExerciseName
+{
+	@BarbellJumpShrug = 0x0000, // Value: 0, Comment: 
+	@BarbellShrug = 0x0001, // Value: 1, Comment: 
+	@BarbellUprightRow = 0x0002, // Value: 2, Comment: 
+	@BehindTheBackSmithMachineShrug = 0x0003, // Value: 3, Comment: 
+	@DumbbellJumpShrug = 0x0004, // Value: 4, Comment: 
+	@DumbbellShrug = 0x0005, // Value: 5, Comment: 
+	@DumbbellUprightRow = 0x0006, // Value: 6, Comment: 
+	@InclineDumbbellShrug = 0x0007, // Value: 7, Comment: 
+	@OverheadBarbellShrug = 0x0008, // Value: 8, Comment: 
+	@OverheadDumbbellShrug = 0x0009, // Value: 9, Comment: 
+	@ScaptionAndShrug = 0x000A, // Value: 10, Comment: 
+	@ScapularRetraction = 0x000B, // Value: 11, Comment: 
+	@SerratusChairShrug = 0x000C, // Value: 12, Comment: 
+	@WeightedSerratusChairShrug = 0x000D, // Value: 13, Comment: 
+	@SerratusShrug = 0x000E, // Value: 14, Comment: 
+	@WeightedSerratusShrug = 0x000F, // Value: 15, Comment: 
+	@WideGripJumpShrug = 0x0010 // Value: 16, Comment: 
+};

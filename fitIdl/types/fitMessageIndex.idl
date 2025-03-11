@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> MessageIndex
+{
+	@Selected = 0x8000, // Value: 32768, Comment: 
+	@Reserved = 0x7000, // Value: 28672, Comment: 
+	@Mask = 0x0FFF // Value: 4095, Comment: 
+};

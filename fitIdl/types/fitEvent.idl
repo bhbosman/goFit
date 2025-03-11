@@ -1,0 +1,51 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> Event
+{
+	@Timer = 0x00, // Value: 0, Comment: 
+	@Workout = 0x03, // Value: 3, Comment: 
+	@WorkoutStep = 0x04, // Value: 4, Comment: 
+	@PowerDown = 0x05, // Value: 5, Comment: 
+	@PowerUp = 0x06, // Value: 6, Comment: 
+	@OffCourse = 0x07, // Value: 7, Comment: 
+	@Session = 0x08, // Value: 8, Comment: 
+	@Lap = 0x09, // Value: 9, Comment: 
+	@CoursePoint = 0x0A, // Value: 10, Comment: 
+	@Battery = 0x0B, // Value: 11, Comment: 
+	@VirtualPartnerPace = 0x0C, // Value: 12, Comment: 
+	@HrHighAlert = 0x0D, // Value: 13, Comment: 
+	@HrLowAlert = 0x0E, // Value: 14, Comment: 
+	@SpeedHighAlert = 0x0F, // Value: 15, Comment: 
+	@SpeedLowAlert = 0x10, // Value: 16, Comment: 
+	@CadHighAlert = 0x11, // Value: 17, Comment: 
+	@CadLowAlert = 0x12, // Value: 18, Comment: 
+	@PowerHighAlert = 0x13, // Value: 19, Comment: 
+	@PowerLowAlert = 0x14, // Value: 20, Comment: 
+	@RecoveryHr = 0x15, // Value: 21, Comment: 
+	@BatteryLow = 0x16, // Value: 22, Comment: 
+	@TimeDurationAlert = 0x17, // Value: 23, Comment: 
+	@DistanceDurationAlert = 0x18, // Value: 24, Comment: 
+	@CalorieDurationAlert = 0x19, // Value: 25, Comment: 
+	@Activity = 0x1A, // Value: 26, Comment: 
+	@FitnessEquipment = 0x1B, // Value: 27, Comment: 
+	@Length = 0x1C, // Value: 28, Comment: 
+	@UserMarker = 0x20, // Value: 32, Comment: 
+	@SportPoint = 0x21, // Value: 33, Comment: 
+	@Calibration = 0x24, // Value: 36, Comment: 
+	@FrontGearChange = 0x2A, // Value: 42, Comment: 
+	@RearGearChange = 0x2B, // Value: 43, Comment: 
+	@RiderPositionChange = 0x2C, // Value: 44, Comment: 
+	@ElevHighAlert = 0x2D, // Value: 45, Comment: 
+	@ElevLowAlert = 0x2E, // Value: 46, Comment: 
+	@CommTimeout = 0x2F, // Value: 47, Comment: 
+	@AutoActivityDetect = 0x36, // Value: 54, Comment: 
+	@DiveAlert = 0x38, // Value: 56, Comment: 
+	@DiveGasSwitched = 0x39, // Value: 57, Comment: 
+	@TankPressureReserve = 0x47, // Value: 71, Comment: 
+	@TankPressureCritical = 0x48, // Value: 72, Comment: 
+	@TankLost = 0x49, // Value: 73, Comment: 
+	@RadarThreatAlert = 0x4B, // Value: 75, Comment: 
+	@TankBatteryLow = 0x4C, // Value: 76, Comment: 
+	@TankPodConnected = 0x51, // Value: 81, Comment: 
+	@TankPodDisconnected = 0x52 // Value: 82, Comment: 
+};

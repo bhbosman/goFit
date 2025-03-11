@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> SportBits0
+{
+	@Generic = 0x01, // Value: 1, Comment: Bit field corresponding to sport enum type (1 << sport).
+	@Running = 0x02, // Value: 2, Comment: Bit field corresponding to sport enum type (1 << sport).
+	@Cycling = 0x04, // Value: 4, Comment: Bit field corresponding to sport enum type (1 << sport).
+	@Transition = 0x08, // Value: 8, Comment: Bit field corresponding to sport enum type (1 << sport).
+	@FitnessEquipment = 0x10, // Value: 16, Comment: Bit field corresponding to sport enum type (1 << sport).
+	@Swimming = 0x20, // Value: 32, Comment: Bit field corresponding to sport enum type (1 << sport).
+	@Basketball = 0x40, // Value: 64, Comment: Bit field corresponding to sport enum type (1 << sport).
+	@Soccer = 0x80 // Value: 128, Comment: Bit field corresponding to sport enum type (1 << sport).
+};

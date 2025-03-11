@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"ZonesTarget", ""> ZonesTarget {
+	uint8<"Uint8", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MaxHeartRate;
+	uint8<"Uint8", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ThresholdHeartRate;
+	uint16<"Uint16", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @FunctionalThresholdPower;
+	HrZoneCalc<"Enum", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @HrCalcType;
+	PwrZoneCalc<"Enum", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @PwrCalcType;
+};

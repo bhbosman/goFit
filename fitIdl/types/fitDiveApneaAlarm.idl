@@ -1,0 +1,18 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"DiveApneaAlarm", ""> DiveApneaAlarm {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "Index of the alarm", "", ""> @MessageIndex;
+	uint32<"Uint32", 0, -1, "", 1000, 1, "m", "", "", "", "", "Depth setting (m) for depth type alarms", "", ""> @Depth;
+	int32<"Sint32", 1, -1, "", 1, 1, "s", "", "", "", "", "Time setting (s) for time type alarms", "", ""> @Time;
+	bool<"Bool", 2, -1, "", 1, 1, "", "", "", "", "", "Enablement flag", "", ""> @Enabled;
+	DiveAlarmType<"Enum", 3, -1, "", 1, 1, "", "", "", "", "", "Alarm type setting", "", ""> @AlarmType;
+	Tone<"Enum", 4, -1, "", 1, 1, "", "", "", "", "", "Tone and Vibe setting for the alarm.", "", ""> @Sound;
+	SubSport<"Enum", 5, 0, "", 1, 1, "", "", "", "", "", "Dive types the alarm will trigger on", "", ""> @DiveTypes;
+	uint32<"Uint32", 6, -1, "", 1, 1, "", "", "", "", "", "Alarm ID", "", ""> @Id;
+	bool<"Bool", 7, -1, "", 1, 1, "", "", "", "", "", "Show a visible pop-up for this alarm", "", ""> @PopupEnabled;
+	bool<"Bool", 8, -1, "", 1, 1, "", "", "", "", "", "Trigger the alarm on descent", "", ""> @TriggerOnDescent;
+	bool<"Bool", 9, -1, "", 1, 1, "", "", "", "", "", "Trigger the alarm on ascent", "", ""> @TriggerOnAscent;
+	bool<"Bool", 10, -1, "", 1, 1, "", "", "", "", "", "Repeat alarm each time threshold is crossed?", "", ""> @Repeating;
+	int32<"Sint32", 11, -1, "", 1000, 1, "mps", "", "", "", "", "Ascent/descent rate (mps) setting for speed type alarms", "", ""> @Speed;
+};

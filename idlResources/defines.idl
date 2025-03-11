@@ -1,0 +1,6 @@
+#define da (a,a,d) (222)
+#define da (a,d) \
+    f(\
+        ddd(),\
+        a,s,d, 222, (222))
+

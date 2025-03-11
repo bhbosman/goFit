@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> SessionTrigger
+{
+	@ActivityEnd = 0x00, // Value: 0, Comment: 
+	@Manual = 0x01, // Value: 1, Comment: 
+	@AutoMultiSport = 0x02, // Value: 2, Comment: 
+	@FitnessEquipment = 0x03 // Value: 3, Comment: 
+};

@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> LanguageBits1
+{
+	@Dutch = 0x01, // Value: 1, Comment: 
+	@Finnish = 0x02, // Value: 2, Comment: 
+	@Greek = 0x04, // Value: 4, Comment: 
+	@Hungarian = 0x08, // Value: 8, Comment: 
+	@Norwegian = 0x10, // Value: 16, Comment: 
+	@Polish = 0x20, // Value: 32, Comment: 
+	@Portuguese = 0x40, // Value: 64, Comment: 
+	@Slovakian = 0x80 // Value: 128, Comment: 
+};

@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0x00> SportBits2
+{
+	@Mountaineering = 0x01, // Value: 1, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+	@Hiking = 0x02, // Value: 2, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+	@Multisport = 0x04, // Value: 4, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+	@Paddling = 0x08, // Value: 8, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+	@Flying = 0x10, // Value: 16, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+	@EBiking = 0x20, // Value: 32, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+	@Motorcycling = 0x40, // Value: 64, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+	@Boating = 0x80 // Value: 128, Comment: Bit field corresponding to sport enum type (1 << (sport-16)).
+};

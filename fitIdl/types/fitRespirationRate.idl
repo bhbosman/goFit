@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"RespirationRate", ""> RespirationRate {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Timestamp;
+	int16<"Sint16", 0, -1, "", 100, 1, "breaths/min", "", "", "", "", "Breaths * 100 /min, -300 indicates invalid, -200 indicates large motion, -100 indicates off wrist", "", ""> @RespirationRate;
+};

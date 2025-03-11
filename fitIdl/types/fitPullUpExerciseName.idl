@@ -1,0 +1,44 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> PullUpExerciseName
+{
+	@BandedPullUps = 0x0000, // Value: 0, Comment: 
+	@_30DegreeLatPulldown = 0x0001, // Value: 1, Comment: 
+	@BandAssistedChinUp = 0x0002, // Value: 2, Comment: 
+	@CloseGripChinUp = 0x0003, // Value: 3, Comment: 
+	@WeightedCloseGripChinUp = 0x0004, // Value: 4, Comment: 
+	@CloseGripLatPulldown = 0x0005, // Value: 5, Comment: 
+	@CrossoverChinUp = 0x0006, // Value: 6, Comment: 
+	@WeightedCrossoverChinUp = 0x0007, // Value: 7, Comment: 
+	@EzBarPullover = 0x0008, // Value: 8, Comment: 
+	@HangingHurdle = 0x0009, // Value: 9, Comment: 
+	@WeightedHangingHurdle = 0x000A, // Value: 10, Comment: 
+	@KneelingLatPulldown = 0x000B, // Value: 11, Comment: 
+	@KneelingUnderhandGripLatPulldown = 0x000C, // Value: 12, Comment: 
+	@LatPulldown = 0x000D, // Value: 13, Comment: 
+	@MixedGripChinUp = 0x000E, // Value: 14, Comment: 
+	@WeightedMixedGripChinUp = 0x000F, // Value: 15, Comment: 
+	@MixedGripPullUp = 0x0010, // Value: 16, Comment: 
+	@WeightedMixedGripPullUp = 0x0011, // Value: 17, Comment: 
+	@ReverseGripPulldown = 0x0012, // Value: 18, Comment: 
+	@StandingCablePullover = 0x0013, // Value: 19, Comment: 
+	@StraightArmPulldown = 0x0014, // Value: 20, Comment: 
+	@SwissBallEzBarPullover = 0x0015, // Value: 21, Comment: 
+	@TowelPullUp = 0x0016, // Value: 22, Comment: 
+	@WeightedTowelPullUp = 0x0017, // Value: 23, Comment: 
+	@WeightedPullUp = 0x0018, // Value: 24, Comment: 
+	@WideGripLatPulldown = 0x0019, // Value: 25, Comment: 
+	@WideGripPullUp = 0x001A, // Value: 26, Comment: 
+	@WeightedWideGripPullUp = 0x001B, // Value: 27, Comment: 
+	@BurpeePullUp = 0x001C, // Value: 28, Comment: 
+	@WeightedBurpeePullUp = 0x001D, // Value: 29, Comment: 
+	@JumpingPullUps = 0x001E, // Value: 30, Comment: 
+	@WeightedJumpingPullUps = 0x001F, // Value: 31, Comment: 
+	@KippingPullUp = 0x0020, // Value: 32, Comment: 
+	@WeightedKippingPullUp = 0x0021, // Value: 33, Comment: 
+	@LPullUp = 0x0022, // Value: 34, Comment: 
+	@WeightedLPullUp = 0x0023, // Value: 35, Comment: 
+	@SuspendedChinUp = 0x0024, // Value: 36, Comment: 
+	@WeightedSuspendedChinUp = 0x0025, // Value: 37, Comment: 
+	@PullUp = 0x0026 // Value: 38, Comment: 
+};

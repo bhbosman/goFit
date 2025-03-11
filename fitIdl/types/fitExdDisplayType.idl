@@ -1,0 +1,16 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ExdDisplayType
+{
+	@Numerical = 0x00, // Value: 0, Comment: 
+	@Simple = 0x01, // Value: 1, Comment: 
+	@Graph = 0x02, // Value: 2, Comment: 
+	@Bar = 0x03, // Value: 3, Comment: 
+	@CircleGraph = 0x04, // Value: 4, Comment: 
+	@VirtualPartner = 0x05, // Value: 5, Comment: 
+	@Balance = 0x06, // Value: 6, Comment: 
+	@StringList = 0x07, // Value: 7, Comment: 
+	@String = 0x08, // Value: 8, Comment: 
+	@SimpleDynamicIcon = 0x09, // Value: 9, Comment: 
+	@Gauge = 0x0A // Value: 10, Comment: 
+};

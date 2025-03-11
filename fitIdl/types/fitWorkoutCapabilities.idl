@@ -1,0 +1,19 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0x00000000> WorkoutCapabilities
+{
+	@Interval = 0x00000001, // Value: 1, Comment: 
+	@Custom = 0x00000002, // Value: 2, Comment: 
+	@FitnessEquipment = 0x00000004, // Value: 4, Comment: 
+	@Firstbeat = 0x00000008, // Value: 8, Comment: 
+	@NewLeaf = 0x00000010, // Value: 16, Comment: 
+	@Tcx = 0x00000020, // Value: 32, Comment: 
+	@Speed = 0x00000080, // Value: 128, Comment: 
+	@HeartRate = 0x00000100, // Value: 256, Comment: 
+	@Distance = 0x00000200, // Value: 512, Comment: 
+	@Cadence = 0x00000400, // Value: 1024, Comment: 
+	@Power = 0x00000800, // Value: 2048, Comment: 
+	@Grade = 0x00001000, // Value: 4096, Comment: 
+	@Resistance = 0x00002000, // Value: 8192, Comment: 
+	@Protected = 0x00004000 // Value: 16384, Comment: 
+};

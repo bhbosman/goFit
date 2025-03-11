@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Hrv", ""> Hrv {
+	uint16<"Uint16", 0, 0, "", 1000, 1, "s", "", "", "", "", "Time between beats", "", "1"> @Time;
+};

@@ -1,0 +1,26 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> OlympicLiftExerciseName
+{
+	@BarbellHangPowerClean = 0x0000, // Value: 0, Comment: 
+	@BarbellHangSquatClean = 0x0001, // Value: 1, Comment: 
+	@BarbellPowerClean = 0x0002, // Value: 2, Comment: 
+	@BarbellPowerSnatch = 0x0003, // Value: 3, Comment: 
+	@BarbellSquatClean = 0x0004, // Value: 4, Comment: 
+	@CleanAndJerk = 0x0005, // Value: 5, Comment: 
+	@BarbellHangPowerSnatch = 0x0006, // Value: 6, Comment: 
+	@BarbellHangPull = 0x0007, // Value: 7, Comment: 
+	@BarbellHighPull = 0x0008, // Value: 8, Comment: 
+	@BarbellSnatch = 0x0009, // Value: 9, Comment: 
+	@BarbellSplitJerk = 0x000A, // Value: 10, Comment: 
+	@Clean = 0x000B, // Value: 11, Comment: 
+	@DumbbellClean = 0x000C, // Value: 12, Comment: 
+	@DumbbellHangPull = 0x000D, // Value: 13, Comment: 
+	@OneHandDumbbellSplitSnatch = 0x000E, // Value: 14, Comment: 
+	@PushJerk = 0x000F, // Value: 15, Comment: 
+	@SingleArmDumbbellSnatch = 0x0010, // Value: 16, Comment: 
+	@SingleArmHangSnatch = 0x0011, // Value: 17, Comment: 
+	@SingleArmKettlebellSnatch = 0x0012, // Value: 18, Comment: 
+	@SplitJerk = 0x0013, // Value: 19, Comment: 
+	@SquatCleanAndJerk = 0x0014 // Value: 20, Comment: 
+};

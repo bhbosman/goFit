@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Capabilities", ""> Capabilities {
+	uint8<"Uint8z", 0, 0, "", 1, 1, "", "", "", "", "", "Use language_bits_x types where x is index of array.", "", "4"> @Languages;
+	SportBits0<"Enum", 1, 0, "", 1, 1, "", "", "", "", "", "Use sport_bits_x types where x is index of array.", "", "1"> @Sports;
+	WorkoutCapabilities<"Enum", 21, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @WorkoutsSupported;
+	ConnectivityCapabilities<"Enum", 23, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ConnectivitySupported;
+};

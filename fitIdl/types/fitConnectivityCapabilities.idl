@@ -1,0 +1,37 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0x00000000> ConnectivityCapabilities
+{
+	@Bluetooth = 0x00000001, // Value: 1, Comment: 
+	@BluetoothLe = 0x00000002, // Value: 2, Comment: 
+	@Ant = 0x00000004, // Value: 4, Comment: 
+	@ActivityUpload = 0x00000008, // Value: 8, Comment: 
+	@CourseDownload = 0x00000010, // Value: 16, Comment: 
+	@WorkoutDownload = 0x00000020, // Value: 32, Comment: 
+	@LiveTrack = 0x00000040, // Value: 64, Comment: 
+	@WeatherConditions = 0x00000080, // Value: 128, Comment: 
+	@WeatherAlerts = 0x00000100, // Value: 256, Comment: 
+	@GpsEphemerisDownload = 0x00000200, // Value: 512, Comment: 
+	@ExplicitArchive = 0x00000400, // Value: 1024, Comment: 
+	@SetupIncomplete = 0x00000800, // Value: 2048, Comment: 
+	@ContinueSyncAfterSoftwareUpdate = 0x00001000, // Value: 4096, Comment: 
+	@ConnectIqAppDownload = 0x00002000, // Value: 8192, Comment: 
+	@GolfCourseDownload = 0x00004000, // Value: 16384, Comment: 
+	@DeviceInitiatesSync = 0x00008000, // Value: 32768, Comment: 
+	@ConnectIqWatchAppDownload = 0x00010000, // Value: 65536, Comment: 
+	@ConnectIqWidgetDownload = 0x00020000, // Value: 131072, Comment: 
+	@ConnectIqWatchFaceDownload = 0x00040000, // Value: 262144, Comment: 
+	@ConnectIqDataFieldDownload = 0x00080000, // Value: 524288, Comment: 
+	@ConnectIqAppManagment = 0x00100000, // Value: 1048576, Comment: 
+	@SwingSensor = 0x00200000, // Value: 2097152, Comment: 
+	@SwingSensorRemote = 0x00400000, // Value: 4194304, Comment: 
+	@IncidentDetection = 0x00800000, // Value: 8388608, Comment: 
+	@AudioPrompts = 0x01000000, // Value: 16777216, Comment: 
+	@WifiVerification = 0x02000000, // Value: 33554432, Comment: 
+	@TrueUp = 0x04000000, // Value: 67108864, Comment: 
+	@FindMyWatch = 0x08000000, // Value: 134217728, Comment: 
+	@RemoteManualSync = 0x10000000, // Value: 268435456, Comment: 
+	@LiveTrackAutoStart = 0x20000000, // Value: 536870912, Comment: 
+	@LiveTrackMessaging = 0x40000000, // Value: 1073741824, Comment: 
+	@InstantInput = 0x80000000 // Value: 2147483648, Comment: 
+};

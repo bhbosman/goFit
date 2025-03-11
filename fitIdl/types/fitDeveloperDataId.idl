@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"DeveloperDataId", ""> DeveloperDataId {
+	byte<"Byte", 0, 0, "", 1, 1, "", "", "", "", "", "", "", "16"> @DeveloperId;
+	byte<"Byte", 1, 0, "", 1, 1, "", "", "", "", "", "", "", "16"> @ApplicationId;
+	Manufacturer<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ManufacturerId;
+	uint8<"Uint8", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @DeveloperDataIndex;
+	uint32<"Uint32", 4, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @ApplicationVersion;
+};

@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ProjectileType
+{
+	@Arrow = 0x00, // Value: 0, Comment: 
+	@RifleCartridge = 0x01, // Value: 1, Comment: 
+	@PistolCartridge = 0x02, // Value: 2, Comment: 
+	@Shotshell = 0x03, // Value: 3, Comment: 
+	@AirRiflePellet = 0x04, // Value: 4, Comment: 
+	@Other = 0x05 // Value: 5, Comment: 
+};

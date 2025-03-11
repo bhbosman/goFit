@@ -1,0 +1,28 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> ChopExerciseName
+{
+	@CablePullThrough = 0x0000, // Value: 0, Comment: 
+	@CableRotationalLift = 0x0001, // Value: 1, Comment: 
+	@CableWoodchop = 0x0002, // Value: 2, Comment: 
+	@CrossChopToKnee = 0x0003, // Value: 3, Comment: 
+	@WeightedCrossChopToKnee = 0x0004, // Value: 4, Comment: 
+	@DumbbellChop = 0x0005, // Value: 5, Comment: 
+	@HalfKneelingRotation = 0x0006, // Value: 6, Comment: 
+	@WeightedHalfKneelingRotation = 0x0007, // Value: 7, Comment: 
+	@HalfKneelingRotationalChop = 0x0008, // Value: 8, Comment: 
+	@HalfKneelingRotationalReverseChop = 0x0009, // Value: 9, Comment: 
+	@HalfKneelingStabilityChop = 0x000A, // Value: 10, Comment: 
+	@HalfKneelingStabilityReverseChop = 0x000B, // Value: 11, Comment: 
+	@KneelingRotationalChop = 0x000C, // Value: 12, Comment: 
+	@KneelingRotationalReverseChop = 0x000D, // Value: 13, Comment: 
+	@KneelingStabilityChop = 0x000E, // Value: 14, Comment: 
+	@KneelingWoodchopper = 0x000F, // Value: 15, Comment: 
+	@MedicineBallWoodChops = 0x0010, // Value: 16, Comment: 
+	@PowerSquatChops = 0x0011, // Value: 17, Comment: 
+	@WeightedPowerSquatChops = 0x0012, // Value: 18, Comment: 
+	@StandingRotationalChop = 0x0013, // Value: 19, Comment: 
+	@StandingSplitRotationalChop = 0x0014, // Value: 20, Comment: 
+	@StandingSplitRotationalReverseChop = 0x0015, // Value: 21, Comment: 
+	@StandingStabilityReverseChop = 0x0016 // Value: 22, Comment: 
+};

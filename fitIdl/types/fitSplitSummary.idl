@@ -1,0 +1,19 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SplitSummary", ""> SplitSummary {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @MessageIndex;
+	SplitType<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @SplitType;
+	uint16<"Uint16", 3, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @NumSplits;
+	uint32<"Uint32", 4, -1, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TotalTimerTime;
+	uint32<"Uint32", 5, -1, "", 100, 1, "m", "", "", "", "", "", "", ""> @TotalDistance;
+	uint32<"Uint32", 6, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @AvgSpeed;
+	uint32<"Uint32", 7, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @MaxSpeed;
+	uint16<"Uint16", 8, -1, "", 1, 1, "m", "", "", "", "", "", "", ""> @TotalAscent;
+	uint16<"Uint16", 9, -1, "", 1, 1, "m", "", "", "", "", "", "", ""> @TotalDescent;
+	uint8<"Uint8", 10, -1, "", 1, 1, "bpm", "", "", "", "", "", "", ""> @AvgHeartRate;
+	uint8<"Uint8", 11, -1, "", 1, 1, "bpm", "", "", "", "", "", "", ""> @MaxHeartRate;
+	int32<"Sint32", 12, -1, "", 1000, 1, "m/s", "", "", "", "", "", "", ""> @AvgVertSpeed;
+	uint32<"Uint32", 13, -1, "", 1, 1, "kcal", "", "", "", "", "", "", ""> @TotalCalories;
+	uint32<"Uint32", 77, -1, "", 1000, 1, "s", "", "", "", "", "", "", ""> @TotalMovingTime;
+};

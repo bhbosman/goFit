@@ -1,0 +1,11 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Hr", ""> Hr {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 32768, 1, "s", "", "", "", "", "", "", "1"> @FractionalTimestamp;
+	uint8<"Uint8", 1, -1, "fractional_timestamp", 256, 1, "s", "8", "", "", "", "", "", "1"> @Time256;
+	uint8<"Uint8", 6, 0, "", 1, 1, "bpm", "", "", "", "", "", "", "1"> @FilteredBpm;
+	uint32<"Uint32", 9, 0, "", 1024, 1, "s", "", "", "", "", "", "", "1"> @EventTimestamp;
+	byte<"Byte", 10, 0, "event_timestamp,event_timestamp,event_timestamp,event_timestamp,event_timestamp,event_timestamp,event_timestamp,event_timestamp,event_timestamp,event_timestamp", 0, 1, "s", "12,12,12,12,12,12,12,12,12,12", "1,1,1,1,1,1,1,1,1,1", "", "", "", "", "1"> @EventTimestamp12;
+};

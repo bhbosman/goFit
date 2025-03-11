@@ -1,0 +1,22 @@
+#include "fitTypeDecls.idl"
+
+enum<uint8,0xFF> FitBaseType
+{
+	@Enum = 0x00, // Value: 0, Comment: 
+	@Sint8 = 0x01, // Value: 1, Comment: 
+	@Uint8 = 0x02, // Value: 2, Comment: 
+	@Sint16 = 0x83, // Value: 131, Comment: 
+	@Uint16 = 0x84, // Value: 132, Comment: 
+	@Sint32 = 0x85, // Value: 133, Comment: 
+	@Uint32 = 0x86, // Value: 134, Comment: 
+	@String = 0x07, // Value: 7, Comment: 
+	@Float32 = 0x88, // Value: 136, Comment: 
+	@Float64 = 0x89, // Value: 137, Comment: 
+	@Uint8z = 0x0A, // Value: 10, Comment: 
+	@Uint16z = 0x8B, // Value: 139, Comment: 
+	@Uint32z = 0x8C, // Value: 140, Comment: 
+	@Byte = 0x0D, // Value: 13, Comment: 
+	@Sint64 = 0x8E, // Value: 142, Comment: 
+	@Uint64 = 0x8F, // Value: 143, Comment: 
+	@Uint64z = 0x90 // Value: 144, Comment: 
+};

@@ -1,0 +1,13 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HrvStatusSummary", ""> HrvStatusSummary {
+	uint32<"Uint32", 253, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 128, 1, "ms", "", "", "", "", "7 day RMSSD average over sleep", "", ""> @WeeklyAverage;
+	uint16<"Uint16", 1, -1, "", 128, 1, "ms", "", "", "", "", "Last night RMSSD average over sleep", "", ""> @LastNightAverage;
+	uint16<"Uint16", 2, -1, "", 128, 1, "ms", "", "", "", "", "5 minute high RMSSD value over sleep", "", ""> @LastNight5MinHigh;
+	uint16<"Uint16", 3, -1, "", 128, 1, "ms", "", "", "", "", "3 week baseline, upper boundary of low HRV status", "", ""> @BaselineLowUpper;
+	uint16<"Uint16", 4, -1, "", 128, 1, "ms", "", "", "", "", "3 week baseline, lower boundary of balanced HRV status", "", ""> @BaselineBalancedLower;
+	uint16<"Uint16", 5, -1, "", 128, 1, "ms", "", "", "", "", "3 week baseline, upper boundary of balanced HRV status", "", ""> @BaselineBalancedUpper;
+	HrvStatus<"Enum", 6, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @Status;
+};

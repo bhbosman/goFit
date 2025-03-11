@@ -1,0 +1,17 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"AviationAttitude", ""> AviationAttitude {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Timestamp message was output", "", "1"> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Fractional part of timestamp, added to timestamp", "", "1"> @TimestampMs;
+	uint32<"Uint32", 1, 0, "", 1, 1, "ms", "", "", "", "", "System time associated with sample expressed in ms.", "", "1"> @SystemTime;
+	int16<"Sint16", 2, 0, "", 10430.38, 1, "radians", "", "", "", "", "Range -PI/2 to +PI/2", "", "1"> @Pitch;
+	int16<"Sint16", 3, 0, "", 10430.38, 1, "radians", "", "", "", "", "Range -PI to +PI", "", "1"> @Roll;
+	int16<"Sint16", 4, 0, "", 100, 1, "m/s^2", "", "", "", "", "Range -78.4 to +78.4 (-8 Gs to 8 Gs)", "", "1"> @AccelLateral;
+	int16<"Sint16", 5, 0, "", 100, 1, "m/s^2", "", "", "", "", "Range -78.4 to +78.4 (-8 Gs to 8 Gs)", "", "1"> @AccelNormal;
+	int16<"Sint16", 6, 0, "", 1024, 1, "radians/second", "", "", "", "", "Range -8.727 to +8.727 (-500 degs/sec to +500 degs/sec)", "", "1"> @TurnRate;
+	AttitudeStage<"Enum", 7, 0, "", 1, 1, "", "", "", "", "", "", "", "1"> @Stage;
+	uint8<"Uint8", 8, 0, "", 1, 1, "%", "", "", "", "", "The percent complete of the current attitude stage. Set to 0 for attitude stages 0, 1 and 2 and to 100 for attitude stage 3 by AHRS modules that do not support it. Range - 100", "", "1"> @AttitudeStageComplete;
+	uint16<"Uint16", 9, 0, "", 10430.38, 1, "radians", "", "", "", "", "Track Angle/Heading Range 0 - 2pi", "", "1"> @Track;
+	AttitudeValidity<"Enum", 10, 0, "", 1, 1, "", "", "", "", "", "", "", "1"> @Validity;
+};

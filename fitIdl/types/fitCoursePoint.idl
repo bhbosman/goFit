@@ -1,0 +1,58 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> CoursePoint
+{
+	@Generic = 0x00, // Value: 0, Comment: 
+	@Summit = 0x01, // Value: 1, Comment: 
+	@Valley = 0x02, // Value: 2, Comment: 
+	@Water = 0x03, // Value: 3, Comment: 
+	@Food = 0x04, // Value: 4, Comment: 
+	@Danger = 0x05, // Value: 5, Comment: 
+	@Left = 0x06, // Value: 6, Comment: 
+	@Right = 0x07, // Value: 7, Comment: 
+	@Straight = 0x08, // Value: 8, Comment: 
+	@FirstAid = 0x09, // Value: 9, Comment: 
+	@FourthCategory = 0x0A, // Value: 10, Comment: 
+	@ThirdCategory = 0x0B, // Value: 11, Comment: 
+	@SecondCategory = 0x0C, // Value: 12, Comment: 
+	@FirstCategory = 0x0D, // Value: 13, Comment: 
+	@HorsCategory = 0x0E, // Value: 14, Comment: 
+	@Sprint = 0x0F, // Value: 15, Comment: 
+	@LeftFork = 0x10, // Value: 16, Comment: 
+	@RightFork = 0x11, // Value: 17, Comment: 
+	@MiddleFork = 0x12, // Value: 18, Comment: 
+	@SlightLeft = 0x13, // Value: 19, Comment: 
+	@SharpLeft = 0x14, // Value: 20, Comment: 
+	@SlightRight = 0x15, // Value: 21, Comment: 
+	@SharpRight = 0x16, // Value: 22, Comment: 
+	@UTurn = 0x17, // Value: 23, Comment: 
+	@SegmentStart = 0x18, // Value: 24, Comment: 
+	@SegmentEnd = 0x19, // Value: 25, Comment: 
+	@Campsite = 0x1B, // Value: 27, Comment: 
+	@AidStation = 0x1C, // Value: 28, Comment: 
+	@RestArea = 0x1D, // Value: 29, Comment: 
+	@GeneralDistance = 0x1E, // Value: 30, Comment: 
+	@Service = 0x1F, // Value: 31, Comment: 
+	@EnergyGel = 0x20, // Value: 32, Comment: 
+	@SportsDrink = 0x21, // Value: 33, Comment: 
+	@MileMarker = 0x22, // Value: 34, Comment: 
+	@Checkpoint = 0x23, // Value: 35, Comment: 
+	@Shelter = 0x24, // Value: 36, Comment: 
+	@MeetingSpot = 0x25, // Value: 37, Comment: 
+	@Overlook = 0x26, // Value: 38, Comment: 
+	@Toilet = 0x27, // Value: 39, Comment: 
+	@Shower = 0x28, // Value: 40, Comment: 
+	@Gear = 0x29, // Value: 41, Comment: 
+	@SharpCurve = 0x2A, // Value: 42, Comment: 
+	@SteepIncline = 0x2B, // Value: 43, Comment: 
+	@Tunnel = 0x2C, // Value: 44, Comment: 
+	@Bridge = 0x2D, // Value: 45, Comment: 
+	@Obstacle = 0x2E, // Value: 46, Comment: 
+	@Crossing = 0x2F, // Value: 47, Comment: 
+	@Store = 0x30, // Value: 48, Comment: 
+	@Transition = 0x31, // Value: 49, Comment: 
+	@Navaid = 0x32, // Value: 50, Comment: 
+	@Transport = 0x33, // Value: 51, Comment: 
+	@Alert = 0x34, // Value: 52, Comment: 
+	@Info = 0x35 // Value: 53, Comment: 
+};

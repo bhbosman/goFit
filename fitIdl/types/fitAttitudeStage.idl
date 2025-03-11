@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> AttitudeStage
+{
+	@Failed = 0x00, // Value: 0, Comment: 
+	@Aligning = 0x01, // Value: 1, Comment: 
+	@Degraded = 0x02, // Value: 2, Comment: 
+	@Valid = 0x03 // Value: 3, Comment: 
+};

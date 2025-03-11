@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"HsaStepData", ""> HsaStepData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "s", "", "", "", "", "Processing interval length in seconds. File start: 0xFFFFFFEF File stop: 0xFFFFFFEE", "", ""> @ProcessingInterval;
+	uint32<"Uint32", 1, 0, "", 1, 1, "steps", "", "", "", "", "Total step sum", "", ""> @Steps;
+};

@@ -1,0 +1,46 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> TricepsExtensionExerciseName
+{
+	@BenchDip = 0x0000, // Value: 0, Comment: 
+	@WeightedBenchDip = 0x0001, // Value: 1, Comment: 
+	@BodyWeightDip = 0x0002, // Value: 2, Comment: 
+	@CableKickback = 0x0003, // Value: 3, Comment: 
+	@CableLyingTricepsExtension = 0x0004, // Value: 4, Comment: 
+	@CableOverheadTricepsExtension = 0x0005, // Value: 5, Comment: 
+	@DumbbellKickback = 0x0006, // Value: 6, Comment: 
+	@DumbbellLyingTricepsExtension = 0x0007, // Value: 7, Comment: 
+	@EzBarOverheadTricepsExtension = 0x0008, // Value: 8, Comment: 
+	@InclineDip = 0x0009, // Value: 9, Comment: 
+	@WeightedInclineDip = 0x000A, // Value: 10, Comment: 
+	@InclineEzBarLyingTricepsExtension = 0x000B, // Value: 11, Comment: 
+	@LyingDumbbellPulloverToExtension = 0x000C, // Value: 12, Comment: 
+	@LyingEzBarTricepsExtension = 0x000D, // Value: 13, Comment: 
+	@LyingTricepsExtensionToCloseGripBenchPress = 0x000E, // Value: 14, Comment: 
+	@OverheadDumbbellTricepsExtension = 0x000F, // Value: 15, Comment: 
+	@RecliningTricepsPress = 0x0010, // Value: 16, Comment: 
+	@ReverseGripPressdown = 0x0011, // Value: 17, Comment: 
+	@ReverseGripTricepsPressdown = 0x0012, // Value: 18, Comment: 
+	@RopePressdown = 0x0013, // Value: 19, Comment: 
+	@SeatedBarbellOverheadTricepsExtension = 0x0014, // Value: 20, Comment: 
+	@SeatedDumbbellOverheadTricepsExtension = 0x0015, // Value: 21, Comment: 
+	@SeatedEzBarOverheadTricepsExtension = 0x0016, // Value: 22, Comment: 
+	@SeatedSingleArmOverheadDumbbellExtension = 0x0017, // Value: 23, Comment: 
+	@SingleArmDumbbellOverheadTricepsExtension = 0x0018, // Value: 24, Comment: 
+	@SingleDumbbellSeatedOverheadTricepsExtension = 0x0019, // Value: 25, Comment: 
+	@SingleLegBenchDipAndKick = 0x001A, // Value: 26, Comment: 
+	@WeightedSingleLegBenchDipAndKick = 0x001B, // Value: 27, Comment: 
+	@SingleLegDip = 0x001C, // Value: 28, Comment: 
+	@WeightedSingleLegDip = 0x001D, // Value: 29, Comment: 
+	@StaticLyingTricepsExtension = 0x001E, // Value: 30, Comment: 
+	@SuspendedDip = 0x001F, // Value: 31, Comment: 
+	@WeightedSuspendedDip = 0x0020, // Value: 32, Comment: 
+	@SwissBallDumbbellLyingTricepsExtension = 0x0021, // Value: 33, Comment: 
+	@SwissBallEzBarLyingTricepsExtension = 0x0022, // Value: 34, Comment: 
+	@SwissBallEzBarOverheadTricepsExtension = 0x0023, // Value: 35, Comment: 
+	@TabletopDip = 0x0024, // Value: 36, Comment: 
+	@WeightedTabletopDip = 0x0025, // Value: 37, Comment: 
+	@TricepsExtensionOnFloor = 0x0026, // Value: 38, Comment: 
+	@TricepsPressdown = 0x0027, // Value: 39, Comment: 
+	@WeightedDip = 0x0028 // Value: 40, Comment: 
+};

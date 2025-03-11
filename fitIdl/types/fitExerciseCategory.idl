@@ -1,0 +1,39 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> ExerciseCategory
+{
+	@BenchPress = 0x0000, // Value: 0, Comment: 
+	@CalfRaise = 0x0001, // Value: 1, Comment: 
+	@Cardio = 0x0002, // Value: 2, Comment: 
+	@Carry = 0x0003, // Value: 3, Comment: 
+	@Chop = 0x0004, // Value: 4, Comment: 
+	@Core = 0x0005, // Value: 5, Comment: 
+	@Crunch = 0x0006, // Value: 6, Comment: 
+	@Curl = 0x0007, // Value: 7, Comment: 
+	@Deadlift = 0x0008, // Value: 8, Comment: 
+	@Flye = 0x0009, // Value: 9, Comment: 
+	@HipRaise = 0x000A, // Value: 10, Comment: 
+	@HipStability = 0x000B, // Value: 11, Comment: 
+	@HipSwing = 0x000C, // Value: 12, Comment: 
+	@Hyperextension = 0x000D, // Value: 13, Comment: 
+	@LateralRaise = 0x000E, // Value: 14, Comment: 
+	@LegCurl = 0x000F, // Value: 15, Comment: 
+	@LegRaise = 0x0010, // Value: 16, Comment: 
+	@Lunge = 0x0011, // Value: 17, Comment: 
+	@OlympicLift = 0x0012, // Value: 18, Comment: 
+	@Plank = 0x0013, // Value: 19, Comment: 
+	@Plyo = 0x0014, // Value: 20, Comment: 
+	@PullUp = 0x0015, // Value: 21, Comment: 
+	@PushUp = 0x0016, // Value: 22, Comment: 
+	@Row = 0x0017, // Value: 23, Comment: 
+	@ShoulderPress = 0x0018, // Value: 24, Comment: 
+	@ShoulderStability = 0x0019, // Value: 25, Comment: 
+	@Shrug = 0x001A, // Value: 26, Comment: 
+	@SitUp = 0x001B, // Value: 27, Comment: 
+	@Squat = 0x001C, // Value: 28, Comment: 
+	@TotalBody = 0x001D, // Value: 29, Comment: 
+	@TricepsExtension = 0x001E, // Value: 30, Comment: 
+	@WarmUp = 0x001F, // Value: 31, Comment: 
+	@Run = 0x0020, // Value: 32, Comment: 
+	@Unknown = 0xFFFE // Value: 65534, Comment: 
+};

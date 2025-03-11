@@ -1,0 +1,8 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> WeatherReport
+{
+	@Current = 0x00, // Value: 0, Comment: 
+	@HourlyForecast = 0x01, // Value: 1, Comment: 
+	@DailyForecast = 0x02 // Value: 2, Comment: 
+};

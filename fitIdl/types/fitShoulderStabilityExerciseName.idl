@@ -1,0 +1,38 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> ShoulderStabilityExerciseName
+{
+	@_90DegreeCableExternalRotation = 0x0000, // Value: 0, Comment: 
+	@BandExternalRotation = 0x0001, // Value: 1, Comment: 
+	@BandInternalRotation = 0x0002, // Value: 2, Comment: 
+	@BentArmLateralRaiseAndExternalRotation = 0x0003, // Value: 3, Comment: 
+	@CableExternalRotation = 0x0004, // Value: 4, Comment: 
+	@DumbbellFacePullWithExternalRotation = 0x0005, // Value: 5, Comment: 
+	@FloorIRaise = 0x0006, // Value: 6, Comment: 
+	@WeightedFloorIRaise = 0x0007, // Value: 7, Comment: 
+	@FloorTRaise = 0x0008, // Value: 8, Comment: 
+	@WeightedFloorTRaise = 0x0009, // Value: 9, Comment: 
+	@FloorYRaise = 0x000A, // Value: 10, Comment: 
+	@WeightedFloorYRaise = 0x000B, // Value: 11, Comment: 
+	@InclineIRaise = 0x000C, // Value: 12, Comment: 
+	@WeightedInclineIRaise = 0x000D, // Value: 13, Comment: 
+	@InclineLRaise = 0x000E, // Value: 14, Comment: 
+	@WeightedInclineLRaise = 0x000F, // Value: 15, Comment: 
+	@InclineTRaise = 0x0010, // Value: 16, Comment: 
+	@WeightedInclineTRaise = 0x0011, // Value: 17, Comment: 
+	@InclineWRaise = 0x0012, // Value: 18, Comment: 
+	@WeightedInclineWRaise = 0x0013, // Value: 19, Comment: 
+	@InclineYRaise = 0x0014, // Value: 20, Comment: 
+	@WeightedInclineYRaise = 0x0015, // Value: 21, Comment: 
+	@LyingExternalRotation = 0x0016, // Value: 22, Comment: 
+	@SeatedDumbbellExternalRotation = 0x0017, // Value: 23, Comment: 
+	@StandingLRaise = 0x0018, // Value: 24, Comment: 
+	@SwissBallIRaise = 0x0019, // Value: 25, Comment: 
+	@WeightedSwissBallIRaise = 0x001A, // Value: 26, Comment: 
+	@SwissBallTRaise = 0x001B, // Value: 27, Comment: 
+	@WeightedSwissBallTRaise = 0x001C, // Value: 28, Comment: 
+	@SwissBallWRaise = 0x001D, // Value: 29, Comment: 
+	@WeightedSwissBallWRaise = 0x001E, // Value: 30, Comment: 
+	@SwissBallYRaise = 0x001F, // Value: 31, Comment: 
+	@WeightedSwissBallYRaise = 0x0020 // Value: 32, Comment: 
+};

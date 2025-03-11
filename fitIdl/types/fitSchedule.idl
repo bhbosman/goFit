@@ -1,0 +1,7 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> Schedule
+{
+	@Workout = 0x00, // Value: 0, Comment: 
+	@Course = 0x01 // Value: 1, Comment: 
+};

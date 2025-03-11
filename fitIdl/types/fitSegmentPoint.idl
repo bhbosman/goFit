@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"SegmentPoint", ""> SegmentPoint {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	int32<"Sint32", 1, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", "1"> @PositionLat;
+	int32<"Sint32", 2, -1, "", 1, 1, "semicircles", "", "", "", "", "", "", "1"> @PositionLong;
+	uint32<"Uint32", 3, -1, "", 100, 1, "m", "", "", "", "", "Accumulated distance along the segment at the described point", "", "1"> @Distance;
+	uint16<"Uint16", 4, -1, "enhanced_altitude", 5, 500, "m", "16", "", "", "", "Accumulated altitude along the segment at the described point", "", "1"> @Altitude;
+	uint32<"Uint32", 5, 0, "", 1000, 1, "s", "", "", "", "", "Accumualted time each leader board member required to reach the described point. This value is zero for all leader board members at the starting point of the segment.", "", "1"> @LeaderTime;
+	uint32<"Uint32", 6, -1, "", 5, 500, "m", "", "", "", "", "Accumulated altitude along the segment at the described point", "", ""> @EnhancedAltitude;
+};

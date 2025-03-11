@@ -1,0 +1,17 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0x00000000> CourseCapabilities
+{
+	@Processed = 0x00000001, // Value: 1, Comment: 
+	@Valid = 0x00000002, // Value: 2, Comment: 
+	@Time = 0x00000004, // Value: 4, Comment: 
+	@Distance = 0x00000008, // Value: 8, Comment: 
+	@Position = 0x00000010, // Value: 16, Comment: 
+	@HeartRate = 0x00000020, // Value: 32, Comment: 
+	@Power = 0x00000040, // Value: 64, Comment: 
+	@Cadence = 0x00000080, // Value: 128, Comment: 
+	@Training = 0x00000100, // Value: 256, Comment: 
+	@Navigation = 0x00000200, // Value: 512, Comment: 
+	@Bikeway = 0x00000400, // Value: 1024, Comment: 
+	@Aviation = 0x00001000 // Value: 4096, Comment: 
+};

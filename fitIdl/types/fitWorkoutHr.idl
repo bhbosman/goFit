@@ -1,0 +1,6 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0xFFFFFFFF> WorkoutHr
+{
+	@BpmOffset = 0x00000064 // Value: 100, Comment: 0 - 100 indicates% of max hr; >100 indicates bpm (255 max) plus 100
+};

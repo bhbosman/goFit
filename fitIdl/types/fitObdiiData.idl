@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"ObdiiData", ""> ObdiiData {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Timestamp message was output", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Fractional part of timestamp, added to timestamp", "", ""> @TimestampMs;
+	uint16<"Uint16", 1, 0, "", 1, 1, "ms", "", "", "", "", "Offset of PID reading [i] from start_timestamp+start_timestamp_ms. Readings may span accross seconds.", "", ""> @TimeOffset;
+	byte<"Byte", 2, -1, "", 1, 1, "", "", "", "", "", "Parameter ID", "", ""> @Pid;
+	byte<"Byte", 3, 0, "", 1, 1, "", "", "", "", "", "Raw parameter data", "", ""> @RawData;
+	uint8<"Uint8", 4, 0, "", 1, 1, "", "", "", "", "", "Optional, data size of PID[i]. If not specified refer to SAE J1979.", "", ""> @PidDataSize;
+	uint32<"Uint32", 5, 0, "", 1, 1, "", "", "", "", "", "System time associated with sample expressed in ms, can be used instead of time_offset. There will be a system_time value for each raw_data element. For multibyte pids the system_time is repeated.", "", ""> @SystemTime;
+	uint32<"Uint32", 6, -1, "", 1, 1, "", "", "", "", "", "Timestamp of first sample recorded in the message. Used with time_offset to generate time of each sample", "", ""> @StartTimestamp;
+	uint16<"Uint16", 7, -1, "", 1, 1, "ms", "", "", "", "", "Fractional part of start_timestamp", "", ""> @StartTimestampMs;
+};

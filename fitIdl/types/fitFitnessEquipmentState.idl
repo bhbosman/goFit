@@ -1,0 +1,9 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> FitnessEquipmentState
+{
+	@Ready = 0x00, // Value: 0, Comment: fitness equipment event data
+	@InUse = 0x01, // Value: 1, Comment: fitness equipment event data
+	@Paused = 0x02, // Value: 2, Comment: fitness equipment event data
+	@Unknown = 0x03 // Value: 3, Comment: fitness equipment event data
+};

@@ -1,0 +1,49 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> CurlExerciseName
+{
+	@AlternatingDumbbellBicepsCurl = 0x0000, // Value: 0, Comment: 
+	@AlternatingDumbbellBicepsCurlOnSwissBall = 0x0001, // Value: 1, Comment: 
+	@AlternatingInclineDumbbellBicepsCurl = 0x0002, // Value: 2, Comment: 
+	@BarbellBicepsCurl = 0x0003, // Value: 3, Comment: 
+	@BarbellReverseWristCurl = 0x0004, // Value: 4, Comment: 
+	@BarbellWristCurl = 0x0005, // Value: 5, Comment: 
+	@BehindTheBackBarbellReverseWristCurl = 0x0006, // Value: 6, Comment: 
+	@BehindTheBackOneArmCableCurl = 0x0007, // Value: 7, Comment: 
+	@CableBicepsCurl = 0x0008, // Value: 8, Comment: 
+	@CableHammerCurl = 0x0009, // Value: 9, Comment: 
+	@CheatingBarbellBicepsCurl = 0x000A, // Value: 10, Comment: 
+	@CloseGripEzBarBicepsCurl = 0x000B, // Value: 11, Comment: 
+	@CrossBodyDumbbellHammerCurl = 0x000C, // Value: 12, Comment: 
+	@DeadHangBicepsCurl = 0x000D, // Value: 13, Comment: 
+	@DeclineHammerCurl = 0x000E, // Value: 14, Comment: 
+	@DumbbellBicepsCurlWithStaticHold = 0x000F, // Value: 15, Comment: 
+	@DumbbellHammerCurl = 0x0010, // Value: 16, Comment: 
+	@DumbbellReverseWristCurl = 0x0011, // Value: 17, Comment: 
+	@DumbbellWristCurl = 0x0012, // Value: 18, Comment: 
+	@EzBarPreacherCurl = 0x0013, // Value: 19, Comment: 
+	@ForwardBendBicepsCurl = 0x0014, // Value: 20, Comment: 
+	@HammerCurlToPress = 0x0015, // Value: 21, Comment: 
+	@InclineDumbbellBicepsCurl = 0x0016, // Value: 22, Comment: 
+	@InclineOffsetThumbDumbbellCurl = 0x0017, // Value: 23, Comment: 
+	@KettlebellBicepsCurl = 0x0018, // Value: 24, Comment: 
+	@LyingConcentrationCableCurl = 0x0019, // Value: 25, Comment: 
+	@OneArmPreacherCurl = 0x001A, // Value: 26, Comment: 
+	@PlatePinchCurl = 0x001B, // Value: 27, Comment: 
+	@PreacherCurlWithCable = 0x001C, // Value: 28, Comment: 
+	@ReverseEzBarCurl = 0x001D, // Value: 29, Comment: 
+	@ReverseGripWristCurl = 0x001E, // Value: 30, Comment: 
+	@ReverseGripBarbellBicepsCurl = 0x001F, // Value: 31, Comment: 
+	@SeatedAlternatingDumbbellBicepsCurl = 0x0020, // Value: 32, Comment: 
+	@SeatedDumbbellBicepsCurl = 0x0021, // Value: 33, Comment: 
+	@SeatedReverseDumbbellCurl = 0x0022, // Value: 34, Comment: 
+	@SplitStanceOffsetPinkyDumbbellCurl = 0x0023, // Value: 35, Comment: 
+	@StandingAlternatingDumbbellCurls = 0x0024, // Value: 36, Comment: 
+	@StandingDumbbellBicepsCurl = 0x0025, // Value: 37, Comment: 
+	@StandingEzBarBicepsCurl = 0x0026, // Value: 38, Comment: 
+	@StaticCurl = 0x0027, // Value: 39, Comment: 
+	@SwissBallDumbbellOverheadTricepsExtension = 0x0028, // Value: 40, Comment: 
+	@SwissBallEzBarPreacherCurl = 0x0029, // Value: 41, Comment: 
+	@TwistingStandingDumbbellBicepsCurl = 0x002A, // Value: 42, Comment: 
+	@WideGripEzBarBicepsCurl = 0x002B // Value: 43, Comment: 
+};

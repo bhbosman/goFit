@@ -1,0 +1,14 @@
+#include "fitTypeDecls.idl"
+
+enum<byte,0xFF> ExdLayout
+{
+	@FullScreen = 0x00, // Value: 0, Comment: 
+	@HalfVertical = 0x01, // Value: 1, Comment: 
+	@HalfHorizontal = 0x02, // Value: 2, Comment: 
+	@HalfVerticalRightSplit = 0x03, // Value: 3, Comment: 
+	@HalfHorizontalBottomSplit = 0x04, // Value: 4, Comment: 
+	@FullQuarterSplit = 0x05, // Value: 5, Comment: 
+	@HalfVerticalLeftSplit = 0x06, // Value: 6, Comment: 
+	@HalfHorizontalTopSplit = 0x07, // Value: 7, Comment: 
+	@Dynamic = 0x08 // Value: 8, Comment: 
+};

@@ -1,0 +1,10 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"CameraEvent", ""> CameraEvent {
+	uint32<"Uint32", 253, -1, "", 1, 1, "s", "", "", "", "", "Whole second part of the timestamp.", "", ""> @Timestamp;
+	uint16<"Uint16", 0, -1, "", 1, 1, "ms", "", "", "", "", "Millisecond part of the timestamp.", "", ""> @TimestampMs;
+	CameraEventType<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @CameraEventType;
+	string<"String", 2, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @CameraFileUuid;
+	CameraOrientationType<"Enum", 3, -1, "", 1, 1, "", "", "", "", "", "", "", ""> @CameraOrientation;
+};

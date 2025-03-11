@@ -1,0 +1,15 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"MesgCapabilities", ""> MesgCapabilities {
+	MessageIndex<"Enum", 254, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MessageIndex;
+	File<"Enum", 0, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @File;
+	MesgNum<"Enum", 1, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @MesgNum;
+	MesgCount<"Enum", 2, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @CountType;
+	uint16<"Uint16", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @Count
+	{
+		uint16<"Uint16", "", 1, 1, "", "", "", "count_type", "num_per_file", "", "", "1"> @NumPerFile;
+		uint16<"Uint16", "", 1, 1, "", "", "", "count_type", "max_per_file", "", "", "1"> @MaxPerFile;
+		uint16<"Uint16", "", 1, 1, "", "", "", "count_type", "max_per_file_type", "", "", "1"> @MaxPerFileType;
+	};
+};

@@ -1,0 +1,18 @@
+#include "fitTypeDecls.idl"
+
+enum<uint16,0xFFFF> AttitudeValidity
+{
+	@TrackAngleHeadingValid = 0x0001, // Value: 1, Comment: 
+	@PitchValid = 0x0002, // Value: 2, Comment: 
+	@RollValid = 0x0004, // Value: 4, Comment: 
+	@LateralBodyAccelValid = 0x0008, // Value: 8, Comment: 
+	@NormalBodyAccelValid = 0x0010, // Value: 16, Comment: 
+	@TurnRateValid = 0x0020, // Value: 32, Comment: 
+	@HwFail = 0x0040, // Value: 64, Comment: 
+	@MagInvalid = 0x0080, // Value: 128, Comment: 
+	@NoGps = 0x0100, // Value: 256, Comment: 
+	@GpsInvalid = 0x0200, // Value: 512, Comment: 
+	@SolutionCoasting = 0x0400, // Value: 1024, Comment: 
+	@TrueTrackAngle = 0x0800, // Value: 2048, Comment: 
+	@MagneticHeading = 0x1000 // Value: 4096, Comment: 
+};

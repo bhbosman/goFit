@@ -1,0 +1,18 @@
+#include "fitTypeDecls.idl"
+#include "fitAllTypes.idl"
+
+struct<"Connectivity", ""> Connectivity {
+	bool<"Bool", 0, -1, "", 1, 1, "", "", "", "", "", "Use Bluetooth for connectivity features", "", "1"> @BluetoothEnabled;
+	bool<"Bool", 1, -1, "", 1, 1, "", "", "", "", "", "Use Bluetooth Low Energy for connectivity features", "", "1"> @BluetoothLeEnabled;
+	bool<"Bool", 2, -1, "", 1, 1, "", "", "", "", "", "Use ANT for connectivity features", "", "1"> @AntEnabled;
+	string<"String", 3, -1, "", 1, 1, "", "", "", "", "", "", "", "24"> @Name;
+	bool<"Bool", 4, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @LiveTrackingEnabled;
+	bool<"Bool", 5, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @WeatherConditionsEnabled;
+	bool<"Bool", 6, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @WeatherAlertsEnabled;
+	bool<"Bool", 7, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @AutoActivityUploadEnabled;
+	bool<"Bool", 8, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @CourseDownloadEnabled;
+	bool<"Bool", 9, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @WorkoutDownloadEnabled;
+	bool<"Bool", 10, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @GpsEphemerisDownloadEnabled;
+	bool<"Bool", 11, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @IncidentDetectionEnabled;
+	bool<"Bool", 12, -1, "", 1, 1, "", "", "", "", "", "", "", "1"> @GrouptrackEnabled;
+};

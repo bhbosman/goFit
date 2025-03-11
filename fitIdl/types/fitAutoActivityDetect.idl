@@ -1,0 +1,12 @@
+#include "fitTypeDecls.idl"
+
+enum<uint32,0xFFFFFFFF> AutoActivityDetect
+{
+	@None = 0x00000000, // Value: 0, Comment: 
+	@Running = 0x00000001, // Value: 1, Comment: 
+	@Cycling = 0x00000002, // Value: 2, Comment: 
+	@Swimming = 0x00000004, // Value: 4, Comment: 
+	@Walking = 0x00000008, // Value: 8, Comment: 
+	@Elliptical = 0x00000020, // Value: 32, Comment: 
+	@Sedentary = 0x00000400 // Value: 1024, Comment: 
+};
